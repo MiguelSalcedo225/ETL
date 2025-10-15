@@ -1,8 +1,6 @@
-import datetime
 from datetime import timedelta, date, datetime
 from typing import Tuple, Any
 from deep_translator import GoogleTranslator
-import holidays
 import numpy as np
 import pandas as pd
 from mlxtend.frequent_patterns import apriori
@@ -41,7 +39,7 @@ def transform_product(args) -> pd.DataFrame:
     desc = (
         productmodelproductdescriptionculture
         .merge(productdescription, on='productdescriptionid', how='left')
-        .merge(culture, on='cultureid', how='left')  # 👈 Une con culture para tener nombre del idioma
+        .merge(culture, on='cultureid', how='left')  
     )
     desc = (
         productmodelproductdescriptionculture
@@ -50,14 +48,12 @@ def transform_product(args) -> pd.DataFrame:
         [['productmodelid', 'description']]
     )
 
-    # Unir descripción con el producto
     product = product.merge(desc, on='productmodelid', how='left')
     idiomas = {
         'englishdescription': 'en','frenchdescription': 'fr','chinesedescription': 'zh-CN',
         'arabicdescription': 'ar','hebrewdescription': 'he','thaidescription': 'th',
         'germandescription': 'de',   'japanesedescription': 'ja','turkishdescription': 'tr' 
     }
-    # cache para evitar repetir traducciones
     traduccion_cache = {}
     def traducir_texto(texto, target, source='auto'):
         if pd.isna(texto) or texto.strip() == "":
@@ -72,7 +68,6 @@ def transform_product(args) -> pd.DataFrame:
         except Exception:
             traduccion_cache[clave] = ""
             return ""
-    # Detectar idioma base (una sola vez por descripción única)
     descripciones_unicas = product['description'].dropna().unique()
     detecciones = {}
     for texto in descripciones_unicas:
@@ -86,7 +81,6 @@ def transform_product(args) -> pd.DataFrame:
     for col, lang in idiomas.items():
         product[col] = product['description'].apply(lambda x: traducir_texto(x, lang, source=detecciones.get(x, 'auto')))
 
-    # ====== Traducción de nombres ======
     idiomasname = {
         'english': 'en',
         'french': 'fr',
@@ -111,15 +105,14 @@ def transform_product(args) -> pd.DataFrame:
     return dim_product
 
 def transform_fecha() -> DataFrame:
-    # Generar rango de fechas (ajústalo según tus datos)
     dimdate = pd.DataFrame({
         "fulldatealternatekey": pd.date_range(start='2005-01-01', end='2008-12-31', freq='D')
     })
 
-    # Clave surrogate
+ 
     dimdate["datekey"] = dimdate["fulldatealternatekey"].dt.strftime("%Y%m%d").astype(int)
 
-    # Atributos básicos
+
     dimdate["daynumberofweek"] = dimdate["fulldatealternatekey"].dt.weekday + 1  # Lunes=1
     dimdate["daynumberofmonth"] = dimdate["fulldatealternatekey"].dt.day
     dimdate["daynumberofyear"] = dimdate["fulldatealternatekey"].dt.day_of_year
@@ -129,8 +122,7 @@ def transform_fecha() -> DataFrame:
     dimdate["calendaryear"] = dimdate["fulldatealternatekey"].dt.year
     dimdate["calendarsemester"] = dimdate["monthnumberofyear"].apply(lambda m: 1 if m <= 6 else 2)
 
-    # ===== Fiscal attributes =====
-    # Ejemplo: Año fiscal comienza en julio
+
     dimdate["fiscalyear"] = dimdate["fulldatealternatekey"].apply(
         lambda x: x.year if x.month >= 7 else x.year - 1
     )
@@ -139,11 +131,9 @@ def transform_fecha() -> DataFrame:
     )
     dimdate["fiscalsemester"] = dimdate["fiscalquarter"].apply(lambda q: 1 if q <= 2 else 2)
 
-    # ===== Nombres de días y meses =====
     dimdate["englishdaynameofweek"] = dimdate["fulldatealternatekey"].dt.day_name()
     dimdate["englishmonthname"] = dimdate["fulldatealternatekey"].dt.month_name()
 
-    # Traducción de días y meses
     def traducir(texto, idioma):
         try:
             return GoogleTranslator(source='en', target=idioma).translate(texto)
@@ -156,7 +146,6 @@ def transform_fecha() -> DataFrame:
     dimdate["spanishmonthname"] = dimdate["englishmonthname"].apply(lambda x: traducir(x, "es"))
     dimdate["frenchmonthname"] = dimdate["englishmonthname"].apply(lambda x: traducir(x, "fr"))
 
-    # Ordenar columnas
     dimdate = dimdate[[
         "datekey", "fulldatealternatekey", "daynumberofweek",
         "englishdaynameofweek", "spanishdaynameofweek", "frenchdaynameofweek",
