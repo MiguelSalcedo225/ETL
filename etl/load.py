@@ -10,8 +10,25 @@ def load_data_product(dim_product: DataFrame, etl_conn):
     dim_product.to_sql('dim_product', etl_conn, if_exists='append', index_label='productkey')
 
 def load_data_fecha(dim_fecha: DataFrame, etl_conn: Engine):
-    dim_fecha.to_sql('dim_date', etl_conn, if_exists='append', index_label='datakey')
-    
+    dim_fecha.to_sql('dim_date', etl_conn, if_exists='append', index=False)
+
+def load_data_salesterritory(dim_salesterritory: DataFrame, etl_conn: Engine):
+    dim_salesterritory.to_sql('dim_salesterritory', etl_conn, if_exists='append', index_label='salesterritorykey')
+
+def load_data_salesreason(dim_salesreason: DataFrame, etl_conn: Engine):
+    dim_salesreason.to_sql('dim_salesreason', etl_conn, if_exists='append', index_label='salesreasonkey')
+
+def load_data_currency(dim_currency: DataFrame, etl_conn: Engine):
+    dim_currency.to_sql('dim_currency', etl_conn, if_exists='append', index_label='currencykey')
+
+def load_data_promotion(dim_promotion: DataFrame, etl_conn: Engine):
+    dim_promotion.to_sql('dim_promotion', etl_conn, if_exists='append', index_label='promotionkey')
+
+def load_data_customer(dim_customer: DataFrame, etl_conn: Engine):
+    dim_customer.to_sql('dim_customer', etl_conn, if_exists='append', index=False)
+
+def load_data_hecho_internetsales(fact_internet_sales: DataFrame, etl_conn: Engine):
+    fact_internet_sales.to_sql('fact_internetsales', etl_conn, if_exists='append', index=False)
 
 
 def load(table: DataFrame, etl_conn: Engine, tname, replace: bool = False):
