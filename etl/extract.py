@@ -45,14 +45,27 @@ def extract_promotion(conection: Engine):
     promotion = pd.read_sql_table('specialoffer', conection, schema='sales')
     return promotion
 
+def extract_geography(conection: Engine):
+    address = pd.read_sql_table('address', conection, schema='person')
+    stateprovince = pd.read_sql_table('stateprovince', conection, schema='person')
+    countryregion = pd.read_sql_table('countryregion', conection, schema='person')
+    salesterritory = pd.read_sql_table('salesterritory', conection, schema='sales')
+    business_entity_address = pd.read_sql_table('businessentityaddress', conection, schema='person')
+    customer = pd.read_sql_table('customer', conection, schema='sales')
+    store = pd.read_sql_table('store', conection, schema='sales')
+    return [address, stateprovince, countryregion, salesterritory, business_entity_address, customer, store]
+
+
 def extract_customer(conection: Engine):
     customer = pd.read_sql_table('customer', conection, schema='sales')
     person = pd.read_sql_table('person', conection, schema='person')
-    salesorderheader = pd.read_sql_table('salesorderheader', conection, schema='sales')
     address = pd.read_sql_table('address', conection, schema='person')
     personphone = pd.read_sql_table('personphone', conection, schema='person')
     personemailaddress = pd.read_sql_table('emailaddress', conection, schema='person')
-    return [customer, person, salesorderheader, address, personphone, personemailaddress]
+    businessentityaddress = pd.read_sql_table('businessentityaddress', conection, schema='person')
+    stateprovince = pd.read_sql_table('stateprovince', conection, schema='person')
+    countryregion = pd.read_sql_table('countryregion', conection, schema='person')
+    return [customer, person, address, personphone, personemailaddress, businessentityaddress, stateprovince, countryregion]
 
 
 

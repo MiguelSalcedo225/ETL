@@ -4,6 +4,7 @@ from deep_translator import GoogleTranslator
 import numpy as np
 import pandas as pd
 from pandas import DataFrame
+import xml.etree.ElementTree as ET
 
 
 def transform_product(args) -> pd.DataFrame:
@@ -179,26 +180,129 @@ def transform_promotion(promotion: DataFrame) -> DataFrame:
     return dim_promotion
 
 
-def transform_customer(args: DataFrame) -> DataFrame:
-    (customer, person, salesorderheader, address, personphone, personemailaddress) = args
+def transform_geography(args: DataFrame) -> DataFrame:
+    (address, stateprovince, countryregion, salesterritory, business_entity_address, customer, store) = args
+
+    address.drop(columns=['modifieddate','rowguid','addressline1','addressline2','spatiallocation'], inplace=True)
+    stateprovince.rename(columns={'name': 'stateprovincename'}, inplace=True)
+    address = address.merge(stateprovince[['stateprovinceid','stateprovincename', 'countryregioncode', 'stateprovincecode', 'territoryid']], on='stateprovinceid', how='left')
+    address = address.merge(salesterritory[['territoryid']], on='territoryid', how='left')
+    address.rename(columns={'territoryid': 'salesterritorykey'}, inplace=True)  
+    address = address.merge(countryregion[['countryregioncode','name']].rename(columns={'name': 'countryregionname'}), on='countryregioncode', how='left')
+    # Filtrar direcciones que tienen clientes o tiendas
+    customer_business_ids = customer[['personid']].dropna().rename(columns={'personid': 'businessentityid'})
+    store_business_ids = store[['businessentityid']].dropna()
+    valid_business_ids = pd.concat([customer_business_ids, store_business_ids]).drop_duplicates()
+    # Filtrar business_entity_address para obtener solo las direcciones con clientes o tiendas
+    valid_addresses = business_entity_address.merge(valid_business_ids, on='businessentityid', how='inner')
+    dim_geography = address.merge(valid_addresses[['addressid']].drop_duplicates(), on='addressid',how='inner')
+    dim_geography.drop(columns=['stateprovinceid','addressid'], inplace=True)
+    dim_geography = dim_geography.drop_duplicates(subset=[
+        'city', 'postalcode', 'stateprovincecode', 'stateprovincename', 
+        'countryregioncode', 'countryregionname', 'salesterritorykey'
+    ])
+    dim_geography = dim_geography.sort_values(['countryregioncode', 'stateprovincecode', 'city'])
+    base_ip = "198.51.100.{}"
+    ip_addresses = [base_ip.format(i + 2) for i in range(len(dim_geography))]
+    dim_geography['ipaddresslocator'] = ip_addresses
+    dim_geography['geographykey'] = range(1, len(dim_geography) + 1)
+    dim_geography = dim_geography[[
+        'geographykey','city', 'stateprovincecode', 'stateprovincename', 
+        'countryregioncode', 'countryregionname', 'postalcode', 'salesterritorykey', 'ipaddresslocator'
+    ]]   
+    return dim_geography
+
+def transform_customer(args: DataFrame, dim_geography: DataFrame) -> DataFrame:
+
+    none_xml_columns_dict = {
+    'birthdate': None,
+    'gender': None,
+    'maritalstatus': None,
+    'yearlyincome': None,
+    'totalchildren': None,
+    'numberchildrenathome': None,
+    'education': None,
+    'occupation': None,
+    'home_owner_flag': None,
+    'numbercarsowned': None,
+    'datefirstpurchase': None,
+    'commutedistance': None,
+}
+
+    def extract_demographics(xml_string):
+        if pd.isna(xml_string):
+            return none_xml_columns_dict
+        try:
+            root = ET.fromstring(xml_string)
+            ns = {'ns': root.tag.split('}')[0].strip('{')}
+            
+            def namespace_find(tag):
+                el = root.find(f'ns:{tag}', ns)
+                return el.text if el is not None else None
+
+            return {
+                'birthdate': namespace_find('BirthDate'),
+                'gender': namespace_find('Gender'),
+                'maritalstatus': namespace_find('MaritalStatus'),
+                'yearlyincome': namespace_find('YearlyIncome'),
+                'totalchildren': namespace_find('TotalChildren'),
+                'numberchildrenathome': namespace_find('NumberChildrenAtHome'),
+                'education': namespace_find('Education'),
+                'occupation': namespace_find('Occupation'),
+                'homeownerflag': namespace_find('HomeOwnerFlag'),
+                'numbercarsowned': namespace_find('NumberCarsOwned'),
+                'datefirstpurchase': namespace_find('DateFirstPurchase'),
+                'commutedistance': namespace_find('CommuteDistance'),
+            }
+
+        except Exception:
+            return none_xml_columns_dict
+    
+    (customer, person, address, personphone, personemailaddress, businessentityaddress, stateprovince, countryregion) = args
     customer.rename(columns={
         'customerid': 'customerkey',
         'accountnumber': 'customeralternatekey',
     }, inplace=True)
-    customer = customer.merge(person[['businessentityid','title','firstname', 'middlename', 'lastname','namestyle', 'suffix']], left_on='personid', right_on='businessentityid', how='left')
+    person_clientes = person[person['persontype'] == 'IN']
+    customer = customer.merge(person_clientes[['businessentityid','title','firstname', 'middlename', 'lastname','namestyle', 'suffix', 'demographics']], left_on='personid', right_on='businessentityid', how='inner')
+    demographics_df = customer['demographics'].apply(extract_demographics).apply(pd.Series)
+    customer = pd.concat([customer.drop('demographics', axis=1), demographics_df], axis=1)
     customer = customer.merge(personphone[['businessentityid','phonenumber']], left_on='businessentityid', right_on='businessentityid', how='left')
     customer = customer.merge(personemailaddress[['businessentityid','emailaddress']], left_on='businessentityid', right_on='businessentityid', how='left')
-    customer = customer.drop(columns=['businessentityid', 'storeid', 'rowguid','modifieddate','personid'])
-    salesorder_unique = salesorderheader[['customerid','billtoaddressid']].drop_duplicates('customerid')
+
+    customer_address = businessentityaddress[businessentityaddress['addresstypeid'] == 2 ].drop_duplicates('businessentityid')
+    customer = customer.merge(customer_address[['businessentityid', 'addressid']],left_on='businessentityid', right_on='businessentityid', how='left')
+    customer = customer.merge(address[['addressid', 'city', 'postalcode', 'stateprovinceid', 'addressline1','addressline2']],left_on='addressid', right_on='addressid', how='left')
+    customer = customer.merge(stateprovince[['stateprovinceid', 'stateprovincecode', 'countryregioncode']],left_on='stateprovinceid', right_on='stateprovinceid', how='left')
+    customer = customer.merge(countryregion[['countryregioncode', 'name']].rename(columns={'name': 'countryregionname'}),on='countryregioncode', how='left')
+    
     customer = customer.merge(
-        salesorder_unique,
-        left_on='customerkey', right_on='customerid', how='left'
-    ).merge(
-        address[['addressid','addressline1','addressline2']],
-        left_on='billtoaddressid', right_on='addressid', how='left'
+        dim_geography[['geographykey', 'city', 'stateprovincecode', 'countryregioncode', 'postalcode']],
+        on=['city', 'stateprovincecode', 'countryregioncode', 'postalcode'],
+        how='left'
     )
-    customer.drop(columns=['customerid', 'billtoaddressid', 'addressid','territoryid'], inplace=True)
+
+    customer.drop(columns=[
+        'businessentityid', 'storeid', 'rowguid', 'modifieddate', 'personid',
+        'addressid', 'stateprovinceid', 'city', 'stateprovincecode', 'countryregioncode', 
+        'postalcode', 'countryregionname', 'territoryid'
+    ], inplace=True)
     customer = customer[customer['firstname'].notnull()].drop_duplicates('customerkey')
     dim_customer = customer
+    dim_customer = dim_customer.drop_duplicates(subset=[
+        'customerkey', 'customeralternatekey', 'title', 'firstname', 'middlename',
+        'lastname', 'namestyle', 'birthdate', 'maritalstatus', 'suffix', 'gender',
+        'emailaddress', 'yearlyincome', 'totalchildren', 'numberchildrenathome',
+        'education', 'occupation', 'homeownerflag', 'numbercarsowned', 'addressline1',
+        'addressline2', 'phonenumber', 'datefirstpurchase', 'commutedistance'
+    ])
+
+    dim_customer = dim_customer[[
+        'customerkey', 'geographykey', 'customeralternatekey', 'title', 'firstname', 'middlename',
+        'lastname', 'namestyle', 'birthdate', 'maritalstatus', 'suffix', 'gender',
+        'emailaddress', 'yearlyincome', 'totalchildren', 'numberchildrenathome',
+        'education', 'occupation', 'homeownerflag', 'numbercarsowned', 'addressline1',
+        'addressline2', 'phonenumber', 'datefirstpurchase', 'commutedistance'
+    ]]
     return dim_customer
 
