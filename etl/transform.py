@@ -306,3 +306,97 @@ def transform_customer(args: DataFrame, dim_geography: DataFrame) -> DataFrame:
     ]]
     return dim_customer
 
+def transform_employee(args: DataFrame) -> DataFrame:
+    (employee,
+    person,
+    personemailaddress,
+    personphone,
+    employeepayhistory,
+    employeedepartmenthistory,
+    department,
+    sales
+    ) = args
+    dim_employee = person[['businessentityid', 'firstname', 'lastname', 'middlename', 'namestyle']]
+    dim_employee = dim_employee.merge(employee[['businessentityid', 
+                             'jobtitle', 
+                             'hiredate', 
+                             'birthdate', 
+                             'loginid', 
+                             'maritalstatus', 
+                             'salariedflag',
+                             'gender',
+                             'vacationhours',
+                             'sickleavehours',
+                             'currentflag']], on = 'businessentityid')
+    dim_employee = dim_employee.merge(personemailaddress[['businessentityid', 'emailaddress']], on = 'businessentityid')
+    dim_employee = dim_employee.merge(personphone[['businessentityid', 'phonenumber']], on = 'businessentityid')
+    dim_employee = dim_employee.merge(employeepayhistory[['businessentityid', 'payfrequency', 'rate']], on = 'businessentityid')
+    dim_employee = dim_employee.merge(employeedepartmenthistory[['businessentityid', 'startdate', 'enddate', 'departmentid']], on = 'businessentityid')
+    dim_employee = dim_employee.merge(department[['departmentid', 'name']], on = 'departmentid')
+    dim_employee['salespersonflag'] = np.where(
+        dim_employee['name'] == 'Sales',
+        True,
+        False
+    )
+    dim_employee = dim_employee.merge(sales[['businessentityid', 'territoryid']], on = 'businessentityid', how='left')
+
+    dim_employee.rename(columns={'businessentityid' : 'employeekey',
+                                 'jobtitle' : 'title',
+                                 'phonenumber': 'phone',
+                                 'rate': 'baserate',
+                                 'name': 'departmentname',
+                                 'territoryid' : 'salesterritorykey'                             
+                                 }, 
+                        inplace=True)
+    
+    dim_employee.drop('departmentid', axis=1, inplace=True)
+    
+    
+    dim_employee.drop_duplicates(subset=['employeekey'], inplace=True)
+    dim_employee['hiredate'] = pd.to_datetime(dim_employee['hiredate']).dt.date
+    dim_employee['birthdate'] = pd.to_datetime(dim_employee['birthdate']).dt.date
+    dim_employee['startdate'] = pd.to_datetime(dim_employee['startdate']).dt.date
+    dim_employee['enddate'] = pd.to_datetime(dim_employee['enddate']).dt.date
+
+    column_order = [
+    'employeekey',
+    'salesterritorykey',
+    'firstname',
+    'lastname',
+    'middlename',
+    'namestyle',
+    'title',
+    'hiredate',
+    'birthdate',
+    'loginid',
+    'emailaddress',
+    'phone',
+    'maritalstatus',
+    'salariedflag',
+    'gender',
+    'payfrequency',
+    'baserate',
+    'vacationhours',
+    'sickleavehours',
+    'currentflag',
+    'salespersonflag',
+    'departmentname',
+    'startdate',
+    'enddate'
+    ]
+
+    dim_employee = dim_employee.reindex(columns=column_order)
+
+    dim_employee['salesterritorykey'] = dim_employee['salesterritorykey'].fillna(11).astype('int')
+    dim_employee['firstname'] = dim_employee['firstname'].astype(str)
+    dim_employee['lastname'] = dim_employee['lastname'].astype(str)
+    dim_employee['namestyle'] = dim_employee['namestyle'].astype(bool)
+    dim_employee['payfrequency'] = dim_employee['payfrequency'].astype('int16')
+    dim_employee['baserate'] = dim_employee['baserate'].astype(float)
+    dim_employee['vacationhours'] = dim_employee['vacationhours'].astype('int16')
+    dim_employee['sickleavehours'] = dim_employee['sickleavehours'].astype('int16')
+    dim_employee['currentflag'] = dim_employee['currentflag'].astype(bool)
+    dim_employee['salespersonflag'] = dim_employee['salespersonflag'].astype(bool)
+    
+    return dim_employee
+

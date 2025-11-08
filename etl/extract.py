@@ -67,6 +67,24 @@ def extract_customer(conection: Engine):
     countryregion = pd.read_sql_table('countryregion', conection, schema='person')
     return [customer, person, address, personphone, personemailaddress, businessentityaddress, stateprovince, countryregion]
 
-
+def extract_employee(connection: Engine) -> list[pd.DataFrame]:
+    employee = pd.read_sql_table('employee', connection, schema='humanresources')
+    person = pd.read_sql_table('person', connection, schema='person')
+    personemailaddress = pd.read_sql_table('emailaddress', connection, schema='person')
+    personphone = pd.read_sql_table('personphone', connection, schema='person')
+    employeepayhistory = pd.read_sql_table('employeepayhistory', connection, schema='humanresources')
+    employeedepartmenthistory = pd.read_sql_table('employeedepartmenthistory', connection, schema='humanresources')
+    department = pd.read_sql_table('department', connection, schema='humanresources')
+    sales = pd.read_sql_table('salesperson', connection, schema='sales')
+    return [
+        employee,
+        person,
+        personemailaddress,
+        personphone,
+        employeepayhistory,
+        employeedepartmenthistory,
+        department,
+        sales,
+    ]
 
 

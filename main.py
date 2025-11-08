@@ -32,6 +32,8 @@ tnames = inspector.get_table_names()
 
 
 if config['LOAD_DIMENSIONS']:
+
+    # Extract
     '''
     dim_product = extract.extract_product(co_sa)
 
@@ -39,11 +41,12 @@ if config['LOAD_DIMENSIONS']:
     dim_salesreason = extract.extract_salesreason(co_sa)
     dim_currency = extract.extract_currency(co_sa)
     dim_promotion = extract.extract_promotion(co_sa)
-    '''
     dim_geography = extract.extract_geography(co_sa)
     dim_customer = extract.extract_customer(co_sa)
+    '''
+    dim_employee = extract.extract_employee(co_sa)
 
-    # transform
+    # Transform
     '''
     dim_product = transform.transform_product(dim_product)
 
@@ -52,9 +55,12 @@ if config['LOAD_DIMENSIONS']:
     dim_salesreason = transform.transform_salesreason(dim_salesreason)
     dim_currency = transform.transform_currency(dim_currency)
     dim_promotion = transform.transform_promotion(dim_promotion)
-    '''
     dim_geography = transform.transform_geography(dim_geography)
     dim_customer = transform.transform_customer(dim_customer, dim_geography)
+    '''
+    dim_employee = transform.transform_employee(dim_employee)
+
+    # Load
     '''
     load.load_data_product(dim_product, etl_conn)
 
@@ -63,10 +69,11 @@ if config['LOAD_DIMENSIONS']:
     load.load_data_salesreason(dim_salesreason, etl_conn)
     load.load_data_currency(dim_currency, etl_conn)
     load.load_data_promotion(dim_promotion, etl_conn)
-    '''
+    
     load.load_data_geography(dim_geography, etl_conn)
     load.load_data_customer(dim_customer, etl_conn)
-
+    '''
+    load.load_data_employee(dim_employee, etl_conn)
     print('success all facts loaded')
     
 

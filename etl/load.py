@@ -33,6 +33,8 @@ def load_data_hecho_internetsales(fact_internet_sales: DataFrame, etl_conn: Engi
 def load_data_geography(dim_geography: DataFrame, etl_conn: Engine):
     dim_geography.to_sql('dim_geography', etl_conn, if_exists='append', index= False)
 
+def load_data_employee(dim_employee: DataFrame, etl_conn: Engine):
+    dim_employee.to_sql('dim_employee', etl_conn, if_exists='append', index= False)
 
 def load(table: DataFrame, etl_conn: Engine, tname, replace: bool = False):
     """
