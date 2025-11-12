@@ -364,10 +364,12 @@ def transform_employee(args: DataFrame) -> DataFrame:
     dim_employee['firstname'].fillna('') + ' ' + dim_employee['lastname'].fillna('')
     )
     dim_employee['status'] = np.where(dim_employee['enddate'].isna(), 'current', pd.NA)
+    dim_employee['parentemployeenationalidalternatekey'] = pd.NA
 
     column_order = [
     'employeekey',
     'employeenationalidalternatekey',
+    'parentemployeenationalidalternatekey',
     'salesterritorykey',
     'firstname',
     'lastname',
