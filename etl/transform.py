@@ -95,7 +95,7 @@ def transform_fecha() -> DataFrame:
     dimdate["daynumberofmonth"] = dimdate["fulldatealternatekey"].dt.day
     dimdate["daynumberofyear"] = dimdate["fulldatealternatekey"].dt.day_of_year
     dimdate["weeknumberofyear"] = dimdate["fulldatealternatekey"].dt.strftime("%U").astype(int) + 1
-    dimdate["monthnumberofyear"] = dimdate["fulldatealternatekey"].dt.month
+    dimdate["monthnumberofyear"] = dimdate["fulldatealternatekey"].dt.month'employeenationalidalternatekey',
     dimdate["calendarquarter"] = dimdate["fulldatealternatekey"].dt.quarter
     dimdate["calendaryear"] = dimdate["fulldatealternatekey"].dt.year
     dimdate["calendarsemester"] = (dimdate["monthnumberofyear"] > 6).astype(int) + 1
@@ -317,7 +317,8 @@ def transform_employee(args: DataFrame) -> DataFrame:
     sales
     ) = args
     dim_employee = person[['businessentityid', 'firstname', 'lastname', 'middlename', 'namestyle']]
-    dim_employee = dim_employee.merge(employee[['businessentityid', 
+    dim_employee = dim_employee.merge(employee[['businessentityid','employeenationalidalternatekey',
+                             'nationalidnumber',
                              'jobtitle', 
                              'hiredate', 
                              'birthdate', 
@@ -341,6 +342,7 @@ def transform_employee(args: DataFrame) -> DataFrame:
     dim_employee = dim_employee.merge(sales[['businessentityid', 'territoryid']], on = 'businessentityid', how='left')
 
     dim_employee.rename(columns={'businessentityid' : 'employeekey',
+                                 'nationalidnumber' : 'employeenationalidalternatekey',
                                  'jobtitle' : 'title',
                                  'phonenumber': 'phone',
                                  'rate': 'baserate',
@@ -360,6 +362,7 @@ def transform_employee(args: DataFrame) -> DataFrame:
 
     column_order = [
     'employeekey',
+    'employeenationalidalternatekey',
     'salesterritorykey',
     'firstname',
     'lastname',
