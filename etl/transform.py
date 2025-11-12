@@ -363,6 +363,7 @@ def transform_employee(args: DataFrame) -> DataFrame:
     dim_employee['emergencycontactname'] = (
     dim_employee['firstname'].fillna('') + ' ' + dim_employee['lastname'].fillna('')
     )
+    dim_employee['status'] = np.where(dim_employee['enddate'].isna(), 'current', pd.NA)
 
     column_order = [
     'employeekey',
@@ -391,7 +392,8 @@ def transform_employee(args: DataFrame) -> DataFrame:
     'salespersonflag',
     'departmentname',
     'startdate',
-    'enddate'
+    'enddate',
+    'status'
     ]
 
     dim_employee = dim_employee.reindex(columns=column_order)
