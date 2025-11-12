@@ -87,7 +87,7 @@ def transform_product(args) -> pd.DataFrame:
 
 def transform_fecha() -> DataFrame:
     dimdate = pd.DataFrame({
-        "fulldatealternatekey": pd.date_range(start='2005-01-01', end='2008-12-31', freq='D')
+        "fulldatealternatekey": pd.date_range(start='2005-01-01', end='2014-12-31', freq='D')
     })
     dimdate["datekey"] = dimdate["fulldatealternatekey"].dt.strftime("%Y%m%d").astype(int)
     dimdate["daynumberofweek"] = dimdate["fulldatealternatekey"].dt.weekday + 2
@@ -95,7 +95,7 @@ def transform_fecha() -> DataFrame:
     dimdate["daynumberofmonth"] = dimdate["fulldatealternatekey"].dt.day
     dimdate["daynumberofyear"] = dimdate["fulldatealternatekey"].dt.day_of_year
     dimdate["weeknumberofyear"] = dimdate["fulldatealternatekey"].dt.strftime("%U").astype(int) + 1
-    dimdate["monthnumberofyear"] = dimdate["fulldatealternatekey"].dt.month'employeenationalidalternatekey',
+    dimdate["monthnumberofyear"] = dimdate["fulldatealternatekey"].dt.month
     dimdate["calendarquarter"] = dimdate["fulldatealternatekey"].dt.quarter
     dimdate["calendaryear"] = dimdate["fulldatealternatekey"].dt.year
     dimdate["calendarsemester"] = (dimdate["monthnumberofyear"] > 6).astype(int) + 1
@@ -164,7 +164,7 @@ def transform_currency(currency: DataFrame) -> DataFrame:
         'name': 'currencyname'
     }, inplace=True)
     dim_currency = currency
-    dim_currency = currency.sort_values('currencyalternatekey').reset_index(drop=True)
+    dim_currency = currency.sort_values('currencyname').reset_index(drop=True)
     return dim_currency
 
 def transform_promotion(promotion: DataFrame) -> DataFrame:
@@ -412,4 +412,88 @@ def transform_employee(args: DataFrame) -> DataFrame:
     dim_employee['salespersonflag'] = dim_employee['salespersonflag'].astype(bool)
     
     return dim_employee
+
+def transform_reseller(args: DataFrame, dim_geography: DataFrame) -> DataFrame:
+    (store, customer, businessentityaddress, address, 
+     person, stateprovince, countryregion, personphone, businessentitycontact, businessentity) = args  
+
+    def extract_demographics(xml_string):
+        if pd.isna(xml_string):
+            return {}
+        try:
+            root = ET.fromstring(xml_string)
+            ns = {'ns': root.tag.split('}')[0].strip('{')} if '}' in root.tag else {'ns': ''}
+            
+            def namespace_find(tag):
+                el = root.find(f'.//{tag}') if not ns['ns'] else root.find(f'ns:{tag}', ns)
+                return el.text if el is not None else None
+            
+            return {
+                'businesstype': namespace_find('BusinessType'),
+                'numberemployees': namespace_find('NumberEmployees'),
+                'annualsales': namespace_find('AnnualSales'),
+                'bankname': namespace_find('BankName'),
+                'minpaymenttype': namespace_find('MinPaymentType'),
+                'minpaymentamount': namespace_find('MinPaymentAmount'),
+                'annualrevenue': namespace_find('AnnualRevenue'),
+                'productline': namespace_find('Specialty'),
+                'yearopened': namespace_find('YearOpened')
+            }
+        except Exception as e:
+            print(f"Error parsing demographics: {e}")
+            return {}
+
+    reseller = customer[
+        customer['storeid'].notnull() & customer['personid'].isnull()].copy()
+    
+    
+    reseller.drop(columns=['rowguid', 'modifieddate'], inplace=True)
+    reseller.rename(columns={'accountnumber': 'reselleralternatekey'}, inplace=True)
+
+    reseller = reseller.merge(
+        store[['businessentityid', 'name', 'demographics']],
+        left_on='storeid', right_on='businessentityid', how='left'
+    )
+
+    demo_data = reseller['demographics'].apply(extract_demographics).apply(pd.Series)
+    reseller = pd.concat([reseller, demo_data], axis=1)
+
+    reseller = reseller.merge(businessentity[['businessentityid']], on='businessentityid', how='left')
+    reseller = reseller.merge(businessentitycontact[['businessentityid', 'personid']], on='businessentityid', how='left')
+    reseller = reseller.merge(person[['businessentityid']], on='businessentityid', how='left')
+    reseller = reseller.merge(personphone[['businessentityid', 'phonenumber']], on='businessentityid', how='left')
+    reseller = reseller.merge(businessentityaddress[['businessentityid', 'addressid']], on='businessentityid', how='left')
+    reseller = reseller.merge(address[['addressid', 'city', 'postalcode', 'stateprovinceid', 'addressline1','addressline2']], on='addressid', how='left') 
+    reseller = reseller.merge(stateprovince[['stateprovinceid', 'stateprovincecode', 'countryregioncode']],left_on='stateprovinceid', right_on='stateprovinceid', how='left')
+    reseller = reseller.merge(countryregion[['countryregioncode', 'name']].rename(columns={'name': 'countryregionname'}),on='countryregioncode', how='left')
+    reseller = reseller.merge(
+        dim_geography[['geographykey', 'city', 'stateprovincecode', 'countryregioncode', 'postalcode']],
+        on=['city', 'stateprovincecode', 'countryregioncode', 'postalcode'],
+        how='left'
+    )
+
+    reseller.rename(columns={
+        'name': 'resellername',
+        'phonenumber': 'phone'
+    }, inplace=True)
+
+    dim_reseller = reseller
+
+    dim_reseller = dim_reseller.drop_duplicates(subset=[
+        'reselleralternatekey', 'phone', 'resellername',
+        'businesstype', 'numberemployees', 'annualsales',
+        'bankname', 'minpaymenttype', 'minpaymentamount',
+        'annualrevenue', 'yearopened'
+    ])
+    dim_reseller['resellerkey'] = range(1, len(dim_reseller) + 1)
+
+    dim_reseller = dim_reseller[[
+        'resellerkey', 'geographykey', 'reselleralternatekey', 'phone', 'businesstype',
+        'resellername','numberemployees', 'productline', 'addressline1','addressline2', 'annualsales',
+        'bankname', 'minpaymenttype', 'minpaymentamount',
+        'annualrevenue', 'yearopened'
+    ]]
+
+
+    return dim_reseller
 

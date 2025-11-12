@@ -87,4 +87,18 @@ def extract_employee(connection: Engine) -> list[pd.DataFrame]:
         sales,
     ]
 
+def extract_reseller(conection: Engine):
+    store = pd.read_sql_table('store', conection, schema='sales')
+    customer = pd.read_sql_table('customer', conection, schema='sales')
+    businessentityaddress = pd.read_sql_table('businessentityaddress', conection, schema='person')
+    address = pd.read_sql_table('address', conection, schema='person')
+    person = pd.read_sql_table('person', conection, schema='person')
+    stateprovince = pd.read_sql_table('stateprovince', conection, schema='person')
+    countryregion = pd.read_sql_table('countryregion', conection, schema='person')
+    personphone = pd.read_sql_table('personphone', conection, schema='person')
+    businessentitycontact = pd.read_sql_table('businessentitycontact', conection, schema='person')
+    businessentity = pd.read_sql_table('businessentity', conection, schema='person')
+    
+    return [store, customer, businessentityaddress, address, person, stateprovince, countryregion, personphone, businessentitycontact, businessentity]
+
 

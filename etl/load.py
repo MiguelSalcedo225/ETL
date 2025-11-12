@@ -36,6 +36,9 @@ def load_data_geography(dim_geography: DataFrame, etl_conn: Engine):
 def load_data_employee(dim_employee: DataFrame, etl_conn: Engine):
     dim_employee.to_sql('dim_employee', etl_conn, if_exists='append', index= False)
 
+def load_data_reseller(dim_reseller: DataFrame, etl_conn: Engine):
+    dim_reseller.to_sql('dim_reseller', etl_conn, if_exists='append', index=False)
+
 def load(table: DataFrame, etl_conn: Engine, tname, replace: bool = False):
     """
 
