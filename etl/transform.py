@@ -359,6 +359,7 @@ def transform_employee(args: DataFrame) -> DataFrame:
     dim_employee['birthdate'] = pd.to_datetime(dim_employee['birthdate']).dt.date
     dim_employee['startdate'] = pd.to_datetime(dim_employee['startdate']).dt.date
     dim_employee['enddate'] = pd.to_datetime(dim_employee['enddate']).dt.date
+    dim_employee['emergencycontactphone'] = dim_employee['phone']
 
     column_order = [
     'employeekey',
@@ -375,6 +376,7 @@ def transform_employee(args: DataFrame) -> DataFrame:
     'emailaddress',
     'phone',
     'maritalstatus',
+    'emergencycontactphone',
     'salariedflag',
     'gender',
     'payfrequency',
