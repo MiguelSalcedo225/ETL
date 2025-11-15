@@ -317,7 +317,7 @@ def transform_employee(args: DataFrame) -> DataFrame:
     sales
     ) = args
     dim_employee = person[['businessentityid', 'firstname', 'lastname', 'middlename', 'namestyle']]
-    dim_employee = dim_employee.merge(employee[['businessentityid','employeenationalidalternatekey',
+    dim_employee = dim_employee.merge(employee[['businessentityid',
                              'nationalidnumber',
                              'jobtitle', 
                              'hiredate', 
