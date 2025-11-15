@@ -106,8 +106,7 @@ def extract_reseller(conection: Engine):
 def extract_fact_internet_sales(conection: Engine):
     salesorderheader = pd.read_sql_table('salesorderheader', conection, schema='sales')
     salesorderdetail = pd.read_sql_table('salesorderdetail', conection, schema='sales')
-    salesorderheadersalesreason = pd.read_sql_table('salesorderheadersalesreason', conection, schema='sales')
     currencyrate = pd.read_sql_table('currencyrate', conection, schema='sales')
     product = pd.read_sql_table('product', conection, schema='production')
     customer = pd.read_sql_table('customer', conection, schema='sales')
-    return [salesorderheader, salesorderdetail, salesorderheadersalesreason, currencyrate, product, customer]
+    return [salesorderheader, salesorderdetail, currencyrate, product, customer]
