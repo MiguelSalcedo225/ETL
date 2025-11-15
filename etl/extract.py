@@ -97,8 +97,15 @@ def extract_reseller(conection: Engine):
     countryregion = pd.read_sql_table('countryregion', conection, schema='person')
     personphone = pd.read_sql_table('personphone', conection, schema='person')
     businessentitycontact = pd.read_sql_table('businessentitycontact', conection, schema='person')
-    businessentity = pd.read_sql_table('businessentity', conection, schema='person')
+    salesorderheader = pd.read_sql_table('salesorderheader', conection, schema='sales')
     
-    return [store, customer, businessentityaddress, address, person, stateprovince, countryregion, personphone, businessentitycontact, businessentity]
+    return [store, customer, businessentityaddress, address, person, stateprovince, countryregion, personphone, businessentitycontact, salesorderheader]
 
-
+def extract_fact_internet_sales(conection: Engine):
+    salesorderheader = pd.read_sql_table('salesorderheader', conection, schema='sales')
+    salesorderdetail = pd.read_sql_table('salesorderdetail', conection, schema='sales')
+    salesorderheadersalesreason = pd.read_sql_table('salesorderheadersalesreason', conection, schema='sales')
+    currencyrate = pd.read_sql_table('currencyrate', conection, schema='sales')
+    product = pd.read_sql_table('product', conection, schema='production')
+    customer = pd.read_sql_table('customer', conection, schema='sales')
+    return [salesorderheader, salesorderdetail, salesorderheadersalesreason, currencyrate, product, customer]

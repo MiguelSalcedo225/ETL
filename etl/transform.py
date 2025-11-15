@@ -70,11 +70,13 @@ def transform_product(args) -> pd.DataFrame:
 
     product.drop(columns=[
         'rowguid_x', 'rowguid_y', 'modifieddate_y', 'modifieddate_x',
-        'productmodelid', 'productsubcategoryid', 'productid',
+        'productmodelid', 'productsubcategoryid',
         'productphotoid', 'name', 'productkey'
     ], inplace=True)
+    dim_product = product
+    dim_product['productkey'] = range(1, len(dim_product) + 1)
     dim_product = product[[
-        'productalternatekey', 'productsubcategorykey',
+        'productkey','productalternatekey', 'productsubcategorykey',
         'weightunitmeasurecode', 'sizeunitmeasurecode',
         'englishproductname', 'standardcost', 'finishedgoodsflag',
         'color', 'safetystocklevel', 'reorderpoint', 'listprice',
@@ -140,8 +142,10 @@ def transform_salesterritory(args: DataFrame) -> DataFrame:
     countryregion.rename(columns={'name': 'salesterritorycountry'}, inplace=True)
     salesterritory = salesterritory.merge(countryregion[['countryregioncode', 'salesterritorycountry']], on='countryregioncode', how='left')
     salesterritory.drop(columns=['countryregioncode'], inplace=True)
+    dim_salesterritory = salesterritory
+    dim_salesterritory['salesterritorykey'] = range(1, len(dim_salesterritory) + 1)
     dim_salesterritory = salesterritory[[
-        'salesterritoryalternatekey', 'salesterritoryregion', 'salesterritorycountry',
+        'salesterritorykey','salesterritoryalternatekey', 'salesterritoryregion', 'salesterritorycountry',
         'salesterritorygroup'
     ]]
     dim_salesterritory.reset_index(drop=True, inplace=True)
@@ -155,6 +159,10 @@ def transform_salesreason(salesreason: DataFrame) -> DataFrame:
     }, inplace=True)
     salesreason.drop(columns='modifieddate', inplace=True)
     dim_salesreason = salesreason
+    dim_salesreason['salesreasonkey'] = range(1, len(dim_salesreason) + 1)
+    dim_salesreason = dim_salesreason[[
+        'salesreasonkey', 'salesreasonalternatekey', 'salesreasonname', 'salesreasontype'
+    ]]
     return dim_salesreason
 
 def transform_currency(currency: DataFrame) -> DataFrame:
@@ -165,6 +173,10 @@ def transform_currency(currency: DataFrame) -> DataFrame:
     }, inplace=True)
     dim_currency = currency
     dim_currency = currency.sort_values('currencyname').reset_index(drop=True)
+    dim_currency['currencykey'] = range(1, len(dim_currency) + 1)
+    dim_currency = dim_currency[[
+        'currencykey', 'currencyalternatekey', 'currencyname'
+    ]]
     return dim_currency
 
 def transform_promotion(promotion: DataFrame) -> DataFrame:
@@ -177,6 +189,12 @@ def transform_promotion(promotion: DataFrame) -> DataFrame:
         'discountpct': 'promotiondiscountpct'
     }, inplace=True)
     dim_promotion = promotion
+    dim_promotion['promotionkey'] = range(1, len(dim_promotion) + 1)
+    dim_promotion = dim_promotion[[
+        'promotionkey', 'promotionalternatekey', 'promotiondescription',
+        'promotiondiscountpct','promotiontype', 'promotioncategory',
+        'startdate', 'enddate'
+    ]]
     return dim_promotion
 
 
@@ -317,7 +335,7 @@ def transform_employee(args: DataFrame) -> DataFrame:
     sales
     ) = args
     dim_employee = person[['businessentityid', 'firstname', 'lastname', 'middlename', 'namestyle']]
-    dim_employee = dim_employee.merge(employee[['businessentityid','employeenationalidalternatekey',
+    dim_employee = dim_employee.merge(employee[['businessentityid',
                              'nationalidnumber',
                              'jobtitle', 
                              'hiredate', 
@@ -415,19 +433,20 @@ def transform_employee(args: DataFrame) -> DataFrame:
 
 def transform_reseller(args: DataFrame, dim_geography: DataFrame) -> DataFrame:
     (store, customer, businessentityaddress, address, 
-     person, stateprovince, countryregion, personphone, businessentitycontact, businessentity) = args  
+     person, stateprovince, countryregion, personphone, businessentitycontact, salesorderheader) = args  
 
+ 
     def extract_demographics(xml_string):
         if pd.isna(xml_string):
             return {}
         try:
             root = ET.fromstring(xml_string)
             ns = {'ns': root.tag.split('}')[0].strip('{')} if '}' in root.tag else {'ns': ''}
-            
+
             def namespace_find(tag):
                 el = root.find(f'.//{tag}') if not ns['ns'] else root.find(f'ns:{tag}', ns)
                 return el.text if el is not None else None
-            
+
             return {
                 'businesstype': namespace_find('BusinessType'),
                 'numberemployees': namespace_find('NumberEmployees'),
@@ -442,11 +461,18 @@ def transform_reseller(args: DataFrame, dim_geography: DataFrame) -> DataFrame:
         except Exception as e:
             print(f"Error parsing demographics: {e}")
             return {}
+    
+    business_type_transform = {
+        'BM': 'Warehouse',
+        'OS': 'Value Added Reseller',
+        'BS': 'Specialty Bike Shop'
+    }
+
 
     reseller = customer[
-        customer['storeid'].notnull() & customer['personid'].isnull()].copy()
-    
-    
+        customer['storeid'].notnull() & customer['personid'].isnull()
+    ].copy()
+
     reseller.drop(columns=['rowguid', 'modifieddate'], inplace=True)
     reseller.rename(columns={'accountnumber': 'reselleralternatekey'}, inplace=True)
 
@@ -455,17 +481,80 @@ def transform_reseller(args: DataFrame, dim_geography: DataFrame) -> DataFrame:
         left_on='storeid', right_on='businessentityid', how='left'
     )
 
+
     demo_data = reseller['demographics'].apply(extract_demographics).apply(pd.Series)
     reseller = pd.concat([reseller, demo_data], axis=1)
 
-    reseller = reseller.merge(businessentity[['businessentityid']], on='businessentityid', how='left')
-    reseller = reseller.merge(businessentitycontact[['businessentityid', 'personid']], on='businessentityid', how='left')
-    reseller = reseller.merge(person[['businessentityid']], on='businessentityid', how='left')
-    reseller = reseller.merge(personphone[['businessentityid', 'phonenumber']], on='businessentityid', how='left')
-    reseller = reseller.merge(businessentityaddress[['businessentityid', 'addressid']], on='businessentityid', how='left')
-    reseller = reseller.merge(address[['addressid', 'city', 'postalcode', 'stateprovinceid', 'addressline1','addressline2']], on='addressid', how='left') 
-    reseller = reseller.merge(stateprovince[['stateprovinceid', 'stateprovincecode', 'countryregioncode']],left_on='stateprovinceid', right_on='stateprovinceid', how='left')
-    reseller = reseller.merge(countryregion[['countryregioncode', 'name']].rename(columns={'name': 'countryregionname'}),on='countryregioncode', how='left')
+    reseller['businesstype'] = reseller['businesstype'].map(business_type_transform).fillna(reseller['businesstype'])
+
+    orders = customer[['customerid', 'storeid']].merge(
+        salesorderheader[['customerid', 'orderdate']], on='customerid', how='left'
+    )
+
+    orders['year'] = orders['orderdate'].dt.year
+    orders['month'] = orders['orderdate'].dt.month
+
+    reseller_info = orders.groupby('storeid').agg(
+        first_order_year=('year', 'min'),
+        last_order_year=('year', 'max'),
+        order_month=('month', 'max'),
+    ).reset_index()
+
+    reseller_info['order_frequency'] = "0"
+
+    reseller = reseller.merge(
+        reseller_info,
+        left_on='storeid',
+        right_on='storeid',
+        how='left'
+    )
+
+
+    ranked_contacts = (
+        businessentitycontact[['businessentityid', 'personid', 'contacttypeid']]
+        .sort_values(['businessentityid', 'contacttypeid'])
+        .assign(rn=lambda x: x.groupby('businessentityid').cumcount() + 1)
+    )
+
+    ranked_contacts = ranked_contacts[ranked_contacts['rn'] == 1]
+
+    ranked_contacts = ranked_contacts.merge(
+        person[['businessentityid']], left_on='personid', right_on='businessentityid', how='left'
+    )
+
+    ranked_contacts = ranked_contacts.merge(
+        personphone[['businessentityid', 'phonenumber']],
+        left_on='businessentityid_y',
+        right_on='businessentityid',
+        how='left'
+    )
+
+    ranked_contacts = ranked_contacts[['businessentityid_x', 'phonenumber']]
+    ranked_contacts.rename(columns={'businessentityid_x': 'businessentityid'}, inplace=True)
+
+
+    reseller = reseller.merge(ranked_contacts, on='businessentityid', how='left')
+
+    reseller = reseller.merge(
+        businessentityaddress[['businessentityid', 'addressid']], 
+        on='businessentityid', how='left'
+    )
+
+    reseller = reseller.merge(
+        address[['addressid', 'city', 'postalcode', 'stateprovinceid', 'addressline1','addressline2']], 
+        on='addressid', how='left'
+    )
+
+    reseller = reseller.merge(
+        stateprovince[['stateprovinceid', 'stateprovincecode', 'countryregioncode']],
+        on='stateprovinceid', how='left'
+    )
+
+    reseller = reseller.merge(
+        countryregion[['countryregioncode', 'name']].rename(columns={'name': 'countryregionname'}),
+        on='countryregioncode', how='left'
+    )
+
     reseller = reseller.merge(
         dim_geography[['geographykey', 'city', 'stateprovincecode', 'countryregioncode', 'postalcode']],
         on=['city', 'stateprovincecode', 'countryregioncode', 'postalcode'],
@@ -477,23 +566,154 @@ def transform_reseller(args: DataFrame, dim_geography: DataFrame) -> DataFrame:
         'phonenumber': 'phone'
     }, inplace=True)
 
-    dim_reseller = reseller
-
-    dim_reseller = dim_reseller.drop_duplicates(subset=[
+    dim_reseller = reseller.drop_duplicates(subset=[
         'reselleralternatekey', 'phone', 'resellername',
         'businesstype', 'numberemployees', 'annualsales',
         'bankname', 'minpaymenttype', 'minpaymentamount',
         'annualrevenue', 'yearopened'
     ])
+
     dim_reseller['resellerkey'] = range(1, len(dim_reseller) + 1)
 
     dim_reseller = dim_reseller[[
         'resellerkey', 'geographykey', 'reselleralternatekey', 'phone', 'businesstype',
-        'resellername','numberemployees', 'productline', 'addressline1','addressline2', 'annualsales',
+        'resellername','numberemployees', 'order_frequency', 'order_month', 'first_order_year', 'last_order_year', 
+        'productline', 'addressline1','addressline2', 'annualsales',
         'bankname', 'minpaymenttype', 'minpaymentamount',
         'annualrevenue', 'yearopened'
     ]]
 
-
     return dim_reseller
+
+def transform_fact_internet_sales(args: DataFrame, dim_product: DataFrame,
+                                dim_customer: DataFrame,
+                                dim_promotion: DataFrame,
+                                dim_salesterritory: DataFrame,
+                                dim_currency: DataFrame,
+                                dim_salesreason: DataFrame,
+                                dim_date: DataFrame) -> DataFrame:
+    (salesorderheader, salesorderdetail, salesorderheadersalesreason, currencyrate,product, customer) = args
+
+    fact_internet_sales = salesorderdetail.merge(
+        salesorderheader,
+        on='salesorderid',
+        how='left'
+    )
+
+    fact_internet_sales = fact_internet_sales.merge(
+        salesorderheadersalesreason[['salesorderid', 'salesreasonid']],
+        on='salesorderid',
+        how='left'
+    )
+    customer.rename(columns={'accountnumber': 'accountcode'}, inplace=True)
+
+    fact_internet_sales = fact_internet_sales.merge(
+        customer[['customerid', 'accountcode']],
+        left_on='customerid',
+        right_on='customerid',
+        how='left'
+    )
+
+    fact_internet_sales = fact_internet_sales.merge(
+        product[['productid', 'productnumber']],
+        left_on='productid',
+        right_on='productid',
+        how='left'
+    )
+
+    fact_internet_sales = fact_internet_sales.merge(
+        dim_salesreason[['salesreasonkey', 'salesreasonalternatekey']],
+        left_on='salesreasonid',
+        right_on='salesreasonalternatekey',
+        how='left'
+    )
+
+    fact_internet_sales = fact_internet_sales.merge(
+        dim_product[['productkey', 'productalternatekey', 'standardcost']],
+        left_on='productnumber',
+        right_on='productalternatekey',
+        how='left'
+    )
+
+    fact_internet_sales = fact_internet_sales.merge(
+        dim_customer[['customerkey', 'customeralternatekey']],
+        left_on='accountcode',
+        right_on='customeralternatekey',
+        how='left'
+    )
+
+    fact_internet_sales = fact_internet_sales.merge(
+        dim_promotion[['promotionkey', 'promotionalternatekey']],
+        left_on='specialofferid',
+        right_on='promotionalternatekey',
+        how='left'
+    )
+
+    fact_internet_sales = fact_internet_sales.merge(
+        dim_salesterritory[['salesterritorykey', 'salesterritoryalternatekey']],
+        left_on='territoryid',
+        right_on='salesterritoryalternatekey',
+        how='left'
+    )
+
+    fact_internet_sales = fact_internet_sales.merge(
+    currencyrate[['currencyrateid', 'tocurrencycode']].rename(columns={'tocurrencycode': 'currencycode'}),
+    on='currencyrateid',
+    how='left'
+)
+
+    fact_internet_sales = fact_internet_sales.merge(
+        dim_currency[['currencykey', 'currencyalternatekey']],
+        left_on='currencycode',
+        right_on='currencyalternatekey',
+        how='left'
+    )
+
+    fact_internet_sales[['orderdate', 'duedate', 'shipdate']] = (
+    fact_internet_sales[['orderdate', 'duedate', 'shipdate']].apply(lambda col: pd.to_datetime(col).dt.tz_localize(None)))
+
+
+    fact_internet_sales = fact_internet_sales.merge(dim_date[['fulldatealternatekey', 'datekey']].rename(columns={'datekey': 'orderdatekey'}),
+                      left_on='orderdate', right_on='fulldatealternatekey', how='left')
+    fact_internet_sales = fact_internet_sales.merge(dim_date[['fulldatealternatekey', 'datekey']].rename(columns={'datekey': 'duedatekey'}),
+                      left_on='duedate', right_on='fulldatealternatekey', how='left')
+    fact_internet_sales = fact_internet_sales.merge(dim_date[['fulldatealternatekey', 'datekey']].rename(columns={'datekey': 'shipdatekey'}),
+                      left_on='shipdate', right_on='fulldatealternatekey', how='left')
+    
+
+    fact_internet_sales['extendedamount'] = fact_internet_sales['linetotal']
+    fact_internet_sales['unitpricediscountpct'] = fact_internet_sales['unitpricediscount']
+    fact_internet_sales['discountamount'] = fact_internet_sales['unitprice'] * fact_internet_sales['unitpricediscount'] * fact_internet_sales['orderqty']
+    fact_internet_sales['totalproductcost'] = fact_internet_sales['standardcost'] * fact_internet_sales['orderqty']
+
+    fact_internet_sales = fact_internet_sales[[
+        'productkey',
+        'orderdatekey',
+        'duedatekey',
+        'shipdatekey',
+        'customerkey',
+        'promotionkey',
+        'currencykey',
+        'salesterritorykey',
+
+        'salesordernumber',
+        'shipmethodid',
+        'revisionnumber',
+
+        'orderqty',
+        'unitprice',
+        'extendedamount',
+        'unitpricediscountpct',
+        'discountamount',
+        'standardcost',
+        'totalproductcost',
+        'subtotal'
+    ]]
+    fact_internet_sales = fact_internet_sales.dropna(subset=['customerkey'])
+
+    fact_internet_sales = fact_internet_sales.sort_values(by='salesordernumber')
+    
+
+    return fact_internet_sales
+
 
