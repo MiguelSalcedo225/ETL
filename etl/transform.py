@@ -497,3 +497,175 @@ def transform_reseller(args: DataFrame, dim_geography: DataFrame) -> DataFrame:
 
     return dim_reseller
 
+def transform_fact_internet_sales(args: DataFrame, dim_product: DataFrame,
+                                dim_customer: DataFrame,
+                                dim_promotion: DataFrame,
+                                dim_salesterritory: DataFrame,
+                                dim_currency: DataFrame,
+                                dim_salesreason: DataFrame,
+                                dim_date: DataFrame) -> DataFrame:
+    (salesorderheader, salesorderdetail, salesorderheadersalesreason, currencyrate,product, customer) = args
+
+    fact = salesorderdetail.merge(
+        salesorderheader,
+        on='salesorderid',
+        how='left'
+    )
+
+    fact = fact[fact['onlineorderflag'] == True]
+
+    fact = fact.merge(
+        salesorderheadersalesreason[['salesorderid', 'salesreasonid']],
+        on='salesorderid',
+        how='left'
+    )
+
+    customer = customer.rename(columns={'accountnumber': 'accountcode'})
+
+    fact = fact.merge(
+        customer[['customerid', 'accountcode']],
+        on='customerid',
+        how='left'
+    )
+
+    fact = fact.merge(
+        product[['productid', 'productnumber', 'standardcost']],
+        on='productid',
+        how='left'
+    )
+
+    fact = fact.merge(
+        dim_salesreason[['salesreasonkey', 'salesreasonalternatekey']],
+        left_on='salesreasonid',
+        right_on='salesreasonalternatekey',
+        how='left'
+    )
+
+    fact = fact.merge(
+        dim_product[['productkey', 'productalternatekey']],
+        left_on='productnumber',
+        right_on='productalternatekey',
+        how='left'
+    )
+
+    fact = fact.merge(
+        dim_customer[['customerkey', 'customeralternatekey']],
+        left_on='accountcode',
+        right_on='customeralternatekey',
+        how='left'
+    )
+
+    fact = fact.merge(
+        dim_promotion[['promotionkey', 'promotionalternatekey']],
+        left_on='specialofferid',
+        right_on='promotionalternatekey',
+        how='left'
+    )
+
+    fact = fact.merge(
+        dim_salesterritory[['salesterritorykey', 'salesterritoryalternatekey']],
+        left_on='territoryid',
+        right_on='salesterritoryalternatekey',
+        how='left'
+    )
+
+    fact = fact.merge(
+        currencyrate[['currencyrateid', 'tocurrencycode']].rename(columns={'tocurrencycode': 'currencycode'}),
+        on='currencyrateid',
+        how='left'
+    )
+
+    fact['currencycode'] = fact['currencycode'].fillna('USD')
+
+    fact = fact.merge(
+        dim_currency[['currencykey', 'currencyalternatekey']],
+        left_on='currencycode',
+        right_on='currencyalternatekey',
+        how='left'
+    )
+
+    fact[['orderdate', 'duedate', 'shipdate']] = (
+        fact[['orderdate', 'duedate', 'shipdate']]
+        .apply(lambda col: pd.to_datetime(col).dt.tz_localize(None))
+    )
+
+    fact = fact.merge(
+        dim_date[['fulldatealternatekey', 'datekey']].rename(columns={'datekey': 'orderdatekey'}),
+        left_on='orderdate',
+        right_on='fulldatealternatekey',
+        how='left'
+    )
+
+    fact = fact.merge(
+        dim_date[['fulldatealternatekey', 'datekey']].rename(columns={'datekey': 'duedatekey'}),
+        left_on='duedate',
+        right_on='fulldatealternatekey',
+        how='left'
+    )
+
+    fact = fact.merge(
+        dim_date[['fulldatealternatekey', 'datekey']].rename(columns={'datekey': 'shipdatekey'}),
+        left_on='shipdate',
+        right_on='fulldatealternatekey',
+        how='left'
+    )
+
+    fact['extendedamount'] = fact['unitprice'] * fact['orderqty']
+    fact['unitpricediscountpct'] = fact['unitpricediscount']
+    fact['discountamount'] = fact['unitprice'] * fact['unitpricediscount'] * fact['orderqty']
+    fact['totalproductcost'] = fact['standardcost'] * fact['orderqty']
+
+    fact = fact[[
+        'productkey',
+        'orderdatekey',
+        'duedatekey',
+        'shipdatekey',
+        'customerkey',
+        'promotionkey',
+        'currencykey',
+        'salesterritorykey',
+
+        'salesordernumber',
+        'shipmethodid',
+        'revisionnumber',
+
+        'orderqty',
+        'unitprice',
+        'extendedamount',
+        'unitpricediscountpct',
+        'discountamount',
+        'standardcost',
+        'totalproductcost',
+        'subtotal'
+    ]]
+
+    fact = fact.dropna(subset=['customerkey'])
+
+    fact = fact.sort_values(by='salesordernumber')
+
+    return fact
+
+
+def transform_fact_internet_sales_reason(args: DataFrame,
+                                         dim_salesreason: DataFrame) -> DataFrame:
+    (salesorderheadersalesreason, salesorderheader, salesorderdetail) = args
+
+    detail = salesorderdetail[['salesorderid', 'salesorderdetailid']].copy()
+    detail = detail.sort_values(['salesorderid', 'salesorderdetailid'])
+    detail['salesorderlinenumber'] = detail.groupby('salesorderid').cumcount() + 1
+
+    fact = salesorderheadersalesreason.merge(
+        salesorderheader[['salesorderid', 'salesordernumber']],
+        on='salesorderid',
+        how='left'
+    )
+
+    fact = fact.merge(
+        detail[['salesorderid', 'salesorderlinenumber']],
+        on='salesorderid',
+        how='left'
+    )
+
+    fact = fact[['salesordernumber', 'salesorderlinenumber', 'salesreasonid']]
+
+    return fact
