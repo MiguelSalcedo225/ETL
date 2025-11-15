@@ -48,6 +48,9 @@ if config['LOAD_DIMENSIONS']:
     dim_geography = extract.extract_geography(co_sa)
 
     fact_internet_sales = extract.extract_fact_internet_sales(co_sa)
+    fact_internet_sales_reason = extract.extract_fact_internet_sales_reason(co_sa)
+    
+    print('success all data extracted')
 
     # Transform
 
@@ -64,6 +67,9 @@ if config['LOAD_DIMENSIONS']:
     dim_reseller = transform.transform_reseller(dim_reseller, dim_geography)
 
     fact_internet_sales = transform.transform_fact_internet_sales(fact_internet_sales, dim_product,dim_customer,dim_promotion, dim_salesterritory,dim_currency,dim_salesreason,dim_date)
+    fact_internet_sales_reason = transform.transform_fact_internet_sales_reason(fact_internet_sales_reason, dim_salesreason)
+    
+    print('success all dimensions and facts transformed')
 
     # Load
 
@@ -81,6 +87,8 @@ if config['LOAD_DIMENSIONS']:
     load.load_data_reseller(dim_reseller, etl_conn)
 
     load.load_data_fact_internet_sales(fact_internet_sales, etl_conn)
-    print('success all facts loaded')
+    load.load_data_fact_internet_sales_reason(fact_internet_sales_reason, etl_conn)
+    
+    print('success all dimensions and facts loaded')
     
 

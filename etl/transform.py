@@ -733,4 +733,28 @@ def transform_fact_internet_sales(args: DataFrame ,  dim_product: DataFrame,
 
     return fact
 
+def transform_fact_internet_sales_reason(args: DataFrame,
+                                         dim_salesreason: DataFrame) -> DataFrame:
+    (salesorderheadersalesreason, salesorderheader, salesorderdetail) = args
+
+    detail = salesorderdetail[['salesorderid', 'salesorderdetailid']].copy()
+    detail = detail.sort_values(['salesorderid', 'salesorderdetailid'])
+    detail['salesorderlinenumber'] = detail.groupby('salesorderid').cumcount() + 1
+
+    fact = salesorderheadersalesreason.merge(
+        salesorderheader[['salesorderid', 'salesordernumber']],
+        on='salesorderid',
+        how='left'
+    )
+
+    fact = fact.merge(
+        detail[['salesorderid', 'salesorderlinenumber']],
+        on='salesorderid',
+        how='left'
+    )
+
+    fact = fact[['salesordernumber', 'salesorderlinenumber', 'salesreasonid']]
+
+    return fact
+
 
