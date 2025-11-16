@@ -349,10 +349,35 @@ def transform_employee(args: DataFrame) -> DataFrame:
                              'vacationhours',
                              'sickleavehours',
                              'currentflag']], on = 'businessentityid')
-    dim_employee = dim_employee.merge(personemailaddress[['businessentityid', 'emailaddress']], on = 'businessentityid')
-    dim_employee = dim_employee.merge(personphone[['businessentityid', 'phonenumber']], on = 'businessentityid')
-    dim_employee = dim_employee.merge(employeepayhistory[['businessentityid', 'payfrequency', 'rate']], on = 'businessentityid')
-    dim_employee = dim_employee.merge(employeedepartmenthistory[['businessentityid', 'startdate', 'enddate', 'departmentid']], on = 'businessentityid')
+    dim_employee = dim_employee.merge(personemailaddress[['businessentityid', 'emailaddress']], on = 'businessentityid', how='left')
+    personphone_sorted = (
+        personphone
+        .sort_values(by=["businessentityid", "phonenumbertypeid"])  )
+    dim_employee = dim_employee.merge(
+        personphone_sorted[['businessentityid', 'phonenumber']],
+        on='businessentityid',
+        how='left'
+    )
+    pay_last = (
+        employeepayhistory
+        .sort_values(by=["businessentityid", "ratechangedate"], ascending=[True, False])
+        .drop_duplicates(subset=['businessentityid'], keep='first'))
+    dim_employee = dim_employee.merge(
+        pay_last[['businessentityid', 'payfrequency', 'rate']],
+        on='businessentityid',
+        how='left'
+    )
+
+    dept_hist = (
+        employeedepartmenthistory
+        .sort_values(by=["businessentityid", "startdate"], ascending=[True, False]))
+        
+    
+    dim_employee = dim_employee.merge(
+        dept_hist[['businessentityid', 'startdate', 'enddate', 'departmentid']],
+        on='businessentityid',
+        how='left'
+    )
     dim_employee = dim_employee.merge(department[['departmentid', 'name']], on = 'departmentid')
     dim_employee['salespersonflag'] = np.where(
         dim_employee['name'] == 'Sales',
@@ -361,7 +386,7 @@ def transform_employee(args: DataFrame) -> DataFrame:
     )
     dim_employee = dim_employee.merge(sales[['businessentityid', 'territoryid']], on = 'businessentityid', how='left')
 
-    dim_employee.rename(columns={'businessentityid' : 'employeekey',
+    dim_employee.rename(columns={
                                  'nationalidnumber' : 'employeenationalidalternatekey',
                                  'jobtitle' : 'title',
                                  'phonenumber': 'phone',
@@ -374,7 +399,6 @@ def transform_employee(args: DataFrame) -> DataFrame:
     dim_employee.drop('departmentid', axis=1, inplace=True)
     
     
-    dim_employee.drop_duplicates(subset=['employeekey'], inplace=True)
     dim_employee['hiredate'] = pd.to_datetime(dim_employee['hiredate']).dt.date
     dim_employee['birthdate'] = pd.to_datetime(dim_employee['birthdate']).dt.date
     dim_employee['startdate'] = pd.to_datetime(dim_employee['startdate']).dt.date
@@ -385,6 +409,8 @@ def transform_employee(args: DataFrame) -> DataFrame:
     )
     dim_employee['status'] = np.where(dim_employee['enddate'].isna(), 'current', pd.NA)
     dim_employee['parentemployeenationalidalternatekey'] = pd.NA
+
+    dim_employee['employeekey'] = range(1, len(dim_employee) + 1)
 
     column_order = [
     'employeekey',
@@ -757,4 +783,198 @@ def transform_fact_internet_sales_reason(args: DataFrame,
 
     return fact
 
+def transform_fact_reseller_sales(
+    args: DataFrame,
+    dim_product: DataFrame,
+    dim_reseller: DataFrame,
+    dim_employee: DataFrame,
+    dim_currency: DataFrame,
+    dim_promotion: DataFrame,
+    dim_salesterritory: DataFrame,
+    dim_date: DataFrame
+) -> DataFrame:
+
+    (salesorderheader, salesorderdetail, currencyrate,
+     product, customer, store, employee) = args
+
+    employee_mapping = employee[[
+        "businessentityid", "nationalidnumber"
+    ]].rename(columns={
+        "businessentityid": "sales_person_id",
+        "nationalidnumber": "employee_national_id"
+    })
+
+    reseller_account_mapping = (
+        customer[customer["storeid"].notna()]
+        .groupby("storeid")["accountnumber"]
+        .min()
+        .reset_index()
+        .rename(columns={
+            "storeid": "reseller_id",
+            "accountnumber": "reseller_account_number"
+        })
+    )
+
+    salesorderheader.rename(columns={
+        "purchaseordernumber": "customerponumber"
+    }, inplace=True)
+    fact = salesorderdetail.merge(
+        salesorderheader,
+        on="salesorderid",
+        how="inner"
+    )
+
+
+    fact=fact.merge(
+        dim_promotion[['promotionalternatekey','promotionkey']],
+        left_on='specialofferid',
+        right_on='promotionalternatekey',
+        how='left'
+    )
+
+    fact = fact[(fact["onlineorderflag"] == False) &
+                (fact["salespersonid"].notna())]
+
+    fact = fact.merge(
+        product[["productid", "productnumber", "standardcost"]],
+        on="productid",
+        how="inner"
+    )
+
+    fact = fact.merge(
+        customer[["customerid", "storeid"]],
+        on="customerid",
+        how="inner"
+    )
+
+    fact = fact.merge(
+        store[["businessentityid"]],
+        left_on="storeid",
+        right_on="businessentityid",
+        how="inner"
+    ).rename(columns={"businessentityid": "reseller_id"})
+
+    fact = fact.merge(
+        reseller_account_mapping,
+        on="reseller_id",
+        how="left"
+    )
+
+    fact = fact.merge(
+        employee_mapping,
+        left_on="salespersonid",
+        right_on="sales_person_id",
+        how="left"
+    )
+
+    fact["salesorderlinenumber"] = (fact.sort_values("salesorderdetailid").groupby("salesordernumber").cumcount() + 1)
+
+
+    fact["orderquantity"] = fact["orderqty"]
+    fact["extendedamount"] = fact["unitprice"] * fact["orderqty"]
+    fact["unitpricediscountpct"] = fact["unitpricediscount"]
+    fact["discountamount"] = fact["unitprice"] * fact["unitpricediscount"] * fact["orderqty"]
+    fact["productstandardcost"] = fact["standardcost"]
+    fact["totalproductcost"] = fact["standardcost"] * fact["orderqty"]
+    fact["salesamount"] = fact["unitprice"] * (1 - fact["unitpricediscount"]) * fact["orderqty"]
+
+    fact["orderdatekey"] = fact["orderdate"].dt.strftime("%Y%m%d").astype(int)
+    fact["duedatekey"] = fact["duedate"].dt.strftime("%Y%m%d").astype(int)
+    fact["shipdatekey"] = fact["shipdate"].dt.strftime("%Y%m%d").astype(int)
+
+    fact = fact.merge(
+        dim_product[["productkey", "productalternatekey", 'startdate', 'enddate']],
+        left_on="productnumber",
+        right_on="productalternatekey",
+        how="left"
+    )
+
+    fact = fact.merge(
+        dim_reseller[["resellerkey", "reselleralternatekey"]],
+        left_on="reseller_account_number",
+        right_on="reselleralternatekey",
+        how="left"
+    )
+
+    fact = fact.merge(
+        dim_employee[["employeekey", 'employeenationalidalternatekey']],
+        left_on="employee_national_id",
+        right_on='employeenationalidalternatekey',
+        how="left"
+    )
+
+    fact = fact.merge(
+        currencyrate[["currencyrateid", "tocurrencycode"]],
+        on="currencyrateid",
+        how="left"
+    )
+    fact["tocurrencycode"] = fact["tocurrencycode"].fillna("USD")
+
+    fact = fact.merge(
+        dim_currency[["currencykey", "currencyalternatekey"]],
+        left_on="tocurrencycode",
+        right_on="currencyalternatekey",
+        how="left"
+    )
+
+    fact = fact.merge(
+        dim_salesterritory[["salesterritorykey", "salesterritoryalternatekey"]],
+        left_on="territoryid",
+        right_on="salesterritoryalternatekey",
+        how="left"
+    )
+
+    for key in ["orderdatekey", "duedatekey", "shipdatekey"]:
+        fact = fact.merge(
+            dim_date[["datekey"]],
+            left_on=key,
+            right_on="datekey",
+            how="left"
+        )
+    
+    merged_df = fact.copy()
+
+    condicion_historica = (
+        (merged_df['orderdate'] >= merged_df['startdate']) &
+        (merged_df['orderdate'] <= merged_df['enddate'])
+    )
+
+    condicion_actual = (
+        (merged_df['orderdate'] >= merged_df['startdate']) &
+        (merged_df['enddate'].isnull())
+    )
+
+    fact = merged_df[condicion_historica | condicion_actual].copy()
+
+    fact = fact[[
+        "productkey",
+        "orderdatekey",
+        "duedatekey",
+        "shipdatekey",
+        "resellerkey",
+        "employeekey",
+        "promotionkey",
+        "currencykey",
+        "salesterritorykey",
+        "salesordernumber",
+        "salesorderlinenumber",
+        "revisionnumber",
+        "orderquantity",
+        "unitprice",
+        "extendedamount",
+        "unitpricediscountpct",
+        "discountamount",
+        "productstandardcost",
+        "totalproductcost",
+        "salesamount",
+        "taxamt",
+        "freight",
+        "carriertrackingnumber",
+        "customerponumber",
+        "orderdate",
+        "duedate",
+        "shipdate"
+    ]]
+
+    return fact
 
