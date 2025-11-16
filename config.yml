@@ -14,5 +14,14 @@ ETL_PRO:
   host: localhost
   port: 5432
 
+SQL_SERVER_DW:
+  drivername: mssql+pyodbc
+  dbname: AdventureWorksDW2022
+  user: sa
+  password: r00t.R00T
+  host: localhost
+  port: 1433
+  driver: FreeTDS
+
 LOAD_DIMENSIONS:
   True

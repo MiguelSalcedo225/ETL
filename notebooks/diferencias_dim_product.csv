@@ -1,0 +1,2143 @@
+﻿fila_index,productkey,columna_diferente,valor_postgres,valor_sqlserver
+0,1,color,None,NA
+1,2,color,None,NA
+2,3,color,None,NA
+3,4,color,None,NA
+4,5,color,None,NA
+11,12,color,None,NA
+12,13,color,None,NA
+13,14,color,None,NA
+14,15,color,None,NA
+15,16,color,None,NA
+16,17,color,None,NA
+17,18,color,None,NA
+18,19,color,None,NA
+19,20,color,None,NA
+21,22,color,None,NA
+22,23,color,None,NA
+23,24,color,None,NA
+24,25,color,None,NA
+25,26,color,None,NA
+26,27,color,None,NA
+27,28,color,None,NA
+28,29,color,None,NA
+29,30,color,None,NA
+30,31,color,None,NA
+33,34,color,None,NA
+34,35,color,None,NA
+35,36,color,None,NA
+36,37,color,None,NA
+37,38,color,None,NA
+38,39,color,None,NA
+39,40,color,None,NA
+40,41,color,None,NA
+41,42,color,None,NA
+42,43,color,None,NA
+43,44,color,None,NA
+44,45,color,None,NA
+45,46,color,None,NA
+46,47,color,None,NA
+47,48,color,None,NA
+48,49,color,None,NA
+49,50,color,None,NA
+50,51,color,None,NA
+51,52,color,None,NA
+52,53,color,None,NA
+53,54,color,None,NA
+54,55,color,None,NA
+55,56,color,None,NA
+56,57,color,None,NA
+57,58,color,None,NA
+58,59,color,None,NA
+59,60,color,None,NA
+60,61,color,None,NA
+61,62,color,None,NA
+62,63,color,None,NA
+63,64,color,None,NA
+64,65,color,None,NA
+65,66,color,None,NA
+66,67,color,None,NA
+67,68,color,None,NA
+68,69,color,None,NA
+69,70,color,None,NA
+70,71,color,None,NA
+71,72,color,None,NA
+72,73,color,None,NA
+73,74,color,None,NA
+74,75,color,None,NA
+75,76,color,None,NA
+76,77,color,None,NA
+77,78,color,None,NA
+78,79,color,None,NA
+79,80,color,None,NA
+80,81,color,None,NA
+81,82,color,None,NA
+82,83,color,None,NA
+83,84,color,None,NA
+84,85,color,None,NA
+85,86,color,None,NA
+86,87,color,None,NA
+87,88,color,None,NA
+88,89,color,None,NA
+89,90,color,None,NA
+90,91,color,None,NA
+91,92,color,None,NA
+92,93,color,None,NA
+93,94,color,None,NA
+94,95,color,None,NA
+95,96,color,None,NA
+96,97,color,None,NA
+97,98,color,None,NA
+98,99,color,None,NA
+99,100,color,None,NA
+100,101,color,None,NA
+101,102,color,None,NA
+102,103,color,None,NA
+103,104,color,None,NA
+104,105,color,None,NA
+105,106,color,None,NA
+106,107,color,None,NA
+107,108,color,None,NA
+108,109,color,None,NA
+109,110,color,None,NA
+110,111,color,None,NA
+111,112,color,None,NA
+112,113,color,None,NA
+113,114,color,None,NA
+114,115,color,None,NA
+115,116,color,None,NA
+116,117,color,None,NA
+117,118,color,None,NA
+118,119,color,None,NA
+119,120,color,None,NA
+120,121,color,None,NA
+121,122,color,None,NA
+122,123,color,None,NA
+123,124,color,None,NA
+124,125,color,None,NA
+125,126,color,None,NA
+126,127,color,None,NA
+127,128,color,None,NA
+128,129,color,None,NA
+129,130,color,None,NA
+130,131,color,None,NA
+131,132,color,None,NA
+132,133,color,None,NA
+133,134,color,None,NA
+134,135,color,None,NA
+135,136,color,None,NA
+136,137,color,None,NA
+137,138,color,None,NA
+138,139,color,None,NA
+140,141,color,None,NA
+141,142,color,None,NA
+142,143,color,None,NA
+143,144,color,None,NA
+144,145,color,None,NA
+145,146,color,None,NA
+146,147,color,None,NA
+147,148,color,None,NA
+148,149,color,None,NA
+149,150,color,None,NA
+150,151,color,None,NA
+151,152,color,None,NA
+152,153,color,None,NA
+153,154,color,None,NA
+154,155,color,None,NA
+155,156,color,None,NA
+156,157,color,None,NA
+157,158,color,None,NA
+158,159,color,None,NA
+159,160,color,None,NA
+160,161,color,None,NA
+161,162,color,None,NA
+162,163,color,None,NA
+163,164,color,None,NA
+164,165,color,None,NA
+165,166,color,None,NA
+166,167,color,None,NA
+167,168,color,None,NA
+168,169,color,None,NA
+169,170,color,None,NA
+170,171,color,None,NA
+171,172,color,None,NA
+172,173,color,None,NA
+173,174,color,None,NA
+174,175,color,None,NA
+175,176,color,None,NA
+176,177,color,None,NA
+177,178,color,None,NA
+178,179,color,None,NA
+179,180,color,None,NA
+180,181,color,None,NA
+181,182,color,None,NA
+182,183,color,None,NA
+183,184,color,None,NA
+184,185,color,None,NA
+185,186,color,None,NA
+186,187,color,None,NA
+187,188,color,None,NA
+188,189,color,None,NA
+189,190,color,None,NA
+190,191,color,None,NA
+191,192,color,None,NA
+192,193,color,None,NA
+193,194,color,None,NA
+194,195,color,None,NA
+195,196,color,None,NA
+196,197,color,None,NA
+197,198,color,None,NA
+198,199,color,None,NA
+199,200,color,None,NA
+200,201,color,None,NA
+201,202,color,None,NA
+202,203,color,None,NA
+203,204,color,None,NA
+204,205,color,None,NA
+205,206,color,None,NA
+206,207,color,None,NA
+207,208,color,None,NA
+390,391,color,None,NA
+391,392,color,None,NA
+392,393,color,None,NA
+393,394,color,None,NA
+394,395,color,None,NA
+395,396,color,None,NA
+396,397,color,None,NA
+397,398,color,None,NA
+398,399,color,None,NA
+399,400,color,None,NA
+400,401,color,None,NA
+401,402,color,None,NA
+402,403,color,None,NA
+403,404,color,None,NA
+404,405,color,None,NA
+405,406,color,None,NA
+406,407,color,None,NA
+407,408,color,None,NA
+446,447,color,None,NA
+447,448,color,None,NA
+448,449,color,None,NA
+449,450,color,None,NA
+450,451,color,None,NA
+451,452,color,None,NA
+476,477,color,None,NA
+477,478,color,None,NA
+478,479,color,None,NA
+479,480,color,None,NA
+482,483,color,None,NA
+483,484,color,None,NA
+484,485,color,None,NA
+485,486,color,None,NA
+514,515,color,None,NA
+515,516,color,None,NA
+516,517,color,None,NA
+517,518,color,None,NA
+518,519,color,None,NA
+519,520,color,None,NA
+520,521,color,None,NA
+521,522,color,None,NA
+522,523,color,None,NA
+527,528,color,None,NA
+528,529,color,None,NA
+529,530,color,None,NA
+534,535,color,None,NA
+535,536,color,None,NA
+536,537,color,None,NA
+537,538,color,None,NA
+538,539,color,None,NA
+539,540,color,None,NA
+540,541,color,None,NA
+552,553,color,None,NA
+553,554,color,None,NA
+600,601,color,None,NA
+601,602,color,None,NA
+602,603,color,None,NA
+211,212,dealerprice,30.8402,20.1865
+212,213,dealerprice,30.8402,20.1865
+213,214,dealerprice,30.8402,20.994
+214,215,dealerprice,30.399,20.1865
+215,216,dealerprice,30.399,20.1865
+216,217,dealerprice,30.399,20.994
+217,218,dealerprice,5.632,5.7
+219,220,dealerprice,30.3157,20.1865
+220,221,dealerprice,30.3157,20.1865
+221,222,dealerprice,30.3157,20.994
+222,223,dealerprice,7.663,5.1865
+223,224,dealerprice,7.663,5.1865
+224,225,dealerprice,7.663,5.394
+225,226,dealerprice,49.99,28.8404
+226,227,dealerprice,49.99,28.8404
+227,228,dealerprice,49.99,29.994
+228,229,dealerprice,36.7646,28.8404
+229,230,dealerprice,36.7646,28.8404
+230,231,dealerprice,36.7646,29.994
+231,232,dealerprice,34.8424,28.8404
+232,233,dealerprice,34.8424,28.8404
+233,234,dealerprice,34.8424,29.994
+234,235,dealerprice,37.1587,28.8404
+235,236,dealerprice,37.1587,28.8404
+236,237,dealerprice,37.1587,29.994
+237,238,dealerprice,814.0414,758.0759
+238,239,dealerprice,814.0414,780.8182
+239,240,dealerprice,814.0414,858.9
+240,241,dealerprice,813.2805,758.0759
+241,242,dealerprice,813.2805,780.8182
+242,243,dealerprice,813.2805,858.9
+243,244,dealerprice,821.6337,758.0759
+244,245,dealerprice,821.6337,780.8182
+245,246,dealerprice,821.6337,858.9
+246,247,dealerprice,nan,758.0759
+247,248,dealerprice,nan,780.8182
+248,249,dealerprice,nan,858.9
+249,250,dealerprice,nan,758.0759
+250,251,dealerprice,nan,780.8182
+251,252,dealerprice,nan,858.9
+252,253,dealerprice,188.3567,178.5808
+253,254,dealerprice,188.3567,183.9382
+254,255,dealerprice,188.3567,202.332
+255,256,dealerprice,193.0321,178.5808
+256,257,dealerprice,193.0321,183.9382
+257,258,dealerprice,193.0321,202.332
+258,259,dealerprice,nan,178.5808
+259,260,dealerprice,nan,183.9382
+260,261,dealerprice,nan,202.332
+261,262,dealerprice,194.5044,183.9382
+262,263,dealerprice,194.5044,202.332
+263,264,dealerprice,195.6344,183.9382
+264,265,dealerprice,195.6344,202.332
+265,266,dealerprice,200.0328,183.9382
+266,267,dealerprice,200.0328,202.332
+267,268,dealerprice,nan,183.9382
+268,269,dealerprice,nan,202.332
+269,270,dealerprice,194.757,183.9382
+270,271,dealerprice,194.757,202.332
+271,272,dealerprice,195.9168,183.9382
+272,273,dealerprice,195.9168,202.332
+273,274,dealerprice,nan,356.898
+276,277,dealerprice,nan,356.898
+277,278,dealerprice,nan,356.898
+278,279,dealerprice,189.3459,178.5808
+279,280,dealerprice,189.3459,183.9382
+280,281,dealerprice,189.3459,202.332
+281,282,dealerprice,nan,178.5808
+282,283,dealerprice,nan,183.9382
+283,284,dealerprice,nan,202.332
+284,285,dealerprice,189.0976,178.5808
+285,286,dealerprice,189.0976,183.9382
+286,287,dealerprice,189.0976,202.332
+287,288,dealerprice,775.751,722.5949
+288,289,dealerprice,775.751,744.2727
+289,290,dealerprice,775.751,818.7
+290,291,dealerprice,nan,818.7
+292,293,dealerprice,766.5803,722.5949
+293,294,dealerprice,766.5803,744.2727
+294,295,dealerprice,766.5803,818.7
+295,296,dealerprice,760.0903,714.7043
+296,297,dealerprice,760.0903,736.1455
+297,298,dealerprice,760.0903,809.76
+300,301,dealerprice,nan,714.7043
+301,302,dealerprice,nan,736.1455
+302,303,dealerprice,nan,809.76
+303,304,dealerprice,757.6237,714.7043
+304,305,dealerprice,757.6237,736.1455
+305,306,dealerprice,757.6237,809.76
+306,307,dealerprice,768.4823,722.5949
+307,308,dealerprice,768.4823,744.2727
+308,309,dealerprice,768.4823,818.7
+309,310,dealerprice,3170.195,2146.962
+310,311,dealerprice,3270.4188,2146.962
+311,312,dealerprice,3326.3038,2146.962
+312,313,dealerprice,3290.4938,2146.962
+313,314,dealerprice,3035.8796,2146.962
+314,315,dealerprice,874.3863,874.794
+319,320,dealerprice,532.9409,419.4589
+320,321,dealerprice,532.9409,469.794
+321,322,dealerprice,471.8215,419.4589
+322,323,dealerprice,471.8215,469.794
+323,324,dealerprice,486.9148,419.4589
+324,325,dealerprice,486.9148,469.794
+325,326,dealerprice,453.24,419.4589
+326,327,dealerprice,453.24,469.794
+327,328,dealerprice,491.426,419.4589
+328,329,dealerprice,491.426,469.794
+329,330,dealerprice,491.3262,419.4589
+330,331,dealerprice,491.3262,469.794
+331,332,dealerprice,486.7756,419.4589
+332,333,dealerprice,486.7756,469.794
+333,334,dealerprice,498.7619,419.4589
+334,335,dealerprice,498.7619,469.794
+335,336,dealerprice,517.6858,419.4589
+336,337,dealerprice,517.6858,469.794
+337,338,dealerprice,492.4514,419.4589
+338,339,dealerprice,492.4514,469.794
+339,340,dealerprice,513.2345,419.4589
+340,341,dealerprice,513.2345,469.794
+341,342,dealerprice,485.8067,419.4589
+342,343,dealerprice,485.8067,469.794
+343,344,dealerprice,2250.0245,2039.994
+344,345,dealerprice,2190.2766,2039.994
+345,346,dealerprice,2203.7816,2039.994
+346,347,dealerprice,2177.9103,2039.994
+347,348,dealerprice,2199.0468,2024.994
+348,349,dealerprice,2174.4024,2024.994
+349,350,dealerprice,2273.4016,2024.994
+350,351,dealerprice,2220.1323,2024.994
+351,352,dealerprice,1819.4048,1242.8518
+352,353,dealerprice,1819.4048,1391.994
+353,354,dealerprice,1811.8075,1242.8518
+354,355,dealerprice,1811.8075,1391.994
+355,356,dealerprice,1820.9921,1242.8518
+356,357,dealerprice,1820.9921,1391.994
+357,358,dealerprice,1729.8317,1229.4589
+358,359,dealerprice,1729.8317,1376.994
+359,360,dealerprice,1776.0339,1229.4589
+360,361,dealerprice,1776.0339,1376.994
+361,362,dealerprice,1836.0977,1229.4589
+362,363,dealerprice,1836.0977,1376.994
+363,364,dealerprice,647.6837,647.994
+364,365,dealerprice,647.5349,647.994
+366,367,dealerprice,647.841,647.994
+367,368,dealerprice,1851.7056,1466.01
+368,369,dealerprice,1886.554,1466.01
+369,370,dealerprice,1879.9789,1466.01
+370,371,dealerprice,1915.528,1308.9375
+371,372,dealerprice,1915.528,1466.01
+372,373,dealerprice,1744.9591,1308.9375
+373,374,dealerprice,1744.9591,1466.01
+374,375,dealerprice,1776.6896,1308.9375
+375,376,dealerprice,1776.6896,1466.01
+376,377,dealerprice,1823.7732,1308.9375
+377,378,dealerprice,1823.7732,1466.01
+378,379,dealerprice,1896.8282,1308.9375
+379,380,dealerprice,1896.8282,1466.01
+380,381,dealerprice,805.0933,600.2625
+381,382,dealerprice,805.0933,672.294
+382,383,dealerprice,811.1096,600.2625
+383,384,dealerprice,811.1096,672.294
+384,385,dealerprice,851.4835,600.2625
+385,386,dealerprice,851.4835,672.294
+386,387,dealerprice,897.6208,600.2625
+387,388,dealerprice,897.6208,672.294
+388,389,dealerprice,800.5292,600.2625
+389,390,dealerprice,800.5292,672.294
+391,392,dealerprice,nan,105.294
+392,393,dealerprice,137.632,137.694
+394,395,dealerprice,61.0242,61.374
+396,397,dealerprice,25.5651,24.2945
+397,398,dealerprice,25.5651,26.724
+398,399,dealerprice,35.4385,33.7745
+399,400,dealerprice,35.4385,37.152
+400,401,dealerprice,68.8515,65.6018
+401,402,dealerprice,68.8515,72.162
+402,403,dealerprice,25.6084,24.2945
+403,404,dealerprice,25.6084,26.724
+404,405,dealerprice,nan,33.7745
+405,406,dealerprice,nan,37.152
+406,407,dealerprice,68.9305,65.6018
+407,408,dealerprice,68.9305,72.162
+409,410,dealerprice,36.4387,36.447
+412,413,dealerprice,nan,51.339
+413,414,dealerprice,149.2093,149.031
+415,416,dealerprice,nan,130.806
+416,417,dealerprice,340.1285,324.4527
+417,418,dealerprice,340.1285,356.898
+419,420,dealerprice,141.5299,141.615
+420,421,dealerprice,196.0704,196.329
+421,422,dealerprice,67.6423,67.539
+423,424,dealerprice,215.3227,214.236
+424,425,dealerprice,nan,147.006
+427,428,dealerprice,209.3176,209.256
+428,429,dealerprice,335.8823,324.4527
+429,430,dealerprice,335.8823,356.898
+430,431,dealerprice,nan,324.4527
+431,432,dealerprice,nan,356.898
+432,433,dealerprice,339.3187,324.4527
+433,434,dealerprice,339.3187,356.898
+434,435,dealerprice,339.7483,324.4527
+435,436,dealerprice,339.7483,356.898
+436,437,dealerprice,nan,780.8182
+437,438,dealerprice,nan,858.9
+438,439,dealerprice,818.4995,780.8182
+439,440,dealerprice,818.4995,858.9
+440,441,dealerprice,824.0124,780.8182
+441,442,dealerprice,824.0124,858.9
+442,443,dealerprice,nan,780.8182
+443,444,dealerprice,nan,858.9
+444,445,dealerprice,35.9703,35.994
+445,446,dealerprice,nan,75.0
+446,447,dealerprice,14.9787,15.0
+447,448,dealerprice,11.9822,11.994
+448,449,dealerprice,nan,14.994
+449,450,dealerprice,nan,8.394
+450,451,dealerprice,nan,20.994
+451,452,dealerprice,nan,26.994
+452,453,dealerprice,35.9182,35.994
+454,455,dealerprice,nan,35.994
+455,456,dealerprice,44.736,44.994
+457,458,dealerprice,44.7936,44.994
+458,459,dealerprice,53.996,53.994
+459,460,dealerprice,53.8298,53.994
+461,462,dealerprice,19.9996,14.1289
+462,463,dealerprice,19.9996,14.694
+463,464,dealerprice,19.0203,14.1289
+464,465,dealerprice,19.0203,14.694
+465,466,dealerprice,21.0596,14.1289
+466,467,dealerprice,21.0596,14.694
+467,468,dealerprice,22.8257,22.794
+468,469,dealerprice,22.4863,22.794
+469,470,dealerprice,21.9595,22.794
+470,471,dealerprice,43.5986,38.1
+471,472,dealerprice,46.98,38.1
+472,473,dealerprice,62.7418,38.1
+473,474,dealerprice,54.3974,41.994
+474,475,dealerprice,56.4648,41.994
+475,476,dealerprice,55.7468,41.994
+476,477,dealerprice,4.798,2.994
+477,478,dealerprice,9.99,5.994
+478,479,dealerprice,8.99,5.394
+479,480,dealerprice,2.2455,1.374
+480,481,dealerprice,7.1973,5.394
+481,482,dealerprice,6.9522,5.394
+482,483,dealerprice,91.2887,72.0
+483,484,dealerprice,6.9307,4.77
+484,485,dealerprice,21.98,13.188
+485,486,dealerprice,159.0,95.4
+486,487,dealerprice,47.9138,32.994
+487,488,dealerprice,44.5706,32.394
+488,489,dealerprice,53.99,32.394
+489,490,dealerprice,42.268,32.394
+490,491,dealerprice,41.8355,32.394
+491,492,dealerprice,601.876,602.346
+492,493,dealerprice,199.8532,200.052
+495,496,dealerprice,601.3608,602.346
+498,499,dealerprice,601.6979,602.346
+499,500,dealerprice,601.5637,602.346
+505,506,dealerprice,199.9619,200.052
+507,508,dealerprice,nan,200.052
+510,511,dealerprice,218.2721,218.454
+514,515,dealerprice,16.2664,16.272
+515,516,dealerprice,23.4571,23.484
+518,519,dealerprice,nan,23.484
+523,524,dealerprice,158.2438,158.43
+527,528,dealerprice,4.99,2.994
+528,529,dealerprice,3.99,2.394
+529,530,dealerprice,4.99,2.994
+531,532,dealerprice,149.8392,149.874
+534,535,dealerprice,24.99,14.994
+535,536,dealerprice,29.99,17.994
+536,537,dealerprice,35.0,21.0
+537,538,dealerprice,21.49,12.894
+538,539,dealerprice,24.99,14.994
+539,540,dealerprice,32.6,19.56
+540,541,dealerprice,28.99,17.394
+543,544,dealerprice,48.5539,48.594
+550,551,dealerprice,158.3791,158.43
+551,552,dealerprice,54.849,54.894
+554,555,dealerprice,63.862,63.9
+557,558,dealerprice,242.8771,242.994
+558,559,dealerprice,12.1363,12.144
+559,560,dealerprice,842.3377,728.91
+560,561,dealerprice,1695.8692,1430.442
+561,562,dealerprice,1751.9429,1430.442
+562,563,dealerprice,1890.3652,1430.442
+563,564,dealerprice,1627.419,1430.442
+564,565,dealerprice,470.2034,445.41
+565,566,dealerprice,485.8277,445.41
+566,567,dealerprice,542.8021,445.41
+567,568,dealerprice,465.7551,445.41
+568,569,dealerprice,474.534,445.41
+569,570,dealerprice,476.1914,445.41
+570,571,dealerprice,494.5965,445.41
+571,572,dealerprice,456.8075,445.41
+572,573,dealerprice,1810.048,1430.442
+573,574,dealerprice,1856.1688,1430.442
+574,575,dealerprice,1981.2741,1430.442
+575,576,dealerprice,1746.5382,1430.442
+576,577,dealerprice,895.3333,728.91
+577,578,dealerprice,989.0597,728.91
+578,579,dealerprice,840.1397,728.91
+579,580,dealerprice,1310.7066,1020.594
+580,581,dealerprice,1371.4813,1020.594
+581,582,dealerprice,1463.2613,1020.594
+582,583,dealerprice,1295.5708,1020.594
+583,584,dealerprice,458.3379,323.994
+584,585,dealerprice,511.7132,445.41
+585,586,dealerprice,456.1835,445.41
+586,587,dealerprice,641.7486,461.694
+587,588,dealerprice,592.4224,461.694
+588,589,dealerprice,633.5801,461.694
+589,590,dealerprice,639.3155,461.694
+590,591,dealerprice,346.9703,338.994
+591,592,dealerprice,339.6076,338.994
+592,593,dealerprice,346.6431,338.994
+593,594,dealerprice,345.7342,338.994
+594,595,dealerprice,341.2923,338.994
+595,596,dealerprice,393.1127,323.994
+596,597,dealerprice,378.2699,323.994
+597,598,dealerprice,388.9047,323.994
+598,599,dealerprice,376.131,323.994
+599,600,dealerprice,384.6504,323.994
+601,602,dealerprice,nan,60.744
+603,604,dealerprice,490.8579,323.994
+604,605,dealerprice,438.051,323.994
+605,606,dealerprice,443.6378,323.994
+211,212,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+212,213,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+214,215,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+215,216,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+217,218,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+218,219,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+219,220,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+220,221,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+222,223,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+223,224,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+225,226,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+226,227,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+228,229,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+229,230,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+231,232,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+232,233,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+234,235,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+235,236,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+237,238,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+238,239,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+240,241,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+241,242,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+243,244,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+244,245,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+246,247,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+247,248,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+249,250,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+250,251,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+252,253,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+253,254,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+255,256,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+256,257,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+258,259,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+259,260,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+261,262,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+262,263,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+263,264,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+264,265,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+265,266,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+266,267,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+267,268,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+268,269,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+269,270,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+270,271,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+271,272,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+272,273,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+273,274,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+274,275,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+275,276,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+276,277,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+277,278,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+278,279,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+279,280,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+281,282,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+282,283,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+284,285,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+285,286,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+287,288,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+288,289,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+290,291,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+291,292,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+292,293,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+293,294,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+295,296,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+296,297,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+298,299,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+299,300,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+300,301,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+301,302,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+303,304,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+304,305,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+306,307,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+307,308,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+309,310,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+310,311,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+311,312,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+312,313,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+313,314,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+314,315,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+315,316,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+316,317,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+317,318,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+318,319,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+319,320,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+320,321,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+321,322,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+322,323,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+323,324,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+324,325,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+325,326,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+326,327,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+327,328,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+328,329,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+329,330,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+330,331,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+331,332,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+332,333,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+333,334,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+334,335,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+335,336,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+336,337,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+337,338,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+338,339,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+339,340,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+340,341,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+341,342,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+342,343,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+343,344,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+344,345,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+345,346,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+346,347,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+347,348,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+348,349,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+349,350,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+350,351,enddate,2012-05-29 00:00:00+00:00,2007-12-28 00:00:00
+351,352,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+353,354,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+355,356,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+357,358,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+359,360,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+361,362,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+363,364,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+364,365,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+365,366,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+366,367,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+367,368,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+368,369,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+369,370,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+370,371,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+372,373,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+374,375,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+376,377,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+378,379,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+380,381,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+382,383,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+384,385,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+386,387,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+388,389,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+390,391,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+391,392,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+392,393,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+393,394,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+394,395,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+395,396,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+396,397,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+398,399,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+400,401,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+402,403,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+404,405,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+406,407,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+408,409,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+409,410,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+410,411,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+411,412,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+412,413,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+413,414,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+414,415,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+415,416,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+416,417,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+418,419,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+419,420,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+420,421,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+421,422,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+422,423,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+423,424,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+424,425,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+425,426,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+426,427,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+427,428,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+428,429,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+430,431,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+432,433,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+434,435,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+436,437,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+438,439,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+440,441,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+442,443,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+444,445,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+445,446,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+446,447,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+447,448,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+448,449,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+449,450,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+450,451,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+451,452,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+452,453,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+453,454,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+454,455,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+455,456,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+456,457,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+457,458,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+458,459,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+459,460,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+460,461,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+461,462,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+463,464,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+465,466,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+467,468,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+468,469,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+469,470,enddate,2013-05-29 00:00:00+00:00,2008-12-27 00:00:00
+0,1,englishdescription,,None
+1,2,englishdescription,,None
+2,3,englishdescription,,None
+3,4,englishdescription,,None
+4,5,englishdescription,,None
+5,6,englishdescription,,None
+6,7,englishdescription,,None
+7,8,englishdescription,,None
+8,9,englishdescription,,None
+9,10,englishdescription,,None
+10,11,englishdescription,,None
+11,12,englishdescription,,None
+12,13,englishdescription,,None
+13,14,englishdescription,,None
+14,15,englishdescription,,None
+15,16,englishdescription,,None
+16,17,englishdescription,,None
+17,18,englishdescription,,None
+18,19,englishdescription,,None
+19,20,englishdescription,,None
+20,21,englishdescription,,None
+21,22,englishdescription,,None
+22,23,englishdescription,,None
+23,24,englishdescription,,None
+24,25,englishdescription,,None
+25,26,englishdescription,,None
+26,27,englishdescription,,None
+27,28,englishdescription,,None
+28,29,englishdescription,,None
+29,30,englishdescription,,None
+30,31,englishdescription,,None
+31,32,englishdescription,,None
+32,33,englishdescription,,None
+33,34,englishdescription,,None
+34,35,englishdescription,,None
+35,36,englishdescription,,None
+36,37,englishdescription,,None
+37,38,englishdescription,,None
+38,39,englishdescription,,None
+39,40,englishdescription,,None
+40,41,englishdescription,,None
+41,42,englishdescription,,None
+42,43,englishdescription,,None
+43,44,englishdescription,,None
+44,45,englishdescription,,None
+45,46,englishdescription,,None
+46,47,englishdescription,,None
+47,48,englishdescription,,None
+48,49,englishdescription,,None
+49,50,englishdescription,,None
+50,51,englishdescription,,None
+51,52,englishdescription,,None
+52,53,englishdescription,,None
+53,54,englishdescription,,None
+54,55,englishdescription,,None
+55,56,englishdescription,,None
+56,57,englishdescription,,None
+57,58,englishdescription,,None
+58,59,englishdescription,,None
+59,60,englishdescription,,None
+60,61,englishdescription,,None
+61,62,englishdescription,,None
+62,63,englishdescription,,None
+63,64,englishdescription,,None
+64,65,englishdescription,,None
+65,66,englishdescription,,None
+66,67,englishdescription,,None
+67,68,englishdescription,,None
+68,69,englishdescription,,None
+69,70,englishdescription,,None
+70,71,englishdescription,,None
+71,72,englishdescription,,None
+72,73,englishdescription,,None
+73,74,englishdescription,,None
+74,75,englishdescription,,None
+75,76,englishdescription,,None
+76,77,englishdescription,,None
+77,78,englishdescription,,None
+78,79,englishdescription,,None
+79,80,englishdescription,,None
+80,81,englishdescription,,None
+81,82,englishdescription,,None
+82,83,englishdescription,,None
+83,84,englishdescription,,None
+84,85,englishdescription,,None
+85,86,englishdescription,,None
+86,87,englishdescription,,None
+87,88,englishdescription,,None
+88,89,englishdescription,,None
+89,90,englishdescription,,None
+90,91,englishdescription,,None
+91,92,englishdescription,,None
+92,93,englishdescription,,None
+93,94,englishdescription,,None
+94,95,englishdescription,,None
+95,96,englishdescription,,None
+96,97,englishdescription,,None
+97,98,englishdescription,,None
+98,99,englishdescription,,None
+99,100,englishdescription,,None
+100,101,englishdescription,,None
+101,102,englishdescription,,None
+102,103,englishdescription,,None
+103,104,englishdescription,,None
+104,105,englishdescription,,None
+105,106,englishdescription,,None
+106,107,englishdescription,,None
+107,108,englishdescription,,None
+108,109,englishdescription,,None
+109,110,englishdescription,,None
+110,111,englishdescription,,None
+111,112,englishdescription,,None
+112,113,englishdescription,,None
+113,114,englishdescription,,None
+114,115,englishdescription,,None
+115,116,englishdescription,,None
+116,117,englishdescription,,None
+117,118,englishdescription,,None
+118,119,englishdescription,,None
+119,120,englishdescription,,None
+120,121,englishdescription,,None
+121,122,englishdescription,,None
+122,123,englishdescription,,None
+123,124,englishdescription,,None
+124,125,englishdescription,,None
+125,126,englishdescription,,None
+126,127,englishdescription,,None
+127,128,englishdescription,,None
+128,129,englishdescription,,None
+129,130,englishdescription,,None
+130,131,englishdescription,,None
+131,132,englishdescription,,None
+132,133,englishdescription,,None
+133,134,englishdescription,,None
+134,135,englishdescription,,None
+135,136,englishdescription,,None
+136,137,englishdescription,,None
+137,138,englishdescription,,None
+138,139,englishdescription,,None
+139,140,englishdescription,,None
+140,141,englishdescription,,None
+141,142,englishdescription,,None
+142,143,englishdescription,,None
+143,144,englishdescription,,None
+144,145,englishdescription,,None
+145,146,englishdescription,,None
+146,147,englishdescription,,None
+147,148,englishdescription,,None
+148,149,englishdescription,,None
+149,150,englishdescription,,None
+150,151,englishdescription,,None
+151,152,englishdescription,,None
+152,153,englishdescription,,None
+153,154,englishdescription,,None
+154,155,englishdescription,,None
+155,156,englishdescription,,None
+156,157,englishdescription,,None
+157,158,englishdescription,,None
+158,159,englishdescription,,None
+159,160,englishdescription,,None
+160,161,englishdescription,,None
+161,162,englishdescription,,None
+162,163,englishdescription,,None
+163,164,englishdescription,,None
+164,165,englishdescription,,None
+165,166,englishdescription,,None
+166,167,englishdescription,,None
+167,168,englishdescription,,None
+168,169,englishdescription,,None
+169,170,englishdescription,,None
+170,171,englishdescription,,None
+171,172,englishdescription,,None
+172,173,englishdescription,,None
+173,174,englishdescription,,None
+174,175,englishdescription,,None
+175,176,englishdescription,,None
+176,177,englishdescription,,None
+177,178,englishdescription,,None
+178,179,englishdescription,,None
+179,180,englishdescription,,None
+180,181,englishdescription,,None
+181,182,englishdescription,,None
+182,183,englishdescription,,None
+183,184,englishdescription,,None
+184,185,englishdescription,,None
+185,186,englishdescription,,None
+186,187,englishdescription,,None
+187,188,englishdescription,,None
+188,189,englishdescription,,None
+189,190,englishdescription,,None
+190,191,englishdescription,,None
+191,192,englishdescription,,None
+192,193,englishdescription,,None
+193,194,englishdescription,,None
+194,195,englishdescription,,None
+195,196,englishdescription,,None
+196,197,englishdescription,,None
+197,198,englishdescription,,None
+198,199,englishdescription,,None
+199,200,englishdescription,,None
+200,201,englishdescription,,None
+201,202,englishdescription,,None
+202,203,englishdescription,,None
+203,204,englishdescription,,None
+204,205,englishdescription,,None
+205,206,englishdescription,,None
+206,207,englishdescription,,None
+207,208,englishdescription,,None
+208,209,englishdescription,,None
+513,514,englishdescription,,None
+295,296,listprice,1191.174,1191.1739
+296,297,listprice,1226.909,1226.9091
+300,301,listprice,1191.174,1191.1739
+301,302,listprice,1226.909,1226.9091
+303,304,listprice,1191.174,1191.1739
+304,305,listprice,1226.909,1226.9091
+351,352,listprice,2071.4197,2071.4196
+353,354,listprice,2071.4197,2071.4196
+355,356,listprice,2071.4197,2071.4196
+357,358,listprice,2049.0981,2049.0982
+359,360,listprice,2049.0981,2049.0982
+361,362,listprice,2049.0981,2049.0982
+209,210,sizerange,58-60 CM,54-58 CM
+210,211,sizerange,58-60 CM,54-58 CM
+237,238,sizerange,62-64 CM,60-62 CM
+238,239,sizerange,62-64 CM,60-62 CM
+239,240,sizerange,62-64 CM,60-62 CM
+240,241,sizerange,44-46 CM,42-46 CM
+241,242,sizerange,44-46 CM,42-46 CM
+242,243,sizerange,44-46 CM,42-46 CM
+243,244,sizerange,48-50 CM,48-52 CM
+244,245,sizerange,48-50 CM,48-52 CM
+245,246,sizerange,48-50 CM,48-52 CM
+246,247,sizerange,52-54 CM,48-52 CM
+247,248,sizerange,52-54 CM,48-52 CM
+248,249,sizerange,52-54 CM,48-52 CM
+249,250,sizerange,56-58 CM,54-58 CM
+250,251,sizerange,56-58 CM,54-58 CM
+251,252,sizerange,56-58 CM,54-58 CM
+252,253,sizerange,58-60 CM,54-58 CM
+253,254,sizerange,58-60 CM,54-58 CM
+254,255,sizerange,58-60 CM,54-58 CM
+258,259,sizerange,62-64 CM,60-62 CM
+259,260,sizerange,62-64 CM,60-62 CM
+260,261,sizerange,62-64 CM,60-62 CM
+261,262,sizerange,44-46 CM,42-46 CM
+262,263,sizerange,44-46 CM,42-46 CM
+263,264,sizerange,48-50 CM,48-52 CM
+264,265,sizerange,48-50 CM,48-52 CM
+265,266,sizerange,52-54 CM,48-52 CM
+266,267,sizerange,52-54 CM,48-52 CM
+267,268,sizerange,58-60 CM,54-58 CM
+268,269,sizerange,58-60 CM,54-58 CM
+271,272,sizerange,62-64 CM,60-62 CM
+272,273,sizerange,62-64 CM,60-62 CM
+273,274,sizerange,44-46 CM,42-46 CM
+274,275,sizerange,48-50 CM,48-52 CM
+275,276,sizerange,52-54 CM,48-52 CM
+276,277,sizerange,58-60 CM,54-58 CM
+278,279,sizerange,44-46 CM,42-46 CM
+279,280,sizerange,44-46 CM,42-46 CM
+280,281,sizerange,44-46 CM,42-46 CM
+281,282,sizerange,48-50 CM,48-52 CM
+282,283,sizerange,48-50 CM,48-52 CM
+283,284,sizerange,48-50 CM,48-52 CM
+284,285,sizerange,52-54 CM,48-52 CM
+285,286,sizerange,52-54 CM,48-52 CM
+286,287,sizerange,52-54 CM,48-52 CM
+287,288,sizerange,42-44 CM,42-46 CM
+288,289,sizerange,42-44 CM,42-46 CM
+289,290,sizerange,42-44 CM,42-46 CM
+290,291,sizerange,44-46 CM,42-46 CM
+291,292,sizerange,48-50 CM,48-52 CM
+292,293,sizerange,46-48 CM,42-46 CM
+293,294,sizerange,46-48 CM,42-46 CM
+294,295,sizerange,46-48 CM,42-46 CM
+295,296,sizerange,42-44 CM,42-46 CM
+296,297,sizerange,42-44 CM,42-46 CM
+297,298,sizerange,42-44 CM,42-46 CM
+298,299,sizerange,44-46 CM,42-46 CM
+299,300,sizerange,48-50 CM,48-52 CM
+300,301,sizerange,46-48 CM,42-46 CM
+301,302,sizerange,46-48 CM,42-46 CM
+302,303,sizerange,46-48 CM,42-46 CM
+309,310,sizerange,62-64 CM,60-62 CM
+310,311,sizerange,44-46 CM,42-46 CM
+311,312,sizerange,48-50 CM,48-52 CM
+312,313,sizerange,52-54 CM,48-52 CM
+313,314,sizerange,56-58 CM,54-58 CM
+314,315,sizerange,58-60 CM,54-58 CM
+316,317,sizerange,44-46 CM,42-46 CM
+317,318,sizerange,48-50 CM,48-52 CM
+318,319,sizerange,52-54 CM,48-52 CM
+319,320,sizerange,58-60 CM,54-58 CM
+320,321,sizerange,58-60 CM,54-58 CM
+323,324,sizerange,62-64 CM,60-62 CM
+324,325,sizerange,62-64 CM,60-62 CM
+325,326,sizerange,44-46 CM,42-46 CM
+326,327,sizerange,44-46 CM,42-46 CM
+327,328,sizerange,48-50 CM,48-52 CM
+328,329,sizerange,48-50 CM,48-52 CM
+329,330,sizerange,52-54 CM,48-52 CM
+330,331,sizerange,52-54 CM,48-52 CM
+331,332,sizerange,58-60 CM,54-58 CM
+332,333,sizerange,58-60 CM,54-58 CM
+335,336,sizerange,62-64 CM,60-62 CM
+336,337,sizerange,62-64 CM,60-62 CM
+337,338,sizerange,44-46 CM,42-46 CM
+338,339,sizerange,44-46 CM,42-46 CM
+339,340,sizerange,48-50 CM,48-52 CM
+340,341,sizerange,48-50 CM,48-52 CM
+341,342,sizerange,52-54 CM,48-52 CM
+342,343,sizerange,52-54 CM,48-52 CM
+344,345,sizerange,42-44 CM,42-46 CM
+345,346,sizerange,44-46 CM,42-46 CM
+346,347,sizerange,48-50 CM,48-52 CM
+348,349,sizerange,42-44 CM,42-46 CM
+349,350,sizerange,44-46 CM,42-46 CM
+350,351,sizerange,48-50 CM,48-52 CM
+353,354,sizerange,42-44 CM,42-46 CM
+354,355,sizerange,42-44 CM,42-46 CM
+355,356,sizerange,46-48 CM,42-46 CM
+356,357,sizerange,46-48 CM,42-46 CM
+359,360,sizerange,42-44 CM,42-46 CM
+360,361,sizerange,42-44 CM,42-46 CM
+361,362,sizerange,46-48 CM,42-46 CM
+362,363,sizerange,46-48 CM,42-46 CM
+364,365,sizerange,40-42 CM,38-40 CM
+365,366,sizerange,44-46 CM,42-46 CM
+366,367,sizerange,48-50 CM,48-52 CM
+367,368,sizerange,44-46 CM,42-46 CM
+368,369,sizerange,48-50 CM,48-52 CM
+369,370,sizerange,52-54 CM,48-52 CM
+370,371,sizerange,58-60 CM,54-58 CM
+371,372,sizerange,58-60 CM,54-58 CM
+372,373,sizerange,44-46 CM,42-46 CM
+373,374,sizerange,44-46 CM,42-46 CM
+374,375,sizerange,48-50 CM,48-52 CM
+375,376,sizerange,48-50 CM,48-52 CM
+376,377,sizerange,52-54 CM,48-52 CM
+377,378,sizerange,52-54 CM,48-52 CM
+378,379,sizerange,58-60 CM,54-58 CM
+379,380,sizerange,58-60 CM,54-58 CM
+382,383,sizerange,40-42 CM,38-40 CM
+383,384,sizerange,40-42 CM,38-40 CM
+384,385,sizerange,42-44 CM,42-46 CM
+385,386,sizerange,42-44 CM,42-46 CM
+386,387,sizerange,44-46 CM,42-46 CM
+387,388,sizerange,44-46 CM,42-46 CM
+388,389,sizerange,48-50 CM,48-52 CM
+389,390,sizerange,48-50 CM,48-52 CM
+425,426,sizerange,40-42 CM,38-40 CM
+426,427,sizerange,44-46 CM,42-46 CM
+427,428,sizerange,48-50 CM,48-52 CM
+428,429,sizerange,40-42 CM,38-40 CM
+429,430,sizerange,40-42 CM,38-40 CM
+430,431,sizerange,42-44 CM,42-46 CM
+431,432,sizerange,42-44 CM,42-46 CM
+432,433,sizerange,44-46 CM,42-46 CM
+433,434,sizerange,44-46 CM,42-46 CM
+434,435,sizerange,48-50 CM,48-52 CM
+435,436,sizerange,48-50 CM,48-52 CM
+436,437,sizerange,62-64 CM,60-62 CM
+437,438,sizerange,62-64 CM,60-62 CM
+438,439,sizerange,44-46 CM,42-46 CM
+439,440,sizerange,44-46 CM,42-46 CM
+440,441,sizerange,48-50 CM,48-52 CM
+441,442,sizerange,48-50 CM,48-52 CM
+442,443,sizerange,52-54 CM,48-52 CM
+443,444,sizerange,52-54 CM,48-52 CM
+486,487,sizerange,70-72 CM,70
+492,493,sizerange,62-64 CM,60-62 CM
+493,494,sizerange,46-48 CM,42-46 CM
+494,495,sizerange,50-52 CM,48-52 CM
+495,496,sizerange,54-56 CM,54-58 CM
+496,497,sizerange,46-48 CM,42-46 CM
+497,498,sizerange,50-52 CM,48-52 CM
+498,499,sizerange,54-56 CM,54-58 CM
+501,502,sizerange,50-52 CM,48-52 CM
+502,503,sizerange,54-56 CM,54-58 CM
+503,504,sizerange,58-60 CM,54-58 CM
+504,505,sizerange,62-64 CM,60-62 CM
+505,506,sizerange,44-46 CM,42-46 CM
+506,507,sizerange,50-52 CM,48-52 CM
+507,508,sizerange,54-56 CM,54-58 CM
+508,509,sizerange,58-60 CM,54-58 CM
+509,510,sizerange,44-46 CM,42-46 CM
+510,511,sizerange,40-42 CM,38-40 CM
+511,512,sizerange,42-44 CM,42-46 CM
+512,513,sizerange,46-48 CM,42-46 CM
+523,524,sizerange,42-44 CM,42-46 CM
+524,525,sizerange,44-46 CM,42-46 CM
+525,526,sizerange,48-50 CM,48-52 CM
+526,527,sizerange,52-54 CM,48-52 CM
+530,531,sizerange,42-44 CM,42-46 CM
+531,532,sizerange,44-46 CM,42-46 CM
+532,533,sizerange,48-50 CM,48-52 CM
+533,534,sizerange,52-54 CM,48-52 CM
+549,550,sizerange,40-42 CM,38-40 CM
+550,551,sizerange,40-42 CM,38-40 CM
+560,561,sizerange,46-48 CM,42-46 CM
+561,562,sizerange,50-52 CM,48-52 CM
+562,563,sizerange,54-56 CM,54-58 CM
+564,565,sizerange,54-56 CM,54-58 CM
+565,566,sizerange,58-60 CM,54-58 CM
+566,567,sizerange,62-64 CM,60-62 CM
+567,568,sizerange,44-46 CM,42-46 CM
+568,569,sizerange,50-52 CM,48-52 CM
+569,570,sizerange,54-56 CM,54-58 CM
+570,571,sizerange,58-60 CM,54-58 CM
+571,572,sizerange,62-64 CM,60-62 CM
+572,573,sizerange,46-48 CM,42-46 CM
+573,574,sizerange,50-52 CM,48-52 CM
+574,575,sizerange,54-56 CM,54-58 CM
+576,577,sizerange,46-48 CM,42-46 CM
+577,578,sizerange,50-52 CM,48-52 CM
+578,579,sizerange,54-56 CM,54-58 CM
+579,580,sizerange,40-42 CM,38-40 CM
+580,581,sizerange,42-44 CM,42-46 CM
+581,582,sizerange,44-46 CM,42-46 CM
+582,583,sizerange,48-50 CM,48-52 CM
+583,584,sizerange,58-60 CM,54-58 CM
+584,585,sizerange,44-46 CM,42-46 CM
+585,586,sizerange,50-52 CM,48-52 CM
+587,588,sizerange,40-42 CM,38-40 CM
+588,589,sizerange,42-44 CM,42-46 CM
+589,590,sizerange,46-48 CM,42-46 CM
+590,591,sizerange,40-42 CM,38-40 CM
+591,592,sizerange,42-44 CM,42-46 CM
+592,593,sizerange,44-46 CM,42-46 CM
+593,594,sizerange,48-50 CM,48-52 CM
+594,595,sizerange,52-54 CM,48-52 CM
+595,596,sizerange,40-42 CM,38-40 CM
+596,597,sizerange,42-44 CM,42-46 CM
+597,598,sizerange,44-46 CM,42-46 CM
+598,599,sizerange,48-50 CM,48-52 CM
+599,600,sizerange,52-54 CM,48-52 CM
+603,604,sizerange,44-46 CM,42-46 CM
+604,605,sizerange,48-50 CM,48-52 CM
+605,606,sizerange,52-54 CM,48-52 CM
+0,1,standardcost,0.0,nan
+1,2,standardcost,0.0,nan
+2,3,standardcost,0.0,nan
+3,4,standardcost,0.0,nan
+4,5,standardcost,0.0,nan
+5,6,standardcost,0.0,nan
+6,7,standardcost,0.0,nan
+7,8,standardcost,0.0,nan
+8,9,standardcost,0.0,nan
+9,10,standardcost,0.0,nan
+10,11,standardcost,0.0,nan
+11,12,standardcost,0.0,nan
+12,13,standardcost,0.0,nan
+13,14,standardcost,0.0,nan
+14,15,standardcost,0.0,nan
+15,16,standardcost,0.0,nan
+16,17,standardcost,0.0,nan
+17,18,standardcost,0.0,nan
+18,19,standardcost,0.0,nan
+19,20,standardcost,0.0,nan
+20,21,standardcost,0.0,nan
+21,22,standardcost,0.0,nan
+22,23,standardcost,0.0,nan
+23,24,standardcost,0.0,nan
+24,25,standardcost,0.0,nan
+25,26,standardcost,0.0,nan
+26,27,standardcost,0.0,nan
+27,28,standardcost,0.0,nan
+28,29,standardcost,0.0,nan
+29,30,standardcost,0.0,nan
+30,31,standardcost,0.0,nan
+31,32,standardcost,0.0,nan
+32,33,standardcost,0.0,nan
+33,34,standardcost,0.0,nan
+34,35,standardcost,0.0,nan
+35,36,standardcost,0.0,nan
+36,37,standardcost,0.0,nan
+37,38,standardcost,0.0,nan
+38,39,standardcost,0.0,nan
+39,40,standardcost,0.0,nan
+40,41,standardcost,0.0,nan
+41,42,standardcost,0.0,nan
+42,43,standardcost,0.0,nan
+43,44,standardcost,0.0,nan
+44,45,standardcost,0.0,nan
+45,46,standardcost,0.0,nan
+46,47,standardcost,0.0,nan
+47,48,standardcost,0.0,nan
+48,49,standardcost,0.0,nan
+49,50,standardcost,0.0,nan
+50,51,standardcost,0.0,nan
+51,52,standardcost,0.0,nan
+52,53,standardcost,0.0,nan
+53,54,standardcost,0.0,nan
+54,55,standardcost,0.0,nan
+55,56,standardcost,0.0,nan
+56,57,standardcost,0.0,nan
+57,58,standardcost,0.0,nan
+58,59,standardcost,0.0,nan
+59,60,standardcost,0.0,nan
+60,61,standardcost,0.0,nan
+61,62,standardcost,0.0,nan
+62,63,standardcost,0.0,nan
+63,64,standardcost,0.0,nan
+64,65,standardcost,0.0,nan
+65,66,standardcost,0.0,nan
+66,67,standardcost,0.0,nan
+67,68,standardcost,0.0,nan
+68,69,standardcost,0.0,nan
+69,70,standardcost,0.0,nan
+70,71,standardcost,0.0,nan
+71,72,standardcost,0.0,nan
+72,73,standardcost,0.0,nan
+73,74,standardcost,0.0,nan
+74,75,standardcost,0.0,nan
+75,76,standardcost,0.0,nan
+76,77,standardcost,0.0,nan
+77,78,standardcost,0.0,nan
+78,79,standardcost,0.0,nan
+79,80,standardcost,0.0,nan
+80,81,standardcost,0.0,nan
+81,82,standardcost,0.0,nan
+82,83,standardcost,0.0,nan
+83,84,standardcost,0.0,nan
+84,85,standardcost,0.0,nan
+85,86,standardcost,0.0,nan
+86,87,standardcost,0.0,nan
+87,88,standardcost,0.0,nan
+88,89,standardcost,0.0,nan
+89,90,standardcost,0.0,nan
+90,91,standardcost,0.0,nan
+91,92,standardcost,0.0,nan
+92,93,standardcost,0.0,nan
+93,94,standardcost,0.0,nan
+94,95,standardcost,0.0,nan
+95,96,standardcost,0.0,nan
+96,97,standardcost,0.0,nan
+97,98,standardcost,0.0,nan
+98,99,standardcost,0.0,nan
+99,100,standardcost,0.0,nan
+100,101,standardcost,0.0,nan
+101,102,standardcost,0.0,nan
+102,103,standardcost,0.0,nan
+103,104,standardcost,0.0,nan
+104,105,standardcost,0.0,nan
+105,106,standardcost,0.0,nan
+106,107,standardcost,0.0,nan
+107,108,standardcost,0.0,nan
+108,109,standardcost,0.0,nan
+109,110,standardcost,0.0,nan
+110,111,standardcost,0.0,nan
+111,112,standardcost,0.0,nan
+112,113,standardcost,0.0,nan
+113,114,standardcost,0.0,nan
+114,115,standardcost,0.0,nan
+115,116,standardcost,0.0,nan
+116,117,standardcost,0.0,nan
+117,118,standardcost,0.0,nan
+118,119,standardcost,0.0,nan
+119,120,standardcost,0.0,nan
+120,121,standardcost,0.0,nan
+121,122,standardcost,0.0,nan
+122,123,standardcost,0.0,nan
+123,124,standardcost,0.0,nan
+124,125,standardcost,0.0,nan
+125,126,standardcost,0.0,nan
+126,127,standardcost,0.0,nan
+127,128,standardcost,0.0,nan
+128,129,standardcost,0.0,nan
+129,130,standardcost,0.0,nan
+130,131,standardcost,0.0,nan
+131,132,standardcost,0.0,nan
+132,133,standardcost,0.0,nan
+133,134,standardcost,0.0,nan
+134,135,standardcost,0.0,nan
+135,136,standardcost,0.0,nan
+136,137,standardcost,0.0,nan
+137,138,standardcost,0.0,nan
+138,139,standardcost,0.0,nan
+139,140,standardcost,0.0,nan
+140,141,standardcost,0.0,nan
+141,142,standardcost,0.0,nan
+142,143,standardcost,0.0,nan
+143,144,standardcost,0.0,nan
+144,145,standardcost,0.0,nan
+145,146,standardcost,0.0,nan
+146,147,standardcost,0.0,nan
+147,148,standardcost,0.0,nan
+148,149,standardcost,0.0,nan
+149,150,standardcost,0.0,nan
+150,151,standardcost,0.0,nan
+151,152,standardcost,0.0,nan
+152,153,standardcost,0.0,nan
+153,154,standardcost,0.0,nan
+154,155,standardcost,0.0,nan
+155,156,standardcost,0.0,nan
+156,157,standardcost,0.0,nan
+157,158,standardcost,0.0,nan
+158,159,standardcost,0.0,nan
+159,160,standardcost,0.0,nan
+160,161,standardcost,0.0,nan
+161,162,standardcost,0.0,nan
+162,163,standardcost,0.0,nan
+163,164,standardcost,0.0,nan
+164,165,standardcost,0.0,nan
+165,166,standardcost,0.0,nan
+166,167,standardcost,0.0,nan
+167,168,standardcost,0.0,nan
+168,169,standardcost,0.0,nan
+169,170,standardcost,0.0,nan
+170,171,standardcost,0.0,nan
+171,172,standardcost,0.0,nan
+172,173,standardcost,0.0,nan
+173,174,standardcost,0.0,nan
+174,175,standardcost,0.0,nan
+175,176,standardcost,0.0,nan
+176,177,standardcost,0.0,nan
+177,178,standardcost,0.0,nan
+178,179,standardcost,0.0,nan
+179,180,standardcost,0.0,nan
+180,181,standardcost,0.0,nan
+181,182,standardcost,0.0,nan
+182,183,standardcost,0.0,nan
+183,184,standardcost,0.0,nan
+184,185,standardcost,0.0,nan
+185,186,standardcost,0.0,nan
+186,187,standardcost,98.77,nan
+187,188,standardcost,108.99,nan
+188,189,standardcost,145.87,nan
+189,190,standardcost,98.77,nan
+190,191,standardcost,108.99,nan
+191,192,standardcost,145.87,nan
+192,193,standardcost,98.77,nan
+193,194,standardcost,108.99,nan
+194,195,standardcost,145.87,nan
+195,196,standardcost,0.0,nan
+196,197,standardcost,0.0,nan
+197,198,standardcost,0.0,nan
+198,199,standardcost,0.0,nan
+199,200,standardcost,0.0,nan
+200,201,standardcost,0.0,nan
+201,202,standardcost,0.0,nan
+202,203,standardcost,0.0,nan
+203,204,standardcost,0.0,nan
+204,205,standardcost,0.0,nan
+205,206,standardcost,0.0,nan
+206,207,standardcost,0.0,nan
+207,208,standardcost,0.0,nan
+208,209,standardcost,0.0,nan
+209,210,standardcost,1059.31,nan
+210,211,standardcost,1059.31,nan
+211,212,standardcost,13.0863,12.0278
+212,213,standardcost,13.0863,13.8782
+214,215,standardcost,13.0863,12.0278
+215,216,standardcost,13.0863,13.8782
+219,220,standardcost,13.0863,12.0278
+220,221,standardcost,13.0863,13.8782
+222,223,standardcost,6.9223,5.7052
+223,224,standardcost,6.9223,5.2297
+225,226,standardcost,38.4923,31.7244
+226,227,standardcost,38.4923,29.0807
+228,229,standardcost,38.4923,31.7244
+229,230,standardcost,38.4923,29.0807
+231,232,standardcost,38.4923,31.7244
+232,233,standardcost,38.4923,29.0807
+234,235,standardcost,38.4923,31.7244
+235,236,standardcost,38.4923,29.0807
+237,238,standardcost,868.6342,747.9682
+238,239,standardcost,868.6342,722.2568
+240,241,standardcost,868.6342,747.9682
+241,242,standardcost,868.6342,722.2568
+243,244,standardcost,868.6342,747.9682
+244,245,standardcost,868.6342,722.2568
+246,247,standardcost,868.6342,747.9682
+247,248,standardcost,868.6342,722.2568
+249,250,standardcost,868.6342,747.9682
+250,251,standardcost,868.6342,722.2568
+252,253,standardcost,204.6251,176.1997
+253,254,standardcost,204.6251,170.1428
+255,256,standardcost,204.6251,176.1997
+256,257,standardcost,204.6251,170.1428
+258,259,standardcost,204.6251,176.1997
+259,260,standardcost,204.6251,170.1428
+261,262,standardcost,187.1571,181.4857
+263,264,standardcost,187.1571,181.4857
+265,266,standardcost,187.1571,181.4857
+267,268,standardcost,187.1571,181.4857
+269,270,standardcost,187.1571,181.4857
+271,272,standardcost,187.1571,181.4857
+278,279,standardcost,204.6251,176.1997
+279,280,standardcost,204.6251,170.1428
+281,282,standardcost,204.6251,176.1997
+282,283,standardcost,204.6251,170.1428
+284,285,standardcost,204.6251,176.1997
+285,286,standardcost,204.6251,170.1428
+287,288,standardcost,747.2002,623.8403
+288,289,standardcost,747.2002,660.9142
+292,293,standardcost,747.2002,623.8403
+293,294,standardcost,747.2002,660.9142
+295,296,standardcost,739.041,617.0281
+296,297,standardcost,739.041,653.6971
+300,301,standardcost,739.041,617.0281
+301,302,standardcost,739.041,653.6971
+303,304,standardcost,739.041,617.0281
+304,305,standardcost,739.041,653.6971
+306,307,standardcost,747.2002,623.8403
+307,308,standardcost,747.2002,660.9142
+319,320,standardcost,486.7066,413.1463
+321,322,standardcost,486.7066,413.1463
+323,324,standardcost,486.7066,413.1463
+325,326,standardcost,486.7066,413.1463
+327,328,standardcost,486.7066,413.1463
+329,330,standardcost,486.7066,413.1463
+331,332,standardcost,486.7066,413.1463
+333,334,standardcost,486.7066,413.1463
+335,336,standardcost,486.7066,413.1463
+337,338,standardcost,486.7066,413.1463
+339,340,standardcost,486.7066,413.1463
+341,342,standardcost,486.7066,413.1463
+351,352,standardcost,1265.6195,1117.8559
+353,354,standardcost,1265.6195,1117.8559
+355,356,standardcost,1265.6195,1117.8559
+357,358,standardcost,1251.9813,1105.81
+359,360,standardcost,1251.9813,1105.81
+361,362,standardcost,1251.9813,1105.81
+370,371,standardcost,1554.9479,1320.6838
+372,373,standardcost,1554.9479,1320.6838
+374,375,standardcost,1554.9479,1320.6838
+376,377,standardcost,1554.9479,1320.6838
+378,379,standardcost,1554.9479,1320.6838
+380,381,standardcost,713.0798,605.6492
+382,383,standardcost,713.0798,605.6492
+384,385,standardcost,713.0798,605.6492
+386,387,standardcost,713.0798,605.6492
+388,389,standardcost,713.0798,605.6492
+396,397,standardcost,19.7758,17.978
+398,399,standardcost,27.4925,24.9932
+400,401,standardcost,53.3999,48.5453
+402,403,standardcost,19.7758,17.978
+404,405,standardcost,27.4925,24.9932
+406,407,standardcost,53.3999,48.5453
+416,417,standardcost,360.9428,300.1188
+428,429,standardcost,360.9428,300.1188
+430,431,standardcost,360.9428,300.1188
+432,433,standardcost,360.9428,300.1188
+434,435,standardcost,360.9428,300.1188
+436,437,standardcost,868.6342,722.2568
+438,439,standardcost,868.6342,722.2568
+440,441,standardcost,868.6342,722.2568
+442,443,standardcost,868.6342,722.2568
+461,462,standardcost,9.1593,9.7136
+463,464,standardcost,9.1593,9.7136
+465,466,standardcost,9.1593,9.7136
+0,1,startdate,NaT,2003-07-01 00:00:00
+1,2,startdate,NaT,2003-07-01 00:00:00
+2,3,startdate,NaT,2003-07-01 00:00:00
+3,4,startdate,NaT,2003-07-01 00:00:00
+4,5,startdate,NaT,2003-07-01 00:00:00
+5,6,startdate,NaT,2003-07-01 00:00:00
+6,7,startdate,NaT,2003-07-01 00:00:00
+7,8,startdate,NaT,2003-07-01 00:00:00
+8,9,startdate,NaT,2003-07-01 00:00:00
+9,10,startdate,NaT,2003-07-01 00:00:00
+10,11,startdate,NaT,2003-07-01 00:00:00
+11,12,startdate,NaT,2003-07-01 00:00:00
+12,13,startdate,NaT,2003-07-01 00:00:00
+13,14,startdate,NaT,2003-07-01 00:00:00
+14,15,startdate,NaT,2003-07-01 00:00:00
+15,16,startdate,NaT,2003-07-01 00:00:00
+16,17,startdate,NaT,2003-07-01 00:00:00
+17,18,startdate,NaT,2003-07-01 00:00:00
+18,19,startdate,NaT,2003-07-01 00:00:00
+19,20,startdate,NaT,2003-07-01 00:00:00
+20,21,startdate,NaT,2003-07-01 00:00:00
+21,22,startdate,NaT,2003-07-01 00:00:00
+22,23,startdate,NaT,2003-07-01 00:00:00
+23,24,startdate,NaT,2003-07-01 00:00:00
+24,25,startdate,NaT,2003-07-01 00:00:00
+25,26,startdate,NaT,2003-07-01 00:00:00
+26,27,startdate,NaT,2003-07-01 00:00:00
+27,28,startdate,NaT,2003-07-01 00:00:00
+28,29,startdate,NaT,2003-07-01 00:00:00
+29,30,startdate,NaT,2003-07-01 00:00:00
+30,31,startdate,NaT,2003-07-01 00:00:00
+31,32,startdate,NaT,2003-07-01 00:00:00
+32,33,startdate,NaT,2003-07-01 00:00:00
+33,34,startdate,NaT,2003-07-01 00:00:00
+34,35,startdate,NaT,2003-07-01 00:00:00
+35,36,startdate,NaT,2003-07-01 00:00:00
+36,37,startdate,NaT,2003-07-01 00:00:00
+37,38,startdate,NaT,2003-07-01 00:00:00
+38,39,startdate,NaT,2003-07-01 00:00:00
+39,40,startdate,NaT,2003-07-01 00:00:00
+40,41,startdate,NaT,2003-07-01 00:00:00
+41,42,startdate,NaT,2003-07-01 00:00:00
+42,43,startdate,NaT,2003-07-01 00:00:00
+43,44,startdate,NaT,2003-07-01 00:00:00
+44,45,startdate,NaT,2003-07-01 00:00:00
+45,46,startdate,NaT,2003-07-01 00:00:00
+46,47,startdate,NaT,2003-07-01 00:00:00
+47,48,startdate,NaT,2003-07-01 00:00:00
+48,49,startdate,NaT,2003-07-01 00:00:00
+49,50,startdate,NaT,2003-07-01 00:00:00
+50,51,startdate,NaT,2003-07-01 00:00:00
+51,52,startdate,NaT,2003-07-01 00:00:00
+52,53,startdate,NaT,2003-07-01 00:00:00
+53,54,startdate,NaT,2003-07-01 00:00:00
+54,55,startdate,NaT,2003-07-01 00:00:00
+55,56,startdate,NaT,2003-07-01 00:00:00
+56,57,startdate,NaT,2003-07-01 00:00:00
+57,58,startdate,NaT,2003-07-01 00:00:00
+58,59,startdate,NaT,2003-07-01 00:00:00
+59,60,startdate,NaT,2003-07-01 00:00:00
+60,61,startdate,NaT,2003-07-01 00:00:00
+61,62,startdate,NaT,2003-07-01 00:00:00
+62,63,startdate,NaT,2003-07-01 00:00:00
+63,64,startdate,NaT,2003-07-01 00:00:00
+64,65,startdate,NaT,2003-07-01 00:00:00
+65,66,startdate,NaT,2003-07-01 00:00:00
+66,67,startdate,NaT,2003-07-01 00:00:00
+67,68,startdate,NaT,2003-07-01 00:00:00
+68,69,startdate,NaT,2003-07-01 00:00:00
+69,70,startdate,NaT,2003-07-01 00:00:00
+70,71,startdate,NaT,2003-07-01 00:00:00
+71,72,startdate,NaT,2003-07-01 00:00:00
+72,73,startdate,NaT,2003-07-01 00:00:00
+73,74,startdate,NaT,2003-07-01 00:00:00
+74,75,startdate,NaT,2003-07-01 00:00:00
+75,76,startdate,NaT,2003-07-01 00:00:00
+76,77,startdate,NaT,2003-07-01 00:00:00
+77,78,startdate,NaT,2003-07-01 00:00:00
+78,79,startdate,NaT,2003-07-01 00:00:00
+79,80,startdate,NaT,2003-07-01 00:00:00
+80,81,startdate,NaT,2003-07-01 00:00:00
+81,82,startdate,NaT,2003-07-01 00:00:00
+82,83,startdate,NaT,2003-07-01 00:00:00
+83,84,startdate,NaT,2003-07-01 00:00:00
+84,85,startdate,NaT,2003-07-01 00:00:00
+85,86,startdate,NaT,2003-07-01 00:00:00
+86,87,startdate,NaT,2003-07-01 00:00:00
+87,88,startdate,NaT,2003-07-01 00:00:00
+88,89,startdate,NaT,2003-07-01 00:00:00
+89,90,startdate,NaT,2003-07-01 00:00:00
+90,91,startdate,NaT,2003-07-01 00:00:00
+91,92,startdate,NaT,2003-07-01 00:00:00
+92,93,startdate,NaT,2003-07-01 00:00:00
+93,94,startdate,NaT,2003-07-01 00:00:00
+94,95,startdate,NaT,2003-07-01 00:00:00
+95,96,startdate,NaT,2003-07-01 00:00:00
+96,97,startdate,NaT,2003-07-01 00:00:00
+97,98,startdate,NaT,2003-07-01 00:00:00
+98,99,startdate,NaT,2003-07-01 00:00:00
+99,100,startdate,NaT,2003-07-01 00:00:00
+100,101,startdate,NaT,2003-07-01 00:00:00
+101,102,startdate,NaT,2003-07-01 00:00:00
+102,103,startdate,NaT,2003-07-01 00:00:00
+103,104,startdate,NaT,2003-07-01 00:00:00
+104,105,startdate,NaT,2003-07-01 00:00:00
+105,106,startdate,NaT,2003-07-01 00:00:00
+106,107,startdate,NaT,2003-07-01 00:00:00
+107,108,startdate,NaT,2003-07-01 00:00:00
+108,109,startdate,NaT,2003-07-01 00:00:00
+109,110,startdate,NaT,2003-07-01 00:00:00
+110,111,startdate,NaT,2003-07-01 00:00:00
+111,112,startdate,NaT,2003-07-01 00:00:00
+112,113,startdate,NaT,2003-07-01 00:00:00
+113,114,startdate,NaT,2003-07-01 00:00:00
+114,115,startdate,NaT,2003-07-01 00:00:00
+115,116,startdate,NaT,2003-07-01 00:00:00
+116,117,startdate,NaT,2003-07-01 00:00:00
+117,118,startdate,NaT,2003-07-01 00:00:00
+118,119,startdate,NaT,2003-07-01 00:00:00
+119,120,startdate,NaT,2003-07-01 00:00:00
+120,121,startdate,NaT,2003-07-01 00:00:00
+121,122,startdate,NaT,2003-07-01 00:00:00
+122,123,startdate,NaT,2003-07-01 00:00:00
+123,124,startdate,NaT,2003-07-01 00:00:00
+124,125,startdate,NaT,2003-07-01 00:00:00
+125,126,startdate,NaT,2003-07-01 00:00:00
+126,127,startdate,NaT,2003-07-01 00:00:00
+127,128,startdate,NaT,2003-07-01 00:00:00
+128,129,startdate,NaT,2003-07-01 00:00:00
+129,130,startdate,NaT,2003-07-01 00:00:00
+130,131,startdate,NaT,2003-07-01 00:00:00
+131,132,startdate,NaT,2003-07-01 00:00:00
+132,133,startdate,NaT,2003-07-01 00:00:00
+133,134,startdate,NaT,2003-07-01 00:00:00
+134,135,startdate,NaT,2003-07-01 00:00:00
+135,136,startdate,NaT,2003-07-01 00:00:00
+136,137,startdate,NaT,2003-07-01 00:00:00
+137,138,startdate,NaT,2003-07-01 00:00:00
+138,139,startdate,NaT,2003-07-01 00:00:00
+139,140,startdate,NaT,2003-07-01 00:00:00
+140,141,startdate,NaT,2003-07-01 00:00:00
+141,142,startdate,NaT,2003-07-01 00:00:00
+142,143,startdate,NaT,2003-07-01 00:00:00
+143,144,startdate,NaT,2003-07-01 00:00:00
+144,145,startdate,NaT,2003-07-01 00:00:00
+145,146,startdate,NaT,2003-07-01 00:00:00
+146,147,startdate,NaT,2003-07-01 00:00:00
+147,148,startdate,NaT,2003-07-01 00:00:00
+148,149,startdate,NaT,2003-07-01 00:00:00
+149,150,startdate,NaT,2003-07-01 00:00:00
+150,151,startdate,NaT,2003-07-01 00:00:00
+151,152,startdate,NaT,2003-07-01 00:00:00
+152,153,startdate,NaT,2003-07-01 00:00:00
+153,154,startdate,NaT,2003-07-01 00:00:00
+154,155,startdate,NaT,2003-07-01 00:00:00
+155,156,startdate,NaT,2003-07-01 00:00:00
+156,157,startdate,NaT,2003-07-01 00:00:00
+157,158,startdate,NaT,2003-07-01 00:00:00
+158,159,startdate,NaT,2003-07-01 00:00:00
+159,160,startdate,NaT,2003-07-01 00:00:00
+160,161,startdate,NaT,2003-07-01 00:00:00
+161,162,startdate,NaT,2003-07-01 00:00:00
+162,163,startdate,NaT,2003-07-01 00:00:00
+163,164,startdate,NaT,2003-07-01 00:00:00
+164,165,startdate,NaT,2003-07-01 00:00:00
+165,166,startdate,NaT,2003-07-01 00:00:00
+166,167,startdate,NaT,2003-07-01 00:00:00
+167,168,startdate,NaT,2003-07-01 00:00:00
+168,169,startdate,NaT,2003-07-01 00:00:00
+169,170,startdate,NaT,2003-07-01 00:00:00
+170,171,startdate,NaT,2003-07-01 00:00:00
+171,172,startdate,NaT,2003-07-01 00:00:00
+172,173,startdate,NaT,2003-07-01 00:00:00
+173,174,startdate,NaT,2003-07-01 00:00:00
+174,175,startdate,NaT,2003-07-01 00:00:00
+175,176,startdate,NaT,2003-07-01 00:00:00
+176,177,startdate,NaT,2003-07-01 00:00:00
+177,178,startdate,NaT,2003-07-01 00:00:00
+178,179,startdate,NaT,2003-07-01 00:00:00
+179,180,startdate,NaT,2003-07-01 00:00:00
+180,181,startdate,NaT,2003-07-01 00:00:00
+181,182,startdate,NaT,2003-07-01 00:00:00
+182,183,startdate,NaT,2003-07-01 00:00:00
+183,184,startdate,NaT,2003-07-01 00:00:00
+184,185,startdate,NaT,2003-07-01 00:00:00
+185,186,startdate,NaT,2003-07-01 00:00:00
+186,187,startdate,NaT,2003-07-01 00:00:00
+187,188,startdate,NaT,2003-07-01 00:00:00
+188,189,startdate,NaT,2003-07-01 00:00:00
+189,190,startdate,NaT,2003-07-01 00:00:00
+190,191,startdate,NaT,2003-07-01 00:00:00
+191,192,startdate,NaT,2003-07-01 00:00:00
+192,193,startdate,NaT,2003-07-01 00:00:00
+193,194,startdate,NaT,2003-07-01 00:00:00
+194,195,startdate,NaT,2003-07-01 00:00:00
+195,196,startdate,NaT,2003-07-01 00:00:00
+196,197,startdate,NaT,2003-07-01 00:00:00
+197,198,startdate,NaT,2003-07-01 00:00:00
+198,199,startdate,NaT,2003-07-01 00:00:00
+199,200,startdate,NaT,2003-07-01 00:00:00
+200,201,startdate,NaT,2003-07-01 00:00:00
+201,202,startdate,NaT,2003-07-01 00:00:00
+202,203,startdate,NaT,2003-07-01 00:00:00
+203,204,startdate,NaT,2003-07-01 00:00:00
+204,205,startdate,NaT,2003-07-01 00:00:00
+205,206,startdate,NaT,2003-07-01 00:00:00
+206,207,startdate,NaT,2003-07-01 00:00:00
+207,208,startdate,NaT,2003-07-01 00:00:00
+208,209,startdate,NaT,2003-07-01 00:00:00
+209,210,startdate,NaT,2003-07-01 00:00:00
+210,211,startdate,NaT,2003-07-01 00:00:00
+211,212,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+212,213,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+213,214,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+214,215,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+215,216,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+216,217,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+217,218,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+218,219,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+219,220,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+220,221,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+221,222,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+222,223,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+223,224,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+224,225,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+225,226,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+226,227,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+227,228,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+228,229,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+229,230,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+230,231,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+231,232,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+232,233,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+233,234,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+234,235,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+235,236,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+236,237,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+237,238,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+238,239,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+239,240,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+240,241,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+241,242,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+242,243,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+243,244,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+244,245,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+245,246,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+246,247,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+247,248,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+248,249,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+249,250,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+250,251,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+251,252,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+252,253,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+253,254,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+254,255,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+255,256,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+256,257,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+257,258,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+258,259,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+259,260,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+260,261,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+261,262,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+262,263,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+263,264,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+264,265,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+265,266,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+266,267,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+267,268,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+268,269,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+269,270,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+270,271,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+271,272,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+272,273,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+273,274,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+274,275,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+275,276,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+276,277,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+277,278,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+278,279,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+279,280,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+280,281,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+281,282,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+282,283,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+283,284,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+284,285,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+285,286,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+286,287,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+287,288,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+288,289,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+289,290,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+290,291,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+291,292,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+292,293,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+293,294,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+294,295,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+295,296,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+296,297,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+297,298,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+298,299,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+299,300,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+300,301,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+301,302,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+302,303,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+303,304,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+304,305,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+305,306,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+306,307,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+307,308,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+308,309,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+309,310,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+310,311,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+311,312,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+312,313,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+313,314,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+314,315,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+315,316,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+316,317,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+317,318,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+318,319,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+319,320,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+320,321,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+321,322,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+322,323,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+323,324,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+324,325,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+325,326,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+326,327,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+327,328,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+328,329,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+329,330,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+330,331,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+331,332,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+332,333,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+333,334,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+334,335,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+335,336,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+336,337,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+337,338,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+338,339,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+339,340,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+340,341,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+341,342,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+342,343,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+343,344,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+344,345,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+345,346,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+346,347,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+347,348,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+348,349,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+349,350,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+350,351,startdate,2011-05-31 00:00:00+00:00,2011-07-01 00:00:00
+351,352,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+352,353,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+353,354,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+354,355,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+355,356,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+356,357,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+357,358,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+358,359,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+359,360,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+360,361,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+361,362,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+362,363,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+363,364,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+364,365,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+365,366,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+366,367,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+367,368,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+368,369,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+369,370,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+370,371,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+371,372,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+372,373,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+373,374,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+374,375,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+375,376,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+376,377,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+377,378,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+378,379,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+379,380,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+380,381,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+381,382,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+382,383,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+383,384,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+384,385,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+385,386,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+386,387,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+387,388,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+388,389,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+389,390,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+390,391,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+391,392,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+392,393,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+393,394,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+394,395,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+395,396,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+396,397,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+397,398,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+398,399,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+399,400,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+400,401,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+401,402,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+402,403,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+403,404,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+404,405,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+405,406,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+406,407,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+407,408,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+408,409,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+409,410,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+410,411,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+411,412,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+412,413,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+413,414,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+414,415,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+415,416,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+416,417,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+417,418,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+418,419,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+419,420,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+420,421,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+421,422,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+422,423,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+423,424,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+424,425,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+425,426,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+426,427,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+427,428,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+428,429,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+429,430,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+430,431,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+431,432,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+432,433,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+433,434,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+434,435,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+435,436,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+436,437,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+437,438,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+438,439,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+439,440,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+440,441,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+441,442,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+442,443,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+443,444,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+444,445,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+445,446,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+446,447,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+447,448,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+448,449,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+449,450,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+450,451,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+451,452,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+452,453,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+453,454,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+454,455,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+455,456,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+456,457,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+457,458,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+458,459,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+459,460,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+460,461,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+461,462,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+462,463,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+463,464,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+464,465,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+465,466,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+466,467,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+467,468,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+468,469,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+469,470,startdate,2012-05-30 00:00:00+00:00,2012-07-01 00:00:00
+470,471,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+471,472,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+472,473,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+473,474,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+474,475,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+475,476,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+476,477,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+477,478,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+478,479,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+479,480,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+480,481,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+481,482,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+482,483,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+483,484,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+484,485,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+485,486,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+486,487,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+487,488,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+488,489,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+489,490,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+490,491,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+491,492,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+492,493,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+493,494,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+494,495,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+495,496,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+496,497,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+497,498,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+498,499,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+499,500,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+500,501,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+501,502,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+502,503,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+503,504,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+504,505,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+505,506,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+506,507,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+507,508,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+508,509,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+509,510,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+510,511,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+511,512,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+512,513,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+513,514,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+514,515,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+515,516,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+516,517,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+517,518,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+518,519,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+519,520,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+520,521,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+521,522,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+522,523,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+523,524,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+524,525,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+525,526,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+526,527,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+527,528,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+528,529,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+529,530,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+530,531,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+531,532,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+532,533,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+533,534,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+534,535,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+535,536,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+536,537,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+537,538,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+538,539,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+539,540,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+540,541,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+541,542,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+542,543,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+543,544,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+544,545,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+545,546,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+546,547,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+547,548,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+548,549,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+549,550,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+550,551,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+551,552,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+552,553,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+553,554,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+554,555,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+555,556,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+556,557,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+557,558,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+558,559,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+559,560,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+560,561,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+561,562,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+562,563,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+563,564,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+564,565,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+565,566,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+566,567,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+567,568,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+568,569,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+569,570,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+570,571,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+571,572,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+572,573,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+573,574,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+574,575,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+575,576,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+576,577,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+577,578,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+578,579,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+579,580,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+580,581,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+581,582,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+582,583,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+583,584,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+584,585,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+585,586,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+586,587,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+587,588,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+588,589,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+589,590,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+590,591,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+591,592,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+592,593,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+593,594,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+594,595,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+595,596,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+596,597,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+597,598,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+598,599,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+599,600,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+600,601,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+601,602,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+602,603,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+603,604,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+604,605,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
+605,606,startdate,2013-05-30 00:00:00+00:00,2013-07-01 00:00:00
