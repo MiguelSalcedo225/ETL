@@ -95,14 +95,22 @@ def transform_fecha() -> DataFrame:
     dimdate["daynumberofweek"] = dimdate["fulldatealternatekey"].dt.weekday + 2
     dimdate["daynumberofweek"] = dimdate["daynumberofweek"].where(dimdate["daynumberofweek"] <= 7, 1)
     dimdate["daynumberofmonth"] = dimdate["fulldatealternatekey"].dt.day
-    dimdate["daynumberofyear"] = dimdate["fulldatealternatekey"].dt.day_of_year
-    dimdate["weeknumberofyear"] = dimdate["fulldatealternatekey"].dt.strftime("%U").astype(int) + 1
+    dimdate["daynumberofyear"] = dimdate["fulldatealternatekey"].dt.dayofyear
+    week_u = dimdate["fulldatealternatekey"].dt.strftime("%U").astype(int)
+    
+    year = dimdate["fulldatealternatekey"].dt.year
+    first_day_of_year = pd.to_datetime(year.astype(str) + '-01-01')
+    year_starts_on_sunday = first_day_of_year.dt.dayofweek == 6 
+    adjustment = ((week_u > 0) & (~year_starts_on_sunday)).astype(int)
+    dimdate["weeknumberofyear"] = week_u + (week_u == 0).astype(int) + adjustment
+    
     dimdate["monthnumberofyear"] = dimdate["fulldatealternatekey"].dt.month
     dimdate["calendarquarter"] = dimdate["fulldatealternatekey"].dt.quarter
     dimdate["calendaryear"] = dimdate["fulldatealternatekey"].dt.year
     dimdate["calendarsemester"] = (dimdate["monthnumberofyear"] > 6).astype(int) + 1
-    dimdate["fiscalyear"] = dimdate["fulldatealternatekey"].apply(lambda x: x.year if x.month >= 7 else x.year)
     dimdate["fiscalquarter"] = ((dimdate["fulldatealternatekey"].dt.month - 7) % 12 // 3 + 1)
+    fiscalyear_base = dimdate["calendaryear"] + (dimdate["monthnumberofyear"] >= 7).astype(int)
+    dimdate["fiscalyear"] = fiscalyear_base - (dimdate["calendaryear"] >= 2011).astype(int)
     dimdate["fiscalsemester"] = (dimdate["fiscalquarter"] > 2).astype(int) + 1
     dimdate["englishdaynameofweek"] = dimdate["fulldatealternatekey"].dt.day_name()
     dimdate["englishmonthname"] = dimdate["fulldatealternatekey"].dt.month_name()
@@ -120,6 +128,7 @@ def transform_fecha() -> DataFrame:
     dimdate["frenchdaynameofweek"] = dimdate["englishdaynameofweek"].map(dias_fr)
     dimdate["spanishmonthname"] = dimdate["englishmonthname"].map(meses_es)
     dimdate["frenchmonthname"] = dimdate["englishmonthname"].map(meses_fr)
+    dimdate["fulldatealternatekey"] = dimdate["fulldatealternatekey"].dt.date
     dimdate = dimdate[[
         "datekey", "fulldatealternatekey", "daynumberofweek",
         "englishdaynameofweek", "spanishdaynameofweek", "frenchdaynameofweek",
