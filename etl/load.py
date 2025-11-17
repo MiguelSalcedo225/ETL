@@ -44,6 +44,9 @@ def load_data_fact_internet_sales(fact_internet_sales: DataFrame, etl_conn: Engi
     
 def load_data_fact_internet_sales_reason(fact_internet_sales_reason: DataFrame, etl_conn: Engine):
     fact_internet_sales_reason.to_sql('fact_internet_sales_reason', etl_conn, if_exists='append', index=False)
+    
+def load_data_fact_reseller_sales(fact_reseller_sales: DataFrame, etl_conn: Engine):
+    fact_reseller_sales.to_sql('fact_reseller_sales', etl_conn, if_exists='append', index=False)
 
 def load(table: DataFrame, etl_conn: Engine, tname, replace: bool = False):
     """

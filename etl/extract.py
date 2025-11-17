@@ -116,3 +116,13 @@ def extract_fact_internet_sales_reason(conection: Engine):
     salesorderheader = pd.read_sql_table('salesorderheader', conection, schema='sales')
     salesorderdetail = pd.read_sql_table('salesorderdetail', conection, schema='sales')
     return [salesorderheadersalesreason, salesorderheader, salesorderdetail]
+
+def extract_fact_reseller_sales(conection: Engine):
+    salesorderheader = pd.read_sql_table('salesorderheader', conection, schema='sales')
+    salesorderdetail = pd.read_sql_table('salesorderdetail', conection, schema='sales')
+    currencyrate = pd.read_sql_table('currencyrate', conection, schema='sales')
+    product = pd.read_sql_table('product', conection, schema='production')
+    customer = pd.read_sql_table('customer', conection, schema='sales')
+    store = pd.read_sql_table('store', conection, schema='sales')
+    employee = pd.read_sql_table('employee', conection, schema='humanresources')
+    return [salesorderheader, salesorderdetail, currencyrate, product, customer, store, employee]
