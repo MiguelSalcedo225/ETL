@@ -26,8 +26,11 @@ def extract_product(conection: Engine):
     salesorderdetail = pd.read_sql_table('salesorderdetail', conection, schema='sales')
     productproductphoto = pd.read_sql_table('productproductphoto', conection, schema='production')
     productlistpricehistory = pd.read_sql_table('productlistpricehistory', conection, schema='production')
+    customer = pd.read_sql_table('customer', conection, schema='sales')
+    store = pd.read_sql_table('store', conection, schema='sales')
+    salesorderheader = pd.read_sql_table('salesorderheader', conection, schema='sales')
     return [product, productsubcategory, productmodel, productmodelproductdescriptionculture, productdescription, productphoto, salesorderdetail, 
-            productproductphoto, productlistpricehistory ]
+            productproductphoto, productlistpricehistory , customer, store, salesorderheader]
 
 
 def extract_salesterritory(conection: Engine):

@@ -5,6 +5,7 @@ from sqlalchemy import create_engine, inspect, text
 from sqlalchemy.engine import Engine
 import yaml
 from etl import extract, transform, load, utils_etl
+from constraints import create_constraints
 import psycopg2
 
 pd.set_option('display.max_rows', 100)
@@ -91,6 +92,8 @@ if config['LOAD_DIMENSIONS']:
     load.load_data_fact_internet_sales(fact_internet_sales, etl_conn)
     load.load_data_fact_internet_sales_reason(fact_internet_sales_reason, etl_conn)
     load.load_data_fact_reseller_sales(fact_reseller_sales, etl_conn)
+
+    create_constraints(etl_conn)
     
     print('success all dimensions and facts loaded')
     
