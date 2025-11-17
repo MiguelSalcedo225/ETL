@@ -362,7 +362,8 @@ def transform_employee(args: DataFrame) -> DataFrame:
                              'gender',
                              'vacationhours',
                              'sickleavehours',
-                             'currentflag']], on = 'businessentityid')
+                             'currentflag',
+                             'organizationnode_ltree']], on = 'businessentityid')
     dim_employee = dim_employee.merge(personemailaddress[['businessentityid', 'emailaddress']], on = 'businessentityid', how='left')
     personphone_sorted = (
         personphone

@@ -1,0 +1,1519 @@
+﻿tabla,salesordernumber,salesorderlinenumber,columna_diferente,valor_postgres,valor_sqlserver
+fact_reseller_sales,SO43875,10,discountamount,473.27858399999997,473.2786
+fact_reseller_sales,SO43875,12,discountamount,508.948466,508.9485
+fact_reseller_sales,SO43879,26,discountamount,1.3035360000000003,1.3035
+fact_reseller_sales,SO43881,8,discountamount,5.48625,5.4863
+fact_reseller_sales,SO43884,17,discountamount,552.1583479999999,552.1584
+fact_reseller_sales,SO43898,1,discountamount,105.42401999999998,105.424
+fact_reseller_sales,SO43898,13,discountamount,6.133380000000001,6.1334
+fact_reseller_sales,SO43906,3,discountamount,12.350000000000001,12.35
+fact_reseller_sales,SO44100,9,discountamount,430.64870199999996,430.6487
+fact_reseller_sales,SO44283,7,discountamount,97.31447999999999,97.3145
+fact_reseller_sales,SO44284,4,discountamount,6.008749999999999,6.0088
+fact_reseller_sales,SO44518,3,discountamount,430.64870199999996,430.6487
+fact_reseller_sales,SO44518,8,discountamount,469.798584,469.7986
+fact_reseller_sales,SO44525,18,discountamount,21.149600000000003,21.1496
+fact_reseller_sales,SO44530,4,discountamount,1.2032640000000001,1.2033
+fact_reseller_sales,SO44534,10,discountamount,469.798584,469.7986
+fact_reseller_sales,SO44547,28,discountamount,219.864892,219.8649
+fact_reseller_sales,SO44742,10,discountamount,1.2032640000000001,1.2033
+fact_reseller_sales,SO44762,20,discountamount,4.292992,4.293
+fact_reseller_sales,SO44795,4,discountamount,3.9187499999999997,3.9188
+fact_reseller_sales,SO44795,18,discountamount,473.27858399999997,473.2786
+fact_reseller_sales,SO44797,18,discountamount,6.6909600000000005,6.691
+fact_reseller_sales,SO45047,8,discountamount,113.53356,113.5336
+fact_reseller_sales,SO45321,11,discountamount,4.963749999999999,4.9638
+fact_reseller_sales,SO45323,6,discountamount,1.1029920000000002,1.103
+fact_reseller_sales,SO45786,24,discountamount,105.42401999999998,105.424
+fact_reseller_sales,SO46057,1,discountamount,89.20494,89.2049
+fact_reseller_sales,SO46062,22,discountamount,1.4038080000000002,1.4038
+fact_reseller_sales,SO46067,3,discountamount,23.793300000000002,23.7933
+fact_reseller_sales,SO46086,3,discountamount,7.248540000000001,7.2485
+fact_reseller_sales,SO46086,10,discountamount,3.80344,3.8034
+fact_reseller_sales,SO46086,11,discountamount,5.073536,5.0735
+fact_reseller_sales,SO46090,13,discountamount,469.798584,469.7986
+fact_reseller_sales,SO46323,1,discountamount,297.49912499999994,297.4991
+fact_reseller_sales,SO46323,2,discountamount,297.49912499999994,297.4991
+fact_reseller_sales,SO46323,4,discountamount,297.49912499999994,297.4991
+fact_reseller_sales,SO46323,6,discountamount,297.49912499999994,297.4991
+fact_reseller_sales,SO46327,1,discountamount,590.6232499999999,590.6233
+fact_reseller_sales,SO46327,6,discountamount,892.4973749999998,892.4974
+fact_reseller_sales,SO46327,7,discountamount,590.6232499999999,590.6233
+fact_reseller_sales,SO46327,10,discountamount,1476.5581249999996,1476.5581
+fact_reseller_sales,SO46327,11,discountamount,594.9982499999999,594.9983
+fact_reseller_sales,SO46330,1,discountamount,594.9982499999999,594.9983
+fact_reseller_sales,SO46330,5,discountamount,594.9982499999999,594.9983
+fact_reseller_sales,SO46330,6,discountamount,1487.4956249999996,1487.4956
+fact_reseller_sales,SO46330,7,discountamount,590.6232499999999,590.6233
+fact_reseller_sales,SO46330,17,discountamount,885.9348749999998,885.9349
+fact_reseller_sales,SO46332,1,discountamount,295.31162499999994,295.3116
+fact_reseller_sales,SO46332,2,discountamount,295.31162499999994,295.3116
+fact_reseller_sales,SO46332,4,discountamount,297.49912499999994,297.4991
+fact_reseller_sales,SO46332,6,discountamount,892.4973749999998,892.4974
+fact_reseller_sales,SO46332,7,discountamount,594.9982499999999,594.9983
+fact_reseller_sales,SO46332,8,discountamount,295.31162499999994,295.3116
+fact_reseller_sales,SO46332,10,discountamount,297.49912499999994,297.4991
+fact_reseller_sales,SO46334,4,discountamount,2362.4929999999995,2362.493
+fact_reseller_sales,SO46334,5,discountamount,2082.4938749999997,2082.4939
+fact_reseller_sales,SO46334,6,discountamount,2677.4921249999993,2677.4921
+fact_reseller_sales,SO46334,9,discountamount,2379.9929999999995,2379.993
+fact_reseller_sales,SO46334,10,discountamount,2362.4929999999995,2362.493
+fact_reseller_sales,SO46334,12,discountamount,1771.8697499999996,1771.8698
+fact_reseller_sales,SO46334,17,discountamount,2082.4938749999997,2082.4939
+fact_reseller_sales,SO46334,23,discountamount,590.6232499999999,590.6233
+fact_reseller_sales,SO46342,1,discountamount,594.9982499999999,594.9983
+fact_reseller_sales,SO46342,3,discountamount,1487.4956249999996,1487.4956
+fact_reseller_sales,SO46342,4,discountamount,1181.2464999999997,1181.2465
+fact_reseller_sales,SO46342,7,discountamount,885.9348749999998,885.9349
+fact_reseller_sales,SO46342,8,discountamount,885.9348749999998,885.9349
+fact_reseller_sales,SO46342,9,discountamount,892.4973749999998,892.4974
+fact_reseller_sales,SO46345,1,discountamount,1189.9964999999997,1189.9965
+fact_reseller_sales,SO46345,3,discountamount,594.9982499999999,594.9983
+fact_reseller_sales,SO46345,4,discountamount,1189.9964999999997,1189.9965
+fact_reseller_sales,SO46345,5,discountamount,590.6232499999999,590.6233
+fact_reseller_sales,SO46345,6,discountamount,15.200000000000001,15.2
+fact_reseller_sales,SO46345,7,discountamount,1181.2464999999997,1181.2465
+fact_reseller_sales,SO46345,9,discountamount,892.4973749999998,892.4974
+fact_reseller_sales,SO46345,11,discountamount,590.6232499999999,590.6233
+fact_reseller_sales,SO46346,2,discountamount,590.6232499999999,590.6233
+fact_reseller_sales,SO46346,3,discountamount,295.31162499999994,295.3116
+fact_reseller_sales,SO46346,5,discountamount,892.4973749999998,892.4974
+fact_reseller_sales,SO46346,6,discountamount,1189.9964999999997,1189.9965
+fact_reseller_sales,SO46346,8,discountamount,297.49912499999994,297.4991
+fact_reseller_sales,SO46346,9,discountamount,590.6232499999999,590.6233
+fact_reseller_sales,SO46346,10,discountamount,295.31162499999994,295.3116
+fact_reseller_sales,SO46346,11,discountamount,594.9982499999999,594.9983
+fact_reseller_sales,SO46348,2,discountamount,2657.8046249999993,2657.8046
+fact_reseller_sales,SO46348,4,discountamount,1476.5581249999996,1476.5581
+fact_reseller_sales,SO46348,10,discountamount,594.9982499999999,594.9983
+fact_reseller_sales,SO46348,13,discountamount,885.9348749999998,885.9349
+fact_reseller_sales,SO46348,14,discountamount,885.9348749999998,885.9349
+fact_reseller_sales,SO46348,15,discountamount,892.4973749999998,892.4974
+fact_reseller_sales,SO46348,17,discountamount,594.9982499999999,594.9983
+fact_reseller_sales,SO46352,1,discountamount,590.6232499999999,590.6233
+fact_reseller_sales,SO46352,2,discountamount,297.49912499999994,297.4991
+fact_reseller_sales,SO46352,3,discountamount,885.9348749999998,885.9349
+fact_reseller_sales,SO46352,4,discountamount,297.49912499999994,297.4991
+fact_reseller_sales,SO46353,1,discountamount,590.6232499999999,590.6233
+fact_reseller_sales,SO46353,4,discountamount,295.31162499999994,295.3116
+fact_reseller_sales,SO46353,6,discountamount,885.9348749999998,885.9349
+fact_reseller_sales,SO46353,7,discountamount,297.49912499999994,297.4991
+fact_reseller_sales,SO46360,1,discountamount,885.9348749999998,885.9349
+fact_reseller_sales,SO43659,1,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,2,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,3,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,4,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,5,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,6,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,7,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,8,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,9,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,10,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,11,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,12,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43660,1,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43660,2,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,1,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,2,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,3,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,4,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,5,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,6,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,7,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,8,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,9,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,10,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,11,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,12,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,13,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,14,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43661,15,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,1,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,2,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,3,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,4,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,5,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,6,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,7,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,8,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,9,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,10,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,11,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,12,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,13,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,14,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,15,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,16,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,17,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,18,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,19,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,20,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,21,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43662,22,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43663,1,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43664,1,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43664,2,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43664,3,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43664,4,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43664,5,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43664,6,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43664,7,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43664,8,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43665,1,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43665,2,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43665,3,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43665,4,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43665,5,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43665,6,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43665,7,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43665,8,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43665,9,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43665,10,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43666,1,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43666,2,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43666,3,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43666,4,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43666,5,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43666,6,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43667,1,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43667,2,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43667,3,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43667,4,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,1,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,2,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,3,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,4,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,5,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,6,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,7,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,8,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,9,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,10,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,11,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,12,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,13,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,14,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,15,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,16,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,17,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,18,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,19,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43668,20,duedate,2011-06-12 00:00:00+00:00,2011-01-10 00:00:00
+fact_reseller_sales,SO43659,1,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,2,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,3,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,4,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,5,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,6,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,7,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,8,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,9,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,10,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,11,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,12,duedatekey,20110612,20110110
+fact_reseller_sales,SO43660,1,duedatekey,20110612,20110110
+fact_reseller_sales,SO43660,2,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,1,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,2,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,3,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,4,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,5,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,6,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,7,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,8,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,9,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,10,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,11,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,12,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,13,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,14,duedatekey,20110612,20110110
+fact_reseller_sales,SO43661,15,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,1,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,2,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,3,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,4,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,5,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,6,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,7,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,8,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,9,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,10,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,11,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,12,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,13,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,14,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,15,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,16,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,17,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,18,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,19,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,20,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,21,duedatekey,20110612,20110110
+fact_reseller_sales,SO43662,22,duedatekey,20110612,20110110
+fact_reseller_sales,SO43663,1,duedatekey,20110612,20110110
+fact_reseller_sales,SO43664,1,duedatekey,20110612,20110110
+fact_reseller_sales,SO43664,2,duedatekey,20110612,20110110
+fact_reseller_sales,SO43664,3,duedatekey,20110612,20110110
+fact_reseller_sales,SO43664,4,duedatekey,20110612,20110110
+fact_reseller_sales,SO43664,5,duedatekey,20110612,20110110
+fact_reseller_sales,SO43664,6,duedatekey,20110612,20110110
+fact_reseller_sales,SO43664,7,duedatekey,20110612,20110110
+fact_reseller_sales,SO43664,8,duedatekey,20110612,20110110
+fact_reseller_sales,SO43665,1,duedatekey,20110612,20110110
+fact_reseller_sales,SO43665,2,duedatekey,20110612,20110110
+fact_reseller_sales,SO43665,3,duedatekey,20110612,20110110
+fact_reseller_sales,SO43665,4,duedatekey,20110612,20110110
+fact_reseller_sales,SO43665,5,duedatekey,20110612,20110110
+fact_reseller_sales,SO43665,6,duedatekey,20110612,20110110
+fact_reseller_sales,SO43665,7,duedatekey,20110612,20110110
+fact_reseller_sales,SO43665,8,duedatekey,20110612,20110110
+fact_reseller_sales,SO43665,9,duedatekey,20110612,20110110
+fact_reseller_sales,SO43665,10,duedatekey,20110612,20110110
+fact_reseller_sales,SO43666,1,duedatekey,20110612,20110110
+fact_reseller_sales,SO43666,2,duedatekey,20110612,20110110
+fact_reseller_sales,SO43666,3,duedatekey,20110612,20110110
+fact_reseller_sales,SO43666,4,duedatekey,20110612,20110110
+fact_reseller_sales,SO43666,5,duedatekey,20110612,20110110
+fact_reseller_sales,SO43666,6,duedatekey,20110612,20110110
+fact_reseller_sales,SO43667,1,duedatekey,20110612,20110110
+fact_reseller_sales,SO43667,2,duedatekey,20110612,20110110
+fact_reseller_sales,SO43667,3,duedatekey,20110612,20110110
+fact_reseller_sales,SO43667,4,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,1,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,2,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,3,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,4,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,5,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,6,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,7,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,8,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,9,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,10,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,11,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,12,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,13,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,14,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,15,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,16,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,17,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,18,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,19,duedatekey,20110612,20110110
+fact_reseller_sales,SO43668,20,duedatekey,20110612,20110110
+fact_reseller_sales,SO43659,1,employeekey,279,285
+fact_reseller_sales,SO43659,2,employeekey,279,285
+fact_reseller_sales,SO43659,3,employeekey,279,285
+fact_reseller_sales,SO43659,4,employeekey,279,285
+fact_reseller_sales,SO43659,5,employeekey,279,285
+fact_reseller_sales,SO43659,6,employeekey,279,285
+fact_reseller_sales,SO43659,7,employeekey,279,285
+fact_reseller_sales,SO43659,8,employeekey,279,285
+fact_reseller_sales,SO43659,9,employeekey,279,285
+fact_reseller_sales,SO43659,10,employeekey,279,285
+fact_reseller_sales,SO43659,11,employeekey,279,285
+fact_reseller_sales,SO43659,12,employeekey,279,285
+fact_reseller_sales,SO43660,1,employeekey,279,285
+fact_reseller_sales,SO43660,2,employeekey,279,285
+fact_reseller_sales,SO43661,1,employeekey,282,288
+fact_reseller_sales,SO43661,2,employeekey,282,288
+fact_reseller_sales,SO43661,3,employeekey,282,288
+fact_reseller_sales,SO43661,4,employeekey,282,288
+fact_reseller_sales,SO43661,5,employeekey,282,288
+fact_reseller_sales,SO43661,6,employeekey,282,288
+fact_reseller_sales,SO43661,7,employeekey,282,288
+fact_reseller_sales,SO43661,8,employeekey,282,288
+fact_reseller_sales,SO43661,9,employeekey,282,288
+fact_reseller_sales,SO43661,10,employeekey,282,288
+fact_reseller_sales,SO43661,11,employeekey,282,288
+fact_reseller_sales,SO43661,12,employeekey,282,288
+fact_reseller_sales,SO43661,13,employeekey,282,288
+fact_reseller_sales,SO43661,14,employeekey,282,288
+fact_reseller_sales,SO43661,15,employeekey,282,288
+fact_reseller_sales,SO43662,1,employeekey,282,288
+fact_reseller_sales,SO43662,2,employeekey,282,288
+fact_reseller_sales,SO43662,3,employeekey,282,288
+fact_reseller_sales,SO43662,4,employeekey,282,288
+fact_reseller_sales,SO43662,5,employeekey,282,288
+fact_reseller_sales,SO43662,6,employeekey,282,288
+fact_reseller_sales,SO43662,7,employeekey,282,288
+fact_reseller_sales,SO43662,8,employeekey,282,288
+fact_reseller_sales,SO43662,9,employeekey,282,288
+fact_reseller_sales,SO43662,10,employeekey,282,288
+fact_reseller_sales,SO43662,11,employeekey,282,288
+fact_reseller_sales,SO43662,12,employeekey,282,288
+fact_reseller_sales,SO43662,13,employeekey,282,288
+fact_reseller_sales,SO43662,14,employeekey,282,288
+fact_reseller_sales,SO43662,15,employeekey,282,288
+fact_reseller_sales,SO43662,16,employeekey,282,288
+fact_reseller_sales,SO43662,17,employeekey,282,288
+fact_reseller_sales,SO43662,18,employeekey,282,288
+fact_reseller_sales,SO43662,19,employeekey,282,288
+fact_reseller_sales,SO43662,20,employeekey,282,288
+fact_reseller_sales,SO43662,21,employeekey,282,288
+fact_reseller_sales,SO43662,22,employeekey,282,288
+fact_reseller_sales,SO43663,1,employeekey,276,282
+fact_reseller_sales,SO43664,1,employeekey,280,286
+fact_reseller_sales,SO43664,2,employeekey,280,286
+fact_reseller_sales,SO43664,3,employeekey,280,286
+fact_reseller_sales,SO43664,4,employeekey,280,286
+fact_reseller_sales,SO43664,5,employeekey,280,286
+fact_reseller_sales,SO43664,6,employeekey,280,286
+fact_reseller_sales,SO43664,7,employeekey,280,286
+fact_reseller_sales,SO43664,8,employeekey,280,286
+fact_reseller_sales,SO43665,1,employeekey,283,289
+fact_reseller_sales,SO43665,2,employeekey,283,289
+fact_reseller_sales,SO43665,3,employeekey,283,289
+fact_reseller_sales,SO43665,4,employeekey,283,289
+fact_reseller_sales,SO43665,5,employeekey,283,289
+fact_reseller_sales,SO43665,6,employeekey,283,289
+fact_reseller_sales,SO43665,7,employeekey,283,289
+fact_reseller_sales,SO43665,8,employeekey,283,289
+fact_reseller_sales,SO43665,9,employeekey,283,289
+fact_reseller_sales,SO43665,10,employeekey,283,289
+fact_reseller_sales,SO43666,1,employeekey,276,282
+fact_reseller_sales,SO43666,2,employeekey,276,282
+fact_reseller_sales,SO43666,3,employeekey,276,282
+fact_reseller_sales,SO43666,4,employeekey,276,282
+fact_reseller_sales,SO43666,5,employeekey,276,282
+fact_reseller_sales,SO43666,6,employeekey,276,282
+fact_reseller_sales,SO43667,1,employeekey,277,283
+fact_reseller_sales,SO43667,2,employeekey,277,283
+fact_reseller_sales,SO43667,3,employeekey,277,283
+fact_reseller_sales,SO43667,4,employeekey,277,283
+fact_reseller_sales,SO43668,1,employeekey,282,288
+fact_reseller_sales,SO43668,2,employeekey,282,288
+fact_reseller_sales,SO43668,3,employeekey,282,288
+fact_reseller_sales,SO43668,4,employeekey,282,288
+fact_reseller_sales,SO43668,5,employeekey,282,288
+fact_reseller_sales,SO43668,6,employeekey,282,288
+fact_reseller_sales,SO43668,7,employeekey,282,288
+fact_reseller_sales,SO43668,8,employeekey,282,288
+fact_reseller_sales,SO43668,9,employeekey,282,288
+fact_reseller_sales,SO43668,10,employeekey,282,288
+fact_reseller_sales,SO43668,11,employeekey,282,288
+fact_reseller_sales,SO43668,12,employeekey,282,288
+fact_reseller_sales,SO43668,13,employeekey,282,288
+fact_reseller_sales,SO43668,14,employeekey,282,288
+fact_reseller_sales,SO43668,15,employeekey,282,288
+fact_reseller_sales,SO43668,16,employeekey,282,288
+fact_reseller_sales,SO43668,17,employeekey,282,288
+fact_reseller_sales,SO43668,18,employeekey,282,288
+fact_reseller_sales,SO43668,19,employeekey,282,288
+fact_reseller_sales,SO43668,20,employeekey,282,288
+fact_reseller_sales,SO43661,15,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43662,5,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43662,15,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43668,6,extendedamount,1103.6291999999999,1103.6292
+fact_reseller_sales,SO43668,15,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43668,24,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43668,26,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43675,2,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43677,9,extendedamount,25.932499999999997,25.9325
+fact_reseller_sales,SO43689,9,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43689,20,extendedamount,3775.1301000000003,3775.1301
+fact_reseller_sales,SO43694,11,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43846,1,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43850,6,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43851,8,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43873,9,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43873,15,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43873,19,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43875,6,extendedamount,14279.957999999999,14279.958
+fact_reseller_sales,SO43875,9,extendedamount,3612.9745000000003,3612.9745
+fact_reseller_sales,SO43875,10,extendedamount,23663.9292,23663.9304
+fact_reseller_sales,SO43875,12,extendedamount,25447.4233,25447.4246
+fact_reseller_sales,SO43875,19,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43879,9,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43879,15,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43879,17,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43879,20,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43879,23,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43883,10,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43884,3,extendedamount,2429.2799999999997,2429.28
+fact_reseller_sales,SO43884,8,extendedamount,2456.1000000000004,2456.1
+fact_reseller_sales,SO43884,9,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43884,17,extendedamount,27607.9174,27607.9188
+fact_reseller_sales,SO43890,3,extendedamount,14279.957999999999,14279.958
+fact_reseller_sales,SO43890,13,extendedamount,2429.2799999999997,2429.28
+fact_reseller_sales,SO43898,5,extendedamount,36.305499999999995,36.3055
+fact_reseller_sales,SO43898,7,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43898,13,extendedamount,306.66900000000004,306.669
+fact_reseller_sales,SO43902,5,extendedamount,3612.9745000000003,3612.9745
+fact_reseller_sales,SO43906,7,extendedamount,36.305499999999995,36.3055
+fact_reseller_sales,SO43911,11,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43911,15,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43913,10,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43917,5,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44079,6,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44079,22,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44081,16,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44085,9,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44086,15,extendedamount,51.864999999999995,51.865
+fact_reseller_sales,SO44086,16,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44086,18,extendedamount,201.86499999999998,201.865
+fact_reseller_sales,SO44086,20,extendedamount,2429.2799999999997,2429.28
+fact_reseller_sales,SO44091,6,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44091,7,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44098,5,extendedamount,114.94999999999999,114.95
+fact_reseller_sales,SO44100,5,extendedamount,14174.957999999999,14174.958
+fact_reseller_sales,SO44100,9,extendedamount,21532.4351,21532.4362
+fact_reseller_sales,SO44100,16,extendedamount,2456.1000000000004,2456.1
+fact_reseller_sales,SO44100,17,extendedamount,25.932499999999997,25.9325
+fact_reseller_sales,SO44110,11,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44110,20,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44114,3,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44114,7,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44115,9,extendedamount,14279.957999999999,14279.958
+fact_reseller_sales,SO44119,5,extendedamount,14279.957999999999,14279.958
+fact_reseller_sales,SO44121,4,extendedamount,2456.1000000000004,2456.1
+fact_reseller_sales,SO44128,11,extendedamount,25.932499999999997,25.9325
+fact_reseller_sales,SO44129,5,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44129,8,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44129,15,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44131,4,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44133,14,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44283,11,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44283,19,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44284,3,extendedamount,14174.957999999999,14174.958
+fact_reseller_sales,SO44285,5,extendedamount,2456.1000000000004,2456.1
+fact_reseller_sales,SO44288,15,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44288,24,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44288,25,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44288,26,extendedamount,2274.2277000000004,2274.2277
+fact_reseller_sales,SO44296,4,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44296,18,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44298,13,extendedamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44299,21,extendedamount,25.932499999999997,25.9325
+fact_reseller_sales,SO44313,15,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44317,11,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44317,21,extendedamount,181.67849999999999,181.6785
+fact_reseller_sales,SO44317,28,extendedamount,51.864999999999995,51.865
+fact_reseller_sales,SO44493,9,extendedamount,25.932499999999997,25.9325
+fact_reseller_sales,SO44498,5,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44501,13,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44504,10,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44505,3,extendedamount,14279.957999999999,14279.958
+fact_reseller_sales,SO44506,3,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44506,25,extendedamount,25.932499999999997,25.9325
+fact_reseller_sales,SO44506,27,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44509,8,extendedamount,1784.4900000000002,1784.49
+fact_reseller_sales,SO44509,22,extendedamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44509,31,extendedamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44513,13,extendedamount,14279.957999999999,14279.958
+fact_reseller_sales,SO43659,1,freight,616.0984,50.6249
+fact_reseller_sales,SO43659,2,freight,616.0984,151.8746
+fact_reseller_sales,SO43659,3,freight,616.0984,50.6249
+fact_reseller_sales,SO43659,4,freight,616.0984,50.9999
+fact_reseller_sales,SO43659,5,freight,616.0984,50.9999
+fact_reseller_sales,SO43659,6,freight,616.0984,101.9997
+fact_reseller_sales,SO43659,7,freight,616.0984,50.9999
+fact_reseller_sales,SO43659,8,freight,616.0984,2.163
+fact_reseller_sales,SO43659,9,freight,616.0984,0.721
+fact_reseller_sales,SO43659,10,freight,616.0984,0.855
+fact_reseller_sales,SO43659,11,freight,616.0984,0.2593
+fact_reseller_sales,SO43659,12,freight,616.0984,2.0187
+fact_reseller_sales,SO43660,1,freight,38.8276,10.4865
+fact_reseller_sales,SO43660,2,freight,38.8276,21.8699
+fact_reseller_sales,SO43661,1,freight,985.553,20.244
+fact_reseller_sales,SO43661,2,freight,985.553,17.8676
+fact_reseller_sales,SO43661,3,freight,985.553,35.7352
+fact_reseller_sales,SO43661,4,freight,985.553,0.5187
+fact_reseller_sales,SO43661,5,freight,985.553,2.884
+fact_reseller_sales,SO43661,6,freight,985.553,36.1297
+fact_reseller_sales,SO43661,7,freight,985.553,151.8746
+fact_reseller_sales,SO43661,8,freight,985.553,101.2497
+fact_reseller_sales,SO43661,9,freight,985.553,1.0093
+fact_reseller_sales,SO43661,10,freight,985.553,40.935
+fact_reseller_sales,SO43661,11,freight,985.553,202.4994
+fact_reseller_sales,SO43661,12,freight,985.553,101.9997
+fact_reseller_sales,SO43661,13,freight,985.553,1.442
+fact_reseller_sales,SO43661,14,freight,985.553,101.2497
+fact_reseller_sales,SO43661,15,freight,985.553,2.5233
+fact_reseller_sales,SO43662,1,freight,867.2389,31.4594
+fact_reseller_sales,SO43662,2,freight,867.2389,52.4324
+fact_reseller_sales,SO43662,3,freight,867.2389,9.1969
+fact_reseller_sales,SO43662,4,freight,867.2389,87.4794
+fact_reseller_sales,SO43662,5,freight,867.2389,13.7954
+fact_reseller_sales,SO43662,6,freight,867.2389,52.4324
+fact_reseller_sales,SO43662,7,freight,867.2389,31.4594
+fact_reseller_sales,SO43662,8,freight,867.2389,20.9729
+fact_reseller_sales,SO43662,9,freight,867.2389,53.6741
+fact_reseller_sales,SO43662,10,freight,867.2389,21.8699
+fact_reseller_sales,SO43662,11,freight,867.2389,31.4594
+fact_reseller_sales,SO43662,12,freight,867.2389,8.9225
+fact_reseller_sales,SO43662,13,freight,867.2389,131.2191
+fact_reseller_sales,SO43662,14,freight,867.2389,4.5985
+fact_reseller_sales,SO43662,15,freight,867.2389,13.3936
+fact_reseller_sales,SO43662,16,freight,867.2389,53.6741
+fact_reseller_sales,SO43662,17,freight,867.2389,31.4594
+fact_reseller_sales,SO43662,18,freight,867.2389,4.5985
+fact_reseller_sales,SO43662,19,freight,867.2389,8.9225
+fact_reseller_sales,SO43662,20,freight,867.2389,4.4645
+fact_reseller_sales,SO43662,21,freight,867.2389,31.4594
+fact_reseller_sales,SO43662,22,freight,867.2389,21.8699
+fact_reseller_sales,SO43663,1,freight,12.5838,10.4865
+fact_reseller_sales,SO43664,1,freight,732.81,50.9999
+fact_reseller_sales,SO43664,2,freight,732.81,202.4994
+fact_reseller_sales,SO43664,3,freight,732.81,0.721
+fact_reseller_sales,SO43664,4,freight,732.81,0.721
+fact_reseller_sales,SO43664,5,freight,732.81,101.2497
+fact_reseller_sales,SO43664,6,freight,732.81,152.9996
+fact_reseller_sales,SO43664,7,freight,732.81,50.9999
+fact_reseller_sales,SO43664,8,freight,732.81,50.6249
+fact_reseller_sales,SO43665,1,freight,429.9821,1.0093
+fact_reseller_sales,SO43665,2,freight,429.9821,50.9999
+fact_reseller_sales,SO43665,3,freight,429.9821,0.5047
+fact_reseller_sales,SO43665,4,freight,429.9821,1.442
+fact_reseller_sales,SO43665,5,freight,429.9821,101.2497
+fact_reseller_sales,SO43665,6,freight,429.9821,0.2593
+fact_reseller_sales,SO43665,7,freight,429.9821,101.2497
+fact_reseller_sales,SO43665,8,freight,429.9821,50.6249
+fact_reseller_sales,SO43665,9,freight,429.9821,0.855
+fact_reseller_sales,SO43665,10,freight,429.9821,50.6249
+fact_reseller_sales,SO43666,1,freight,151.9921,10.4865
+fact_reseller_sales,SO43666,2,freight,151.9921,53.6741
+fact_reseller_sales,SO43666,3,freight,151.9921,8.9225
+fact_reseller_sales,SO43666,4,freight,151.9921,21.8699
+fact_reseller_sales,SO43666,5,freight,151.9921,20.9729
+fact_reseller_sales,SO43666,6,freight,151.9921,10.4865
+fact_reseller_sales,SO43667,1,freight,183.1626,0.4275
+fact_reseller_sales,SO43667,2,freight,183.1626,50.9999
+fact_reseller_sales,SO43667,3,freight,183.1626,50.6249
+fact_reseller_sales,SO43667,4,freight,183.1626,50.6249
+fact_reseller_sales,SO43668,1,freight,1081.8018,65.6096
+fact_reseller_sales,SO43668,2,freight,1081.8018,107.3481
+fact_reseller_sales,SO43668,3,freight,1081.8018,73.4053
+fact_reseller_sales,SO43668,4,freight,1081.8018,62.9188
+fact_reseller_sales,SO43668,5,freight,1081.8018,4.3261
+fact_reseller_sales,SO43668,6,freight,1081.8018,27.5907
+fact_reseller_sales,SO43668,7,freight,1081.8018,1.0093
+fact_reseller_sales,SO43668,8,freight,1081.8018,1.0093
+fact_reseller_sales,SO43668,9,freight,1081.8018,43.7397
+fact_reseller_sales,SO43668,10,freight,1081.8018,0.5187
+fact_reseller_sales,SO43668,11,freight,1081.8018,9.1969
+fact_reseller_sales,SO43668,12,freight,1081.8018,65.6096
+fact_reseller_sales,SO43668,13,freight,1081.8018,31.4594
+fact_reseller_sales,SO43668,14,freight,1081.8018,20.9729
+fact_reseller_sales,SO43668,15,freight,1081.8018,13.7954
+fact_reseller_sales,SO43668,16,freight,1081.8018,20.9729
+fact_reseller_sales,SO43668,17,freight,1081.8018,20.9729
+fact_reseller_sales,SO43668,18,freight,1081.8018,9.1969
+fact_reseller_sales,SO43668,19,freight,1081.8018,0.721
+fact_reseller_sales,SO43668,20,freight,1081.8018,20.9729
+fact_reseller_sales,SO43659,1,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,2,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,3,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,4,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,5,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,6,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,7,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,8,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,9,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,10,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,11,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,12,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43660,1,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43660,2,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,1,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,2,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,3,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,4,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,5,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,6,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,7,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,8,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,9,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,10,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,11,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,12,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,13,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,14,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43661,15,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,1,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,2,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,3,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,4,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,5,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,6,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,7,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,8,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,9,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,10,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,11,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,12,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,13,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,14,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,15,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,16,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,17,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,18,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,19,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,20,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,21,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43662,22,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43663,1,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43664,1,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43664,2,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43664,3,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43664,4,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43664,5,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43664,6,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43664,7,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43664,8,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43665,1,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43665,2,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43665,3,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43665,4,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43665,5,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43665,6,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43665,7,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43665,8,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43665,9,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43665,10,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43666,1,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43666,2,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43666,3,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43666,4,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43666,5,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43666,6,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43667,1,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43667,2,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43667,3,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43667,4,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,1,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,2,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,3,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,4,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,5,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,6,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,7,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,8,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,9,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,10,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,11,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,12,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,13,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,14,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,15,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,16,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,17,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,18,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,19,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43668,20,orderdate,2011-05-31 00:00:00+00:00,2010-12-29 00:00:00
+fact_reseller_sales,SO43659,1,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,2,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,3,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,4,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,5,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,6,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,7,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,8,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,9,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,10,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,11,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,12,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43660,1,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43660,2,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,1,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,2,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,3,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,4,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,5,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,6,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,7,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,8,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,9,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,10,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,11,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,12,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,13,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,14,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43661,15,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,1,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,2,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,3,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,4,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,5,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,6,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,7,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,8,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,9,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,10,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,11,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,12,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,13,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,14,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,15,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,16,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,17,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,18,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,19,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,20,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,21,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43662,22,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43663,1,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43664,1,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43664,2,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43664,3,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43664,4,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43664,5,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43664,6,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43664,7,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43664,8,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43665,1,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43665,2,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43665,3,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43665,4,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43665,5,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43665,6,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43665,7,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43665,8,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43665,9,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43665,10,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43666,1,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43666,2,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43666,3,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43666,4,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43666,5,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43666,6,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43667,1,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43667,2,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43667,3,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43667,4,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,1,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,2,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,3,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,4,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,5,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,6,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,7,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,8,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,9,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,10,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,11,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,12,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,13,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,14,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,15,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,16,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,17,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,18,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,19,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43668,20,orderdatekey,20110531,20101229
+fact_reseller_sales,SO43659,8,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43659,9,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43659,11,productstandardcost,6.9223,5.7052
+fact_reseller_sales,SO43659,12,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43660,1,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43661,2,productstandardcost,739.041,617.0281
+fact_reseller_sales,SO43661,3,productstandardcost,739.041,617.0281
+fact_reseller_sales,SO43661,4,productstandardcost,6.9223,5.7052
+fact_reseller_sales,SO43661,5,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43661,6,productstandardcost,747.2002,623.8403
+fact_reseller_sales,SO43661,9,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43661,13,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43661,15,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43662,1,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43662,2,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43662,3,productstandardcost,187.1571,181.4857
+fact_reseller_sales,SO43662,5,productstandardcost,187.1571,181.4857
+fact_reseller_sales,SO43662,6,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43662,7,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43662,8,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43662,11,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43662,14,productstandardcost,187.1571,181.4857
+fact_reseller_sales,SO43662,15,productstandardcost,204.6251,176.1997
+fact_reseller_sales,SO43662,17,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43662,18,productstandardcost,187.1571,181.4857
+fact_reseller_sales,SO43662,20,productstandardcost,204.6251,176.1997
+fact_reseller_sales,SO43662,21,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43663,1,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43664,3,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43664,4,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43665,1,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43665,3,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43665,4,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43665,6,productstandardcost,6.9223,5.7052
+fact_reseller_sales,SO43666,1,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43666,5,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43666,6,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43668,3,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43668,4,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43668,5,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43668,6,productstandardcost,187.1571,181.4857
+fact_reseller_sales,SO43668,7,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43668,8,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43668,10,productstandardcost,6.9223,5.7052
+fact_reseller_sales,SO43668,11,productstandardcost,187.1571,181.4857
+fact_reseller_sales,SO43668,13,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43668,14,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43668,15,productstandardcost,187.1571,181.4857
+fact_reseller_sales,SO43668,16,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43668,17,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43668,18,productstandardcost,187.1571,181.4857
+fact_reseller_sales,SO43668,19,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43668,20,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43668,23,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43668,24,productstandardcost,204.6251,176.1997
+fact_reseller_sales,SO43668,25,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43668,26,productstandardcost,204.6251,176.1997
+fact_reseller_sales,SO43668,27,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43668,29,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43669,1,productstandardcost,739.041,617.0281
+fact_reseller_sales,SO43671,2,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43671,4,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43671,6,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43671,8,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43671,9,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43671,10,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43671,11,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43673,2,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43673,3,productstandardcost,187.1571,181.4857
+fact_reseller_sales,SO43673,4,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43673,5,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43673,6,productstandardcost,204.6251,176.1997
+fact_reseller_sales,SO43673,7,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43673,8,productstandardcost,6.9223,5.7052
+fact_reseller_sales,SO43673,9,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43673,10,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43673,11,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43675,1,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43675,2,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43675,3,productstandardcost,204.6251,176.1997
+fact_reseller_sales,SO43675,4,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43675,5,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43675,7,productstandardcost,6.9223,5.7052
+fact_reseller_sales,SO43675,9,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43677,1,productstandardcost,38.4923,31.7244
+fact_reseller_sales,SO43677,4,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43677,5,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43677,6,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43677,7,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43677,8,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43677,9,productstandardcost,6.9223,5.7052
+fact_reseller_sales,SO43677,10,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43677,12,productstandardcost,187.1571,181.4857
+fact_reseller_sales,SO43678,1,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43678,2,productstandardcost,204.6251,176.1997
+fact_reseller_sales,SO43678,3,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43678,5,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43678,6,productstandardcost,486.7066,413.1463
+fact_reseller_sales,SO43678,7,productstandardcost,6.9223,5.7052
+fact_reseller_sales,SO43678,8,productstandardcost,13.0863,12.0278
+fact_reseller_sales,SO43659,1,revisionnumber,8,1
+fact_reseller_sales,SO43659,2,revisionnumber,8,1
+fact_reseller_sales,SO43659,3,revisionnumber,8,1
+fact_reseller_sales,SO43659,4,revisionnumber,8,1
+fact_reseller_sales,SO43659,5,revisionnumber,8,1
+fact_reseller_sales,SO43659,6,revisionnumber,8,1
+fact_reseller_sales,SO43659,7,revisionnumber,8,1
+fact_reseller_sales,SO43659,8,revisionnumber,8,1
+fact_reseller_sales,SO43659,9,revisionnumber,8,1
+fact_reseller_sales,SO43659,10,revisionnumber,8,1
+fact_reseller_sales,SO43659,11,revisionnumber,8,1
+fact_reseller_sales,SO43659,12,revisionnumber,8,1
+fact_reseller_sales,SO43660,1,revisionnumber,8,1
+fact_reseller_sales,SO43660,2,revisionnumber,8,1
+fact_reseller_sales,SO43661,1,revisionnumber,8,1
+fact_reseller_sales,SO43661,2,revisionnumber,8,1
+fact_reseller_sales,SO43661,3,revisionnumber,8,1
+fact_reseller_sales,SO43661,4,revisionnumber,8,1
+fact_reseller_sales,SO43661,5,revisionnumber,8,1
+fact_reseller_sales,SO43661,6,revisionnumber,8,1
+fact_reseller_sales,SO43661,7,revisionnumber,8,1
+fact_reseller_sales,SO43661,8,revisionnumber,8,1
+fact_reseller_sales,SO43661,9,revisionnumber,8,1
+fact_reseller_sales,SO43661,10,revisionnumber,8,1
+fact_reseller_sales,SO43661,11,revisionnumber,8,1
+fact_reseller_sales,SO43661,12,revisionnumber,8,1
+fact_reseller_sales,SO43661,13,revisionnumber,8,1
+fact_reseller_sales,SO43661,14,revisionnumber,8,1
+fact_reseller_sales,SO43661,15,revisionnumber,8,1
+fact_reseller_sales,SO43662,1,revisionnumber,8,1
+fact_reseller_sales,SO43662,2,revisionnumber,8,1
+fact_reseller_sales,SO43662,3,revisionnumber,8,1
+fact_reseller_sales,SO43662,4,revisionnumber,8,1
+fact_reseller_sales,SO43662,5,revisionnumber,8,1
+fact_reseller_sales,SO43662,6,revisionnumber,8,1
+fact_reseller_sales,SO43662,7,revisionnumber,8,1
+fact_reseller_sales,SO43662,8,revisionnumber,8,1
+fact_reseller_sales,SO43662,9,revisionnumber,8,1
+fact_reseller_sales,SO43662,10,revisionnumber,8,1
+fact_reseller_sales,SO43662,11,revisionnumber,8,1
+fact_reseller_sales,SO43662,12,revisionnumber,8,1
+fact_reseller_sales,SO43662,13,revisionnumber,8,1
+fact_reseller_sales,SO43662,14,revisionnumber,8,1
+fact_reseller_sales,SO43662,15,revisionnumber,8,1
+fact_reseller_sales,SO43662,16,revisionnumber,8,1
+fact_reseller_sales,SO43662,17,revisionnumber,8,1
+fact_reseller_sales,SO43662,18,revisionnumber,8,1
+fact_reseller_sales,SO43662,19,revisionnumber,8,1
+fact_reseller_sales,SO43662,20,revisionnumber,8,1
+fact_reseller_sales,SO43662,21,revisionnumber,8,1
+fact_reseller_sales,SO43662,22,revisionnumber,8,1
+fact_reseller_sales,SO43663,1,revisionnumber,8,1
+fact_reseller_sales,SO43664,1,revisionnumber,8,1
+fact_reseller_sales,SO43664,2,revisionnumber,8,1
+fact_reseller_sales,SO43664,3,revisionnumber,8,1
+fact_reseller_sales,SO43664,4,revisionnumber,8,1
+fact_reseller_sales,SO43664,5,revisionnumber,8,1
+fact_reseller_sales,SO43664,6,revisionnumber,8,1
+fact_reseller_sales,SO43664,7,revisionnumber,8,1
+fact_reseller_sales,SO43664,8,revisionnumber,8,1
+fact_reseller_sales,SO43665,1,revisionnumber,8,1
+fact_reseller_sales,SO43665,2,revisionnumber,8,1
+fact_reseller_sales,SO43665,3,revisionnumber,8,1
+fact_reseller_sales,SO43665,4,revisionnumber,8,1
+fact_reseller_sales,SO43665,5,revisionnumber,8,1
+fact_reseller_sales,SO43665,6,revisionnumber,8,1
+fact_reseller_sales,SO43665,7,revisionnumber,8,1
+fact_reseller_sales,SO43665,8,revisionnumber,8,1
+fact_reseller_sales,SO43665,9,revisionnumber,8,1
+fact_reseller_sales,SO43665,10,revisionnumber,8,1
+fact_reseller_sales,SO43666,1,revisionnumber,8,1
+fact_reseller_sales,SO43666,2,revisionnumber,8,1
+fact_reseller_sales,SO43666,3,revisionnumber,8,1
+fact_reseller_sales,SO43666,4,revisionnumber,8,1
+fact_reseller_sales,SO43666,5,revisionnumber,8,1
+fact_reseller_sales,SO43666,6,revisionnumber,8,1
+fact_reseller_sales,SO43667,1,revisionnumber,8,1
+fact_reseller_sales,SO43667,2,revisionnumber,8,1
+fact_reseller_sales,SO43667,3,revisionnumber,8,1
+fact_reseller_sales,SO43667,4,revisionnumber,8,1
+fact_reseller_sales,SO43668,1,revisionnumber,8,1
+fact_reseller_sales,SO43668,2,revisionnumber,8,1
+fact_reseller_sales,SO43668,3,revisionnumber,8,1
+fact_reseller_sales,SO43668,4,revisionnumber,8,1
+fact_reseller_sales,SO43668,5,revisionnumber,8,1
+fact_reseller_sales,SO43668,6,revisionnumber,8,1
+fact_reseller_sales,SO43668,7,revisionnumber,8,1
+fact_reseller_sales,SO43668,8,revisionnumber,8,1
+fact_reseller_sales,SO43668,9,revisionnumber,8,1
+fact_reseller_sales,SO43668,10,revisionnumber,8,1
+fact_reseller_sales,SO43668,11,revisionnumber,8,1
+fact_reseller_sales,SO43668,12,revisionnumber,8,1
+fact_reseller_sales,SO43668,13,revisionnumber,8,1
+fact_reseller_sales,SO43668,14,revisionnumber,8,1
+fact_reseller_sales,SO43668,15,revisionnumber,8,1
+fact_reseller_sales,SO43668,16,revisionnumber,8,1
+fact_reseller_sales,SO43668,17,revisionnumber,8,1
+fact_reseller_sales,SO43668,18,revisionnumber,8,1
+fact_reseller_sales,SO43668,19,revisionnumber,8,1
+fact_reseller_sales,SO43668,20,revisionnumber,8,1
+fact_reseller_sales,SO43661,15,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43662,5,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43662,15,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43668,6,salesamount,1103.6291999999999,1103.6292
+fact_reseller_sales,SO43668,15,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43668,24,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43668,26,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43675,2,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43677,9,salesamount,25.932499999999997,25.9325
+fact_reseller_sales,SO43689,9,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43689,20,salesamount,3775.1301000000003,3775.1301
+fact_reseller_sales,SO43694,11,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43846,1,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43850,6,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43851,8,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43873,9,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43873,15,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43873,19,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43875,6,salesamount,14279.957999999999,14279.958
+fact_reseller_sales,SO43875,9,salesamount,3612.9745000000003,3612.9745
+fact_reseller_sales,SO43875,10,salesamount,23190.650616,23190.6518
+fact_reseller_sales,SO43875,12,salesamount,24938.474834,24938.4761
+fact_reseller_sales,SO43875,19,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43879,9,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43879,15,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43879,17,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43879,20,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43879,23,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43879,26,salesamount,63.873264,63.8733
+fact_reseller_sales,SO43881,8,salesamount,104.23874999999998,104.2388
+fact_reseller_sales,SO43883,10,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO43884,3,salesamount,2429.2799999999997,2429.28
+fact_reseller_sales,SO43884,8,salesamount,2456.1000000000004,2456.1
+fact_reseller_sales,SO43884,9,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43884,17,salesamount,27055.759051999998,27055.7604
+fact_reseller_sales,SO43890,3,salesamount,14279.957999999999,14279.958
+fact_reseller_sales,SO43890,13,salesamount,2429.2799999999997,2429.28
+fact_reseller_sales,SO43898,1,salesamount,5165.77698,5165.777
+fact_reseller_sales,SO43898,5,salesamount,36.305499999999995,36.3055
+fact_reseller_sales,SO43898,7,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43898,13,salesamount,300.53562,300.5356
+fact_reseller_sales,SO43902,5,salesamount,3612.9745000000003,3612.9745
+fact_reseller_sales,SO43906,7,salesamount,36.305499999999995,36.3055
+fact_reseller_sales,SO43911,11,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43911,15,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO43913,10,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO43917,5,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44079,6,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44079,22,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44081,16,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44085,9,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44086,15,salesamount,51.864999999999995,51.865
+fact_reseller_sales,SO44086,16,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44086,18,salesamount,201.86499999999998,201.865
+fact_reseller_sales,SO44086,20,salesamount,2429.2799999999997,2429.28
+fact_reseller_sales,SO44091,6,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44091,7,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44098,5,salesamount,109.20249999999999,109.2025
+fact_reseller_sales,SO44100,5,salesamount,14174.957999999999,14174.958
+fact_reseller_sales,SO44100,9,salesamount,21101.786398,21101.7875
+fact_reseller_sales,SO44100,16,salesamount,2456.1000000000004,2456.1
+fact_reseller_sales,SO44100,17,salesamount,25.932499999999997,25.9325
+fact_reseller_sales,SO44110,11,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44110,20,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44114,3,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44114,7,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44115,9,salesamount,14279.957999999999,14279.958
+fact_reseller_sales,SO44119,5,salesamount,14279.957999999999,14279.958
+fact_reseller_sales,SO44121,4,salesamount,2456.1000000000004,2456.1
+fact_reseller_sales,SO44128,11,salesamount,25.932499999999997,25.9325
+fact_reseller_sales,SO44129,5,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44129,8,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44129,15,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44131,4,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44133,14,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44283,7,salesamount,4768.40952,4768.4095
+fact_reseller_sales,SO44283,11,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44283,19,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44284,3,salesamount,14174.957999999999,14174.958
+fact_reseller_sales,SO44284,4,salesamount,114.16624999999998,114.1663
+fact_reseller_sales,SO44285,5,salesamount,2456.1000000000004,2456.1
+fact_reseller_sales,SO44288,15,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44288,24,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44288,25,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44288,26,salesamount,2274.2277000000004,2274.2277
+fact_reseller_sales,SO44294,3,salesamount,89.34749999999998,89.3475
+fact_reseller_sales,SO44296,4,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44296,18,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44298,13,salesamount,100.93249999999999,100.9325
+fact_reseller_sales,SO44299,21,salesamount,25.932499999999997,25.9325
+fact_reseller_sales,SO44313,15,salesamount,535.7424000000001,535.7424
+fact_reseller_sales,SO44317,11,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44317,21,salesamount,181.67849999999999,181.6785
+fact_reseller_sales,SO44317,28,salesamount,51.864999999999995,51.865
+fact_reseller_sales,SO44489,2,salesamount,89.34749999999998,89.3475
+fact_reseller_sales,SO44493,9,salesamount,25.932499999999997,25.9325
+fact_reseller_sales,SO44498,5,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44501,13,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44504,10,salesamount,551.8145999999999,551.8146
+fact_reseller_sales,SO44505,3,salesamount,14279.957999999999,14279.958
+fact_reseller_sales,SO43659,1,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,2,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,3,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,4,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,5,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,6,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,7,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,8,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,9,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,10,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,11,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,12,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43660,1,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43660,2,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,1,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,2,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,3,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,4,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,5,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,6,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,7,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,8,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,9,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,10,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,11,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,12,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,13,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,14,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43661,15,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,1,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,2,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,3,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,4,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,5,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,6,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,7,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,8,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,9,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,10,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,11,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,12,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,13,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,14,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,15,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,16,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,17,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,18,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,19,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,20,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,21,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43662,22,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43663,1,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43664,1,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43664,2,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43664,3,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43664,4,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43664,5,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43664,6,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43664,7,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43664,8,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43665,1,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43665,2,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43665,3,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43665,4,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43665,5,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43665,6,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43665,7,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43665,8,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43665,9,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43665,10,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43666,1,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43666,2,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43666,3,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43666,4,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43666,5,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43666,6,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43667,1,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43667,2,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43667,3,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43667,4,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,1,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,2,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,3,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,4,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,5,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,6,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,7,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,8,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,9,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,10,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,11,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,12,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,13,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,14,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,15,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,16,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,17,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,18,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,19,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43668,20,shipdate,2011-06-07 00:00:00+00:00,2011-01-05 00:00:00
+fact_reseller_sales,SO43659,1,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,2,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,3,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,4,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,5,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,6,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,7,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,8,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,9,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,10,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,11,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,12,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43660,1,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43660,2,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,1,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,2,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,3,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,4,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,5,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,6,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,7,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,8,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,9,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,10,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,11,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,12,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,13,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,14,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43661,15,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,1,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,2,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,3,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,4,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,5,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,6,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,7,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,8,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,9,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,10,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,11,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,12,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,13,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,14,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,15,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,16,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,17,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,18,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,19,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,20,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,21,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43662,22,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43663,1,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43664,1,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43664,2,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43664,3,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43664,4,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43664,5,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43664,6,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43664,7,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43664,8,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43665,1,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43665,2,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43665,3,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43665,4,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43665,5,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43665,6,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43665,7,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43665,8,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43665,9,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43665,10,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43666,1,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43666,2,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43666,3,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43666,4,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43666,5,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43666,6,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43667,1,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43667,2,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43667,3,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43667,4,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,1,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,2,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,3,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,4,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,5,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,6,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,7,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,8,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,9,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,10,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,11,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,12,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,13,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,14,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,15,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,16,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,17,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,18,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,19,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43668,20,shipdatekey,20110607,20110105
+fact_reseller_sales,SO43659,1,taxamt,1971.5149,161.9995
+fact_reseller_sales,SO43659,2,taxamt,1971.5149,485.9986
+fact_reseller_sales,SO43659,3,taxamt,1971.5149,161.9995
+fact_reseller_sales,SO43659,4,taxamt,1971.5149,163.1995
+fact_reseller_sales,SO43659,5,taxamt,1971.5149,163.1995
+fact_reseller_sales,SO43659,6,taxamt,1971.5149,326.399
+fact_reseller_sales,SO43659,7,taxamt,1971.5149,163.1995
+fact_reseller_sales,SO43659,8,taxamt,1971.5149,6.9217
+fact_reseller_sales,SO43659,9,taxamt,1971.5149,2.3072
+fact_reseller_sales,SO43659,10,taxamt,1971.5149,2.736
+fact_reseller_sales,SO43659,11,taxamt,1971.5149,0.8298
+fact_reseller_sales,SO43659,12,taxamt,1971.5149,6.4597
+fact_reseller_sales,SO43660,1,taxamt,124.2483,33.5567
+fact_reseller_sales,SO43660,2,taxamt,124.2483,69.9835
+fact_reseller_sales,SO43661,1,taxamt,3153.7695,64.7808
+fact_reseller_sales,SO43661,2,taxamt,3153.7695,57.1763
+fact_reseller_sales,SO43661,3,taxamt,3153.7695,114.3527
+fact_reseller_sales,SO43661,4,taxamt,3153.7695,1.6597
+fact_reseller_sales,SO43661,5,taxamt,3153.7695,9.2289
+fact_reseller_sales,SO43661,6,taxamt,3153.7695,115.6152
+fact_reseller_sales,SO43661,7,taxamt,3153.7695,485.9986
+fact_reseller_sales,SO43661,8,taxamt,3153.7695,323.999
+fact_reseller_sales,SO43661,9,taxamt,3153.7695,3.2298
+fact_reseller_sales,SO43661,10,taxamt,3153.7695,130.992
+fact_reseller_sales,SO43661,11,taxamt,3153.7695,647.9981
+fact_reseller_sales,SO43661,12,taxamt,3153.7695,326.399
+fact_reseller_sales,SO43661,13,taxamt,3153.7695,4.6145
+fact_reseller_sales,SO43661,14,taxamt,3153.7695,323.999
+fact_reseller_sales,SO43661,15,taxamt,3153.7695,8.0746
+fact_reseller_sales,SO43662,1,taxamt,2775.1646,100.6701
+fact_reseller_sales,SO43662,2,taxamt,2775.1646,167.7836
+fact_reseller_sales,SO43662,3,taxamt,2775.1646,29.4301
+fact_reseller_sales,SO43662,4,taxamt,2775.1646,279.9341
+fact_reseller_sales,SO43662,5,taxamt,2775.1646,44.1452
+fact_reseller_sales,SO43662,6,taxamt,2775.1646,167.7836
+fact_reseller_sales,SO43662,7,taxamt,2775.1646,100.6701
+fact_reseller_sales,SO43662,8,taxamt,2775.1646,67.1134
+fact_reseller_sales,SO43662,9,taxamt,2775.1646,171.757
+fact_reseller_sales,SO43662,10,taxamt,2775.1646,69.9835
+fact_reseller_sales,SO43662,11,taxamt,2775.1646,100.6701
+fact_reseller_sales,SO43662,12,taxamt,2775.1646,28.5518
+fact_reseller_sales,SO43662,13,taxamt,2775.1646,419.9011
+fact_reseller_sales,SO43662,14,taxamt,2775.1646,14.7151
+fact_reseller_sales,SO43662,15,taxamt,2775.1646,42.8594
+fact_reseller_sales,SO43662,16,taxamt,2775.1646,171.757
+fact_reseller_sales,SO43662,17,taxamt,2775.1646,100.6701
+fact_reseller_sales,SO43662,18,taxamt,2775.1646,14.7151
+fact_reseller_sales,SO43662,19,taxamt,2775.1646,28.5518
+fact_reseller_sales,SO43662,20,taxamt,2775.1646,14.2865
+fact_reseller_sales,SO43662,21,taxamt,2775.1646,100.6701
+fact_reseller_sales,SO43662,22,taxamt,2775.1646,69.9835
+fact_reseller_sales,SO43663,1,taxamt,40.2681,33.5567
+fact_reseller_sales,SO43664,1,taxamt,2344.9922,163.1995
+fact_reseller_sales,SO43664,2,taxamt,2344.9922,647.9981
+fact_reseller_sales,SO43664,3,taxamt,2344.9922,2.3072
+fact_reseller_sales,SO43664,4,taxamt,2344.9922,2.3072
+fact_reseller_sales,SO43664,5,taxamt,2344.9922,323.999
+fact_reseller_sales,SO43664,6,taxamt,2344.9922,489.5986
+fact_reseller_sales,SO43664,7,taxamt,2344.9922,163.1995
+fact_reseller_sales,SO43664,8,taxamt,2344.9922,161.9995
+fact_reseller_sales,SO43665,1,taxamt,1375.9427,3.2298
+fact_reseller_sales,SO43665,2,taxamt,1375.9427,163.1995
+fact_reseller_sales,SO43665,3,taxamt,1375.9427,1.6149
+fact_reseller_sales,SO43665,4,taxamt,1375.9427,4.6145
+fact_reseller_sales,SO43665,5,taxamt,1375.9427,323.999
+fact_reseller_sales,SO43665,6,taxamt,1375.9427,0.8298
+fact_reseller_sales,SO43665,7,taxamt,1375.9427,323.999
+fact_reseller_sales,SO43665,8,taxamt,1375.9427,161.9995
+fact_reseller_sales,SO43665,9,taxamt,1375.9427,2.736
+fact_reseller_sales,SO43665,10,taxamt,1375.9427,161.9995
+fact_reseller_sales,SO43666,1,taxamt,486.3747,33.5567
+fact_reseller_sales,SO43666,2,taxamt,486.3747,171.757
+fact_reseller_sales,SO43666,3,taxamt,486.3747,28.5518
+fact_reseller_sales,SO43666,4,taxamt,486.3747,69.9835
+fact_reseller_sales,SO43666,5,taxamt,486.3747,67.1134
+fact_reseller_sales,SO43666,6,taxamt,486.3747,33.5567
+fact_reseller_sales,SO43667,1,taxamt,586.1203,1.368
+fact_reseller_sales,SO43667,2,taxamt,586.1203,163.1995
+fact_reseller_sales,SO43667,3,taxamt,586.1203,161.9995
+fact_reseller_sales,SO43667,4,taxamt,586.1203,161.9995
+fact_reseller_sales,SO43668,1,taxamt,3461.7654,209.9506
+fact_reseller_sales,SO43668,2,taxamt,3461.7654,343.5139
+fact_reseller_sales,SO43668,3,taxamt,3461.7654,234.897
+fact_reseller_sales,SO43668,4,taxamt,3461.7654,201.3403
+fact_reseller_sales,SO43668,5,taxamt,3461.7654,13.8434
+fact_reseller_sales,SO43668,6,taxamt,3461.7654,88.2903
+fact_reseller_sales,SO43668,7,taxamt,3461.7654,3.2298
+fact_reseller_sales,SO43668,8,taxamt,3461.7654,3.2298
+fact_reseller_sales,SO43668,9,taxamt,3461.7654,139.967
+fact_reseller_sales,SO43668,10,taxamt,3461.7654,1.6597
+fact_reseller_sales,SO43668,11,taxamt,3461.7654,29.4301
+fact_reseller_sales,SO43668,12,taxamt,3461.7654,209.9506
+fact_reseller_sales,SO43668,13,taxamt,3461.7654,100.6701
+fact_reseller_sales,SO43668,14,taxamt,3461.7654,67.1134
+fact_reseller_sales,SO43668,15,taxamt,3461.7654,44.1452
+fact_reseller_sales,SO43668,16,taxamt,3461.7654,67.1134
+fact_reseller_sales,SO43668,17,taxamt,3461.7654,67.1134
+fact_reseller_sales,SO43668,18,taxamt,3461.7654,29.4301
+fact_reseller_sales,SO43668,19,taxamt,3461.7654,2.3072
+fact_reseller_sales,SO43668,20,taxamt,3461.7654,67.1134
+fact_reseller_sales,SO43659,8,totalproductcost,115.4769,95.1732
+fact_reseller_sales,SO43659,9,totalproductcost,38.4923,31.7244
+fact_reseller_sales,SO43659,11,totalproductcost,13.8446,11.4104
+fact_reseller_sales,SO43659,12,totalproductcost,52.3452,48.1112
+fact_reseller_sales,SO43660,1,totalproductcost,486.7066,413.1463
+fact_reseller_sales,SO43661,2,totalproductcost,739.041,617.0281
+fact_reseller_sales,SO43661,3,totalproductcost,1478.082,1234.0562
+fact_reseller_sales,SO43661,4,totalproductcost,27.6892,22.8208
+fact_reseller_sales,SO43661,5,totalproductcost,153.9692,126.8976
+fact_reseller_sales,SO43661,6,totalproductcost,1494.4004,1247.6806
+fact_reseller_sales,SO43661,9,totalproductcost,26.1726,24.0556
+fact_reseller_sales,SO43661,13,totalproductcost,76.9846,63.4488
+fact_reseller_sales,SO43661,15,totalproductcost,65.4315,60.139
+fact_reseller_sales,SO43662,1,totalproductcost,1460.1198,1239.4389
+fact_reseller_sales,SO43662,2,totalproductcost,2433.533,2065.7315
+fact_reseller_sales,SO43662,3,totalproductcost,374.3142,362.9714
+fact_reseller_sales,SO43662,5,totalproductcost,561.4713,544.4571
+fact_reseller_sales,SO43662,6,totalproductcost,2433.533,2065.7315
+fact_reseller_sales,SO43662,7,totalproductcost,1460.1198,1239.4389
+fact_reseller_sales,SO43662,8,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43662,11,totalproductcost,1460.1198,1239.4389
+fact_reseller_sales,SO43662,14,totalproductcost,187.1571,181.4857
+fact_reseller_sales,SO43662,15,totalproductcost,613.8753,528.5991
+fact_reseller_sales,SO43662,17,totalproductcost,1460.1198,1239.4389
+fact_reseller_sales,SO43662,18,totalproductcost,187.1571,181.4857
+fact_reseller_sales,SO43662,20,totalproductcost,204.6251,176.1997
+fact_reseller_sales,SO43662,21,totalproductcost,1460.1198,1239.4389
+fact_reseller_sales,SO43663,1,totalproductcost,486.7066,413.1463
+fact_reseller_sales,SO43664,3,totalproductcost,38.4923,31.7244
+fact_reseller_sales,SO43664,4,totalproductcost,38.4923,31.7244
+fact_reseller_sales,SO43665,1,totalproductcost,26.1726,24.0556
+fact_reseller_sales,SO43665,3,totalproductcost,13.0863,12.0278
+fact_reseller_sales,SO43665,4,totalproductcost,76.9846,63.4488
+fact_reseller_sales,SO43665,6,totalproductcost,13.8446,11.4104
+fact_reseller_sales,SO43666,1,totalproductcost,486.7066,413.1463
+fact_reseller_sales,SO43666,5,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43666,6,totalproductcost,486.7066,413.1463
+fact_reseller_sales,SO43668,3,totalproductcost,3406.9462,2892.0241
+fact_reseller_sales,SO43668,4,totalproductcost,2920.2396,2478.8778
+fact_reseller_sales,SO43668,5,totalproductcost,230.9538,190.3464
+fact_reseller_sales,SO43668,6,totalproductcost,1122.9426,1088.9142
+fact_reseller_sales,SO43668,7,totalproductcost,26.1726,24.0556
+fact_reseller_sales,SO43668,8,totalproductcost,26.1726,24.0556
+fact_reseller_sales,SO43668,10,totalproductcost,27.6892,22.8208
+fact_reseller_sales,SO43668,11,totalproductcost,374.3142,362.9714
+fact_reseller_sales,SO43668,13,totalproductcost,1460.1198,1239.4389
+fact_reseller_sales,SO43668,14,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43668,15,totalproductcost,561.4713,544.4571
+fact_reseller_sales,SO43668,16,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43668,17,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43668,18,totalproductcost,374.3142,362.9714
+fact_reseller_sales,SO43668,19,totalproductcost,38.4923,31.7244
+fact_reseller_sales,SO43668,20,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43668,23,totalproductcost,1946.8264,1652.5852
+fact_reseller_sales,SO43668,24,totalproductcost,613.8753,528.5991
+fact_reseller_sales,SO43668,25,totalproductcost,153.9692,126.8976
+fact_reseller_sales,SO43668,26,totalproductcost,613.8753,528.5991
+fact_reseller_sales,SO43668,27,totalproductcost,13.0863,12.0278
+fact_reseller_sales,SO43668,29,totalproductcost,1460.1198,1239.4389
+fact_reseller_sales,SO43669,1,totalproductcost,739.041,617.0281
+fact_reseller_sales,SO43671,2,totalproductcost,76.9846,63.4488
+fact_reseller_sales,SO43671,4,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43671,6,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43671,8,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43671,9,totalproductcost,38.4923,31.7244
+fact_reseller_sales,SO43671,10,totalproductcost,13.0863,12.0278
+fact_reseller_sales,SO43671,11,totalproductcost,13.0863,12.0278
+fact_reseller_sales,SO43673,2,totalproductcost,115.4769,95.1732
+fact_reseller_sales,SO43673,3,totalproductcost,187.1571,181.4857
+fact_reseller_sales,SO43673,4,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43673,5,totalproductcost,486.7066,413.1463
+fact_reseller_sales,SO43673,6,totalproductcost,409.2502,352.3994
+fact_reseller_sales,SO43673,7,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43673,8,totalproductcost,6.9223,5.7052
+fact_reseller_sales,SO43673,9,totalproductcost,26.1726,24.0556
+fact_reseller_sales,SO43673,10,totalproductcost,13.0863,12.0278
+fact_reseller_sales,SO43673,11,totalproductcost,52.3452,48.1112
+fact_reseller_sales,SO43675,1,totalproductcost,1946.8264,1652.5852
+fact_reseller_sales,SO43675,2,totalproductcost,65.4315,60.139
+fact_reseller_sales,SO43675,3,totalproductcost,409.2502,352.3994
+fact_reseller_sales,SO43675,4,totalproductcost,13.0863,12.0278
+fact_reseller_sales,SO43675,5,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43675,7,totalproductcost,13.8446,11.4104
+fact_reseller_sales,SO43675,9,totalproductcost,115.4769,95.1732
+fact_reseller_sales,SO43677,1,totalproductcost,115.4769,95.1732
+fact_reseller_sales,SO43677,4,totalproductcost,486.7066,413.1463
+fact_reseller_sales,SO43677,5,totalproductcost,26.1726,24.0556
+fact_reseller_sales,SO43677,6,totalproductcost,1946.8264,1652.5852
+fact_reseller_sales,SO43677,7,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43677,8,totalproductcost,486.7066,413.1463
+fact_reseller_sales,SO43677,9,totalproductcost,34.6115,28.526
+fact_reseller_sales,SO43677,10,totalproductcost,13.0863,12.0278
+fact_reseller_sales,SO43677,12,totalproductcost,374.3142,362.9714
+fact_reseller_sales,SO43678,1,totalproductcost,486.7066,413.1463
+fact_reseller_sales,SO43678,2,totalproductcost,409.2502,352.3994
+fact_reseller_sales,SO43678,3,totalproductcost,486.7066,413.1463
+fact_reseller_sales,SO43678,5,totalproductcost,1460.1198,1239.4389
+fact_reseller_sales,SO43678,6,totalproductcost,973.4132,826.2926
+fact_reseller_sales,SO43678,7,totalproductcost,20.7669,17.1156
+fact_reseller_sales,SO43678,8,totalproductcost,52.3452,48.1112
+fact_reseller_sales,SO43875,10,unitprice,1971.9941,1971.9942
+fact_reseller_sales,SO43875,12,unitprice,1957.4941,1957.4942
+fact_reseller_sales,SO43884,17,unitprice,1971.9941,1971.9942
+fact_reseller_sales,SO44100,9,unitprice,1957.4941,1957.4942
+fact_reseller_sales,SO44518,3,unitprice,1957.4941,1957.4942
+fact_reseller_sales,SO44518,8,unitprice,1957.4941,1957.4942
+fact_reseller_sales,SO44534,10,unitprice,1957.4941,1957.4942
+fact_reseller_sales,SO44795,18,unitprice,1971.9941,1971.9942
+fact_reseller_sales,SO46090,13,unitprice,1957.4941,1957.4942
+fact_reseller_sales,SO46647,20,unitprice,1201.4233,1201.4234
+fact_reseller_sales,SO46944,27,unitprice,1201.4233,1201.4234
+fact_reseller_sales,SO47451,5,unitprice,1201.4233,1201.4234
+fact_reseller_sales,SO47451,24,unitprice,1201.4233,1201.4234
+fact_reseller_sales,SO47986,31,unitprice,1201.4233,1201.4234
+fact_reseller_sales,SO48306,6,unitprice,1201.4233,1201.4234
+fact_reseller_sales,SO48306,17,unitprice,1201.4233,1201.4234
+fact_reseller_sales,SO48746,18,unitprice,1201.4233,1201.4234
+fact_reseller_sales,SO50310,2,unitprice,1201.4233,1201.4234
