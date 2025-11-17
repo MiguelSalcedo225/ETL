@@ -1,5 +1,10 @@
 import pandas as pd
 from sqlalchemy.engine import Engine
+import warnings
+from sqlalchemy.exc import SAWarning
+
+# Suprimir warnings de tipos de datos no reconocidos (XML, ltree)
+warnings.filterwarnings('ignore', category=SAWarning, message='.*Did not recognize type.*')
 
 
 def extract(tables : list,conection: Engine)-> pd.DataFrame:

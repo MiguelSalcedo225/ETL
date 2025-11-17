@@ -363,7 +363,8 @@ def transform_employee(args: DataFrame) -> DataFrame:
                              'gender',
                              'vacationhours',
                              'sickleavehours',
-                             'currentflag']], on = 'businessentityid')
+                             'currentflag',
+                             'organizationnode_ltree']], on = 'businessentityid')
     dim_employee = dim_employee.merge(personemailaddress[['businessentityid', 'emailaddress']], on = 'businessentityid', how='left')
     personphone_sorted = (
         personphone
@@ -413,6 +414,23 @@ def transform_employee(args: DataFrame) -> DataFrame:
     
     dim_employee.drop('departmentid', axis=1, inplace=True)
     
+    def get_parent_node(ltree_path):
+        if pd.isna(ltree_path) or ltree_path == '':
+            return None
+        parts = str(ltree_path).split('.')
+        if len(parts) <= 1:
+            return None
+        parent_parts = parts[:-1]
+        return '.'.join(parent_parts)
+    
+    dim_employee['parent_org_node'] = dim_employee['organizationnode_ltree'].apply(get_parent_node)
+    
+    org_to_employee = dim_employee[['organizationnode_ltree', 'businessentityid']].drop_duplicates()
+    org_to_employee.columns = ['parent_org_node', 'parent_businessentityid']
+    
+    dim_employee = dim_employee.merge(org_to_employee, on='parent_org_node', how='left')
+    
+    dim_employee.drop(['organizationnode_ltree', 'parent_org_node'], axis=1, inplace=True)
     
     dim_employee['hiredate'] = pd.to_datetime(dim_employee['hiredate']).dt.date
     dim_employee['birthdate'] = pd.to_datetime(dim_employee['birthdate']).dt.date
@@ -423,12 +441,30 @@ def transform_employee(args: DataFrame) -> DataFrame:
     dim_employee['firstname'].fillna('') + ' ' + dim_employee['lastname'].fillna('')
     )
     dim_employee['status'] = np.where(dim_employee['enddate'].isna(), 'current', pd.NA)
-    dim_employee['parentemployeenationalidalternatekey'] = pd.NA
-
+    
+    businessentity_to_nat_id = dim_employee[['businessentityid', 'employeenationalidalternatekey', 'parent_businessentityid']].drop_duplicates(subset=['businessentityid'])
+    
+    parent_nat_id_map = businessentity_to_nat_id[['businessentityid', 'employeenationalidalternatekey']].copy()
+    parent_nat_id_map.columns = ['parent_businessentityid', 'parentemployeenationalidalternatekey']
+    
+    dim_employee = dim_employee.merge(parent_nat_id_map, on='parent_businessentityid', how='left')
+    
+    dim_employee['_sort_key'] = dim_employee['employeenationalidalternatekey'].astype(int)
+    dim_employee = dim_employee.sort_values(['_sort_key', 'startdate'], ascending=[True, False]).reset_index(drop=True)
+    dim_employee.drop('_sort_key', axis=1, inplace=True)
+    
     dim_employee['employeekey'] = range(1, len(dim_employee) + 1)
+    
+    nat_id_to_first_key = dim_employee.groupby('employeenationalidalternatekey')['employeekey'].first().reset_index()
+    nat_id_to_first_key.columns = ['parentemployeenationalidalternatekey', 'parentemployeekey']
+    
+    dim_employee = dim_employee.merge(nat_id_to_first_key, on='parentemployeenationalidalternatekey', how='left')
+    
+    dim_employee.drop(['businessentityid', 'parent_businessentityid'], axis=1, inplace=True)
 
     column_order = [
     'employeekey',
+    'parentemployeekey',
     'employeenationalidalternatekey',
     'parentemployeenationalidalternatekey',
     'salesterritorykey',
@@ -614,7 +650,7 @@ def transform_reseller(args: DataFrame, dim_geography: DataFrame) -> DataFrame:
         'businesstype', 'numberemployees', 'annualsales',
         'bankname', 'minpaymenttype', 'minpaymentamount',
         'annualrevenue', 'yearopened'
-    ])
+    ]).copy()
 
     dim_reseller['resellerkey'] = range(1, len(dim_reseller) + 1)
 
