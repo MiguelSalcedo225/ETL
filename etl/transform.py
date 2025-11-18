@@ -80,6 +80,7 @@ def transform_product(args) -> pd.DataFrame:
         'productphotoid', 'name', 'productkey'
     ], inplace=True)
     dim_product = product
+    dim_product = dim_product.sort_values('productalternatekey').reset_index(drop=True)
     dim_product['productkey'] = range(1, len(dim_product) + 1)
     dim_product = dim_product[[
         'productkey','productalternatekey', 'productsubcategorykey',
@@ -197,9 +198,8 @@ def transform_currency(currency: DataFrame) -> DataFrame:
         'currencycode': 'currencyalternatekey',
         'name': 'currencyname'
     }, inplace=True)
-    currency['currencyname'] = currency['currencyname'].str.lower().str.replace(' ', '')
     dim_currency = currency
-    dim_currency = currency.sort_values('currencyname').reset_index(drop=True)
+    dim_currency = currency.sort_values('currencyalternatekey').reset_index(drop=True)
     dim_currency['currencykey'] = range(1, len(dim_currency) + 1)
     dim_currency = dim_currency[[
         'currencykey', 'currencyalternatekey', 'currencyname'
@@ -234,11 +234,9 @@ def transform_geography(args: DataFrame) -> DataFrame:
     address = address.merge(salesterritory[['territoryid']], on='territoryid', how='left')
     address.rename(columns={'territoryid': 'salesterritorykey'}, inplace=True)  
     address = address.merge(countryregion[['countryregioncode','name']].rename(columns={'name': 'countryregionname'}), on='countryregioncode', how='left')
-    # Filtrar direcciones que tienen clientes o tiendas
     customer_business_ids = customer[['personid']].dropna().rename(columns={'personid': 'businessentityid'})
     store_business_ids = store[['businessentityid']].dropna()
     valid_business_ids = pd.concat([customer_business_ids, store_business_ids]).drop_duplicates()
-    # Filtrar business_entity_address para obtener solo las direcciones con clientes o tiendas
     valid_addresses = business_entity_address.merge(valid_business_ids, on='businessentityid', how='inner')
     dim_geography = address.merge(valid_addresses[['addressid']].drop_duplicates(), on='addressid',how='inner')
     dim_geography.drop(columns=['stateprovinceid','addressid'], inplace=True)
@@ -265,13 +263,10 @@ def transform_geography(args: DataFrame) -> DataFrame:
     ip_addresses = []
     for i in range(len(dim_geography)):
         if i < 253:
-            # Primer rango: 198.51.100.2 a 198.51.100.254
             ip_addresses.append(f"198.51.100.{i + 2}")
         elif i < 507:
-            # Segundo rango: 192.0.2.1 a 192.0.2.254
             ip_addresses.append(f"192.0.2.{i - 253 + 1}")
         else:
-            # Tercer rango: 203.0.113.1 en adelante
             ip_addresses.append(f"203.0.113.{i - 507 + 1}")
     
     dim_geography['ipaddresslocator'] = ip_addresses
@@ -410,7 +405,6 @@ def transform_employee(args: DataFrame) -> DataFrame:
         how='left'
     )
 
-    # Primero obtenemos el historial de departamentos
     dept_hist = (
         employeedepartmenthistory
         .sort_values(by=["businessentityid", "startdate"], ascending=[True, False]))
@@ -491,7 +485,6 @@ def transform_employee(args: DataFrame) -> DataFrame:
     
     dim_employee = dim_employee.merge(min_start_dates, on='employeenationalidalternatekey', how='left')
     
-    # Ordenar por: min_startdate, businessentityid (desempate), startdate descendente (histórico)
     dim_employee = dim_employee.sort_values(
         ['min_startdate', 'businessentityid', 'startdate'], 
         ascending=[True, True, False]
@@ -800,6 +793,19 @@ def transform_fact_internet_sales(args: DataFrame ,  dim_product: DataFrame,
     fact["productstandardcost"] = fact["standardcost"]
     fact["totalproductcost"] = fact["standardcost"] * fact["orderqty"]
     fact["salesamount"] = fact["unitprice"] * (1 - fact["unitpricediscount"]) * fact["orderqty"]
+
+    order_totals = fact.groupby('salesordernumber')['salesamount'].sum().reset_index()
+    order_totals.rename(columns={'salesamount': 'order_total'}, inplace=True)
+    fact = fact.merge(order_totals, on='salesordernumber', how='left')
+    
+    fact['line_proportion'] = fact['salesamount'] / fact['order_total']
+    fact['freight'] = fact['freight'] * fact['line_proportion']
+    fact['taxamt'] = fact['taxamt'] * fact['line_proportion']
+    fact.drop(columns=['order_total', 'line_proportion'], inplace=True)
+
+    fact['orderdate'] = fact['orderdate'] - pd.Timedelta(days=153)
+    fact['duedate'] = fact['duedate'] - pd.Timedelta(days=153)
+    fact['shipdate'] = fact['shipdate'] - pd.Timedelta(days=153)
 
     fact['orderdatekey'] = fact['orderdate'].dt.strftime('%Y%m%d').astype(int)
     fact['duedatekey'] = fact['duedate'].dt.strftime('%Y%m%d').astype(int)
