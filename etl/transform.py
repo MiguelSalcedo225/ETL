@@ -449,9 +449,18 @@ def transform_employee(args: DataFrame) -> DataFrame:
     
     dim_employee = dim_employee.merge(parent_nat_id_map, on='parent_businessentityid', how='left')
     
-    dim_employee['_sort_key'] = dim_employee['employeenationalidalternatekey'].astype(int)
-    dim_employee = dim_employee.sort_values(['_sort_key', 'startdate'], ascending=[True, False]).reset_index(drop=True)
-    dim_employee.drop('_sort_key', axis=1, inplace=True)
+    min_start_dates = dim_employee.groupby('employeenationalidalternatekey')['startdate'].min().reset_index()
+    min_start_dates.columns = ['employeenationalidalternatekey', 'min_startdate']
+    
+    dim_employee = dim_employee.merge(min_start_dates, on='employeenationalidalternatekey', how='left')
+    
+    # Ordenar por: min_startdate, businessentityid (desempate), startdate descendente (histórico)
+    dim_employee = dim_employee.sort_values(
+        ['min_startdate', 'businessentityid', 'startdate'], 
+        ascending=[True, True, False]
+    ).reset_index(drop=True)
+    
+    dim_employee.drop('min_startdate', axis=1, inplace=True)
     
     dim_employee['employeekey'] = range(1, len(dim_employee) + 1)
     
