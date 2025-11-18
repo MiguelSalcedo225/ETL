@@ -387,8 +387,7 @@ def transform_employee(args: DataFrame) -> DataFrame:
     dept_hist = (
         employeedepartmenthistory
         .sort_values(by=["businessentityid", "startdate"], ascending=[True, False]))
-        
-    
+
     dim_employee = dim_employee.merge(
         dept_hist[['businessentityid', 'startdate', 'enddate', 'departmentid']],
         on='businessentityid',
@@ -751,6 +750,7 @@ def transform_fact_internet_sales(args: DataFrame ,  dim_product: DataFrame,
         right_on='customeralternatekey',
         how='left' 
     )
+    fact['revisionnumber']=fact['revisionnumber'].apply(lambda x: 1 if x==8 else 2)
 
     fact["salesorderlinenumber"] = (fact.sort_values("salesorderdetailid").groupby("salesordernumber").cumcount() + 1)
 
@@ -926,6 +926,7 @@ def transform_fact_reseller_sales(
         right_on="sales_person_id",
         how="left"
     )
+    fact['revisionnumber']=fact['revisionnumber'].apply(lambda x: 1 if x==8 else 2)
 
     fact["salesorderlinenumber"] = (fact.sort_values("salesorderdetailid").groupby("salesordernumber").cumcount() + 1)
 
