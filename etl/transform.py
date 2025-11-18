@@ -236,9 +236,34 @@ def transform_geography(args: DataFrame) -> DataFrame:
         'city', 'postalcode', 'stateprovincecode', 'stateprovincename', 
         'countryregioncode', 'countryregionname', 'salesterritorykey'
     ])
-    dim_geography = dim_geography.sort_values(['countryregioncode', 'stateprovincecode', 'city'])
-    base_ip = "198.51.100.{}"
-    ip_addresses = [base_ip.format(i + 2) for i in range(len(dim_geography))]
+    
+    import unicodedata
+    def normalize_for_sort(text):
+        if pd.isna(text):
+            return ''
+        nfd = unicodedata.normalize('NFD', str(text))
+        without_accents = ''.join(c for c in nfd if unicodedata.category(c) != 'Mn')
+        return without_accents.lower()
+    
+    dim_geography['_sort_city'] = dim_geography['city'].apply(normalize_for_sort)
+    dim_geography['_sort_postal'] = dim_geography['postalcode'].apply(normalize_for_sort)
+    dim_geography = dim_geography.sort_values(
+        ['countryregioncode', 'stateprovincecode', '_sort_city', '_sort_postal']
+    )
+    dim_geography.drop(['_sort_city', '_sort_postal'], axis=1, inplace=True)
+    
+    ip_addresses = []
+    for i in range(len(dim_geography)):
+        if i < 253:
+            # Primer rango: 198.51.100.2 a 198.51.100.254
+            ip_addresses.append(f"198.51.100.{i + 2}")
+        elif i < 507:
+            # Segundo rango: 192.0.2.1 a 192.0.2.254
+            ip_addresses.append(f"192.0.2.{i - 253 + 1}")
+        else:
+            # Tercer rango: 203.0.113.1 en adelante
+            ip_addresses.append(f"203.0.113.{i - 507 + 1}")
+    
     dim_geography['ipaddresslocator'] = ip_addresses
     dim_geography['geographykey'] = range(1, len(dim_geography) + 1)
     dim_geography = dim_geography[[
