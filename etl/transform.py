@@ -80,7 +80,6 @@ def transform_product(args) -> pd.DataFrame:
         'productphotoid', 'name', 'productkey'
     ], inplace=True)
     dim_product = product
-    dim_product = dim_product.sort_values('productalternatekey').reset_index(drop=True)
     dim_product['productkey'] = range(1, len(dim_product) + 1)
     dim_product = dim_product[[
         'productkey','productalternatekey', 'productsubcategorykey',
@@ -198,9 +197,11 @@ def transform_currency(currency: DataFrame) -> DataFrame:
         'currencycode': 'currencyalternatekey',
         'name': 'currencyname'
     }, inplace=True)
-    dim_currency = currency
-    dim_currency = currency.sort_values('currencyalternatekey').reset_index(drop=True)
+    currency['currencyname_original'] = currency['currencyname']
+    currency['currencyname_tmp'] = (currency['currencyname'].str.lower().str.replace(' ', ''))
+    dim_currency = currency.sort_values('currencyname_tmp').reset_index(drop=True)
     dim_currency['currencykey'] = range(1, len(dim_currency) + 1)
+    dim_currency['currencyname'] = dim_currency['currencyname_original']
     dim_currency = dim_currency[[
         'currencykey', 'currencyalternatekey', 'currencyname'
     ]]
