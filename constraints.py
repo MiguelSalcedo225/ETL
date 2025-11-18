@@ -19,6 +19,12 @@ def create_constraints(engine):
         "ALTER TABLE fact_internet_sales ADD CONSTRAINT pk_fact_internet_sales PRIMARY KEY (salesordernumber, salesorderlinenumber)",
         "ALTER TABLE fact_reseller_sales ADD CONSTRAINT pk_fact_reseller_sales PRIMARY KEY (salesordernumber, salesorderlinenumber)",
 
+        # FOREIGN KEYS DIMENSIONES
+        "ALTER TABLE dim_customer ADD CONSTRAINT fk_customer_geography FOREIGN KEY (geographykey) REFERENCES dim_geography(geographykey)",
+        "ALTER TABLE dim_employee ADD CONSTRAINT fk_employee_parent FOREIGN KEY (parentemployeekey) REFERENCES dim_employee(employeekey)",
+        "ALTER TABLE dim_employee ADD CONSTRAINT fk_employee_territory FOREIGN KEY (salesterritorykey) REFERENCES dim_salesterritory(salesterritorykey)",
+        "ALTER TABLE dim_reseller ADD CONSTRAINT fk_reseller_geography FOREIGN KEY (geographykey) REFERENCES dim_geography(geographykey)",
+
         # FOREIGN KEYS FACT INTERNET SALES
         "ALTER TABLE fact_internet_sales ADD CONSTRAINT fk_internet_product FOREIGN KEY (productkey) REFERENCES dim_product(productkey)",
         "ALTER TABLE fact_internet_sales ADD CONSTRAINT fk_internet_customer FOREIGN KEY (customerkey) REFERENCES dim_customer(customerkey)",

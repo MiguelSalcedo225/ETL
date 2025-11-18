@@ -164,6 +164,16 @@ def transform_salesterritory(args: DataFrame) -> DataFrame:
         'salesterritorygroup'
     ]]
     dim_salesterritory.reset_index(drop=True, inplace=True)
+    
+    na_territory = pd.DataFrame({
+        'salesterritorykey': [11],
+        'salesterritoryalternatekey': [0],
+        'salesterritoryregion': ['NA'],
+        'salesterritorycountry': ['NA'],
+        'salesterritorygroup': ['NA']
+    })
+    dim_salesterritory = pd.concat([dim_salesterritory, na_territory], ignore_index=True)
+    
     return dim_salesterritory
 
 def transform_salesreason(salesreason: DataFrame) -> DataFrame:
@@ -399,22 +409,25 @@ def transform_employee(args: DataFrame) -> DataFrame:
         on='businessentityid',
         how='left'
     )
-    pay_last = (
-        employeepayhistory
-        .sort_values(by=["businessentityid", "ratechangedate"], ascending=[True, False])
-        .drop_duplicates(subset=['businessentityid'], keep='first'))
-    dim_employee = dim_employee.merge(
-        pay_last[['businessentityid', 'payfrequency', 'rate']],
-        on='businessentityid',
-        how='left'
-    )
 
+    # Primero obtenemos el historial de departamentos
     dept_hist = (
         employeedepartmenthistory
         .sort_values(by=["businessentityid", "startdate"], ascending=[True, False]))
 
     dim_employee = dim_employee.merge(
         dept_hist[['businessentityid', 'startdate', 'enddate', 'departmentid']],
+        on='businessentityid',
+        how='left'
+    )
+    
+    pay_last = (
+        employeepayhistory
+        .sort_values(by=["businessentityid", "ratechangedate"], ascending=[True, False])
+        .drop_duplicates(subset=['businessentityid'], keep='first'))
+    
+    dim_employee = dim_employee.merge(
+        pay_last[['businessentityid', 'payfrequency', 'rate']],
         on='businessentityid',
         how='left'
     )
@@ -525,7 +538,8 @@ def transform_employee(args: DataFrame) -> DataFrame:
     'departmentname',
     'startdate',
     'enddate',
-    'status'
+    'status',
+    'employeephoto'
     ]
 
     dim_employee = dim_employee.reindex(columns=column_order)
