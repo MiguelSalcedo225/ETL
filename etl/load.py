@@ -27,9 +27,6 @@ def load_data_promotion(dim_promotion: DataFrame, etl_conn: Engine):
 def load_data_customer(dim_customer: DataFrame, etl_conn: Engine):
     dim_customer.to_sql('dim_customer', etl_conn, if_exists='append', index=False)
 
-def load_data_hecho_internetsales(fact_internet_sales: DataFrame, etl_conn: Engine):
-    fact_internet_sales.to_sql('fact_internetsales', etl_conn, if_exists='append', index=False)
-
 def load_data_geography(dim_geography: DataFrame, etl_conn: Engine):
     dim_geography.to_sql('dim_geography', etl_conn, if_exists='append', index= False)
 
